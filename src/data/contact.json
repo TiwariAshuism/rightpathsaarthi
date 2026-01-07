@@ -1,0 +1,63 @@
+{
+    "hero": {
+        "title": "Get in Touch",
+        "description": "We're here to help shape your future. Reach out for career guidance, admissions help, or exam prep. Our team usually responds within 24 hours."
+    },
+    "contactInfo": {
+        "title": "Contact Details",
+        "items": [
+            {
+                "icon": "call",
+                "label": "Phone",
+                "value": "+1 (555) 123-4567"
+            },
+            {
+                "icon": "mail",
+                "label": "Email",
+                "value": "support@RightPath Saarthi.com"
+            },
+            {
+                "icon": "location_on",
+                "label": "Visit Us",
+                "value": "123 Education Lane, Tech City"
+            }
+        ],
+        "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.066496734936!2d77.37293031508246!3d28.62777098241968!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce551491b3ce7%3A0x7335d9fcfd4d9db0!2sNoida%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1645523456789!5m2!1sen!2sin"
+    },
+    "form": {
+        "title": "Send us a Message",
+        "fields": {
+            "fullName": {
+                "label": "Full Name",
+                "placeholder": "John Doe"
+            },
+            "email": {
+                "label": "Email Address",
+                "placeholder": "john@example.com"
+            },
+            "phone": {
+                "label": "Phone Number (Optional)",
+                "placeholder": "+1 (555) 000-0000"
+            },
+            "subject": {
+                "label": "Subject",
+                "options": [
+                    "General Inquiry",
+                    "University Admissions",
+                    "Exam Preparation",
+                    "Career Counseling"
+                ]
+            },
+            "message": {
+                "label": "Message",
+                "placeholder": "How can we help you?"
+            }
+        },
+        "buttonText": "Send Message"
+    },
+    "faqTeaser": {
+        "title": "Have a quick question?",
+        "description": "Check our frequently asked questions for immediate answers.",
+        "linkText": "Visit FAQ Page"
+    }
+}

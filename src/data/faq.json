@@ -1,0 +1,119 @@
+{
+    "hero": {
+        "title": "How can we help you?",
+        "subtitle": "Find answers to common questions about university admissions, pricing, and exam prep.",
+        "backgroundImage": "https://lh3.googleusercontent.com/aida-public/AB6AXuCSqRXl8f6rVVaZrfHEJIGNnfn2EYaBS9-vjb_uK2kAADpAQzjZPuxqEfpgWSygJ5aSjyR7TbAQeqxZw6nLFUXgftRmIFCBTTFfzVf454wX8RFPF_aR914GXmpY1C7-u5ZhSdOZTig-bRipg1LJuoqWZB_xFYbsDuKVtNkXJkR6z7Ibb9epYw16bmiBbKIQMUzkn4HaN-ytwNyIu2Zrq2Iz-3Nq4zD6EZmp2v-e6TU3wAXMLl0UCADraxg8G82Stl-PoAcnVYGVNH4",
+        "searchPlaceholder": "Search for 'SAT', 'Pricing', or 'Counseling'...",
+        "searchButtonText": "Search"
+    },
+    "categories": [
+        {
+            "icon": "info",
+            "label": "General",
+            "active": true
+        },
+        {
+            "icon": "school",
+            "label": "Admissions",
+            "active": false
+        },
+        {
+            "icon": "checklist",
+            "label": "Exam Prep",
+            "active": false
+        },
+        {
+            "icon": "credit_card",
+            "label": "Pricing",
+            "active": false
+        },
+        {
+            "icon": "support_agent",
+            "label": "Support",
+            "active": false
+        }
+    ],
+    "sections": [
+        {
+            "title": "General Information",
+            "icon": "info",
+            "items": [
+                {
+                    "question": "How do I book a counseling session?",
+                    "answer": "You can book a session directly through our platform by visiting the <a class=\"text-primary font-medium hover:underline\" href=\"#\">Counseling page</a>. Simply choose a counselor, select a convenient time slot from their calendar, and confirm your booking."
+                },
+                {
+                    "question": "What is the refund policy?",
+                    "answer": "We offer a full refund if you cancel at least 24 hours before your scheduled session. Cancellations made within 24 hours may be subject to a 50% fee. Please contact our support team for assistance with refunds."
+                },
+                {
+                    "question": "Do you offer scholarship guidance?",
+                    "answer": "Yes! Our counselors specialize in finding financial aid and scholarship opportunities relevant to your chosen universities and degree programs."
+                }
+            ]
+        },
+        {
+            "title": "University Admissions",
+            "icon": "school",
+            "items": [
+                {
+                    "question": "Which universities do you cover?",
+                    "answer": "We cover admissions for universities in the US, UK, Canada, Australia, and select European countries. Our database includes over 5,000 institutions."
+                },
+                {
+                    "question": "Can you help with essay writing?",
+                    "answer": "We provide comprehensive essay review and feedback services. While we do not write essays for you, our mentors help you structure your story and refine your voice."
+                }
+            ]
+        },
+        {
+            "title": "Exam Prep Questions",
+            "icon": "checklist",
+            "items": [
+                {
+                    "question": "Do you offer SAT/ACT coaching?",
+                    "answer": "Yes, we offer comprehensive coaching for SAT, ACT, GRE, GMAT, and IELTS/TOEFL. Our courses are designed by top scorers."
+                },
+                {
+                    "question": "Are the classes online or offline?",
+                    "answer": "We offer both online live classes and offline sessions at select centers. You can choose the mode that suits you best."
+                }
+            ]
+        },
+        {
+            "title": "Pricing & Plans",
+            "icon": "credit_card",
+            "items": [
+                {
+                    "question": "Do you have a free trial?",
+                    "answer": "Yes, we offer a free initial consultation and a demo class for our exam prep courses."
+                },
+                {
+                    "question": "What payment methods do you accept?",
+                    "answer": "We accept all major credit/debit cards, UPI, and net banking."
+                }
+            ]
+        },
+        {
+            "title": "Support & Contact",
+            "icon": "support_agent",
+            "items": [
+                {
+                    "question": "How can I contact support?",
+                    "answer": "You can reach our support team via email at support@RightPath Saarthi.com or call us at our helpline number."
+                },
+                {
+                    "question": "What are your support hours?",
+                    "answer": "Our support team is available Mon-Sat from 9 AM to 8 PM IST."
+                }
+            ]
+        }
+    ],
+    "cta": {
+        "icon": "support_agent",
+        "title": "Still have questions?",
+        "description": "Can't find the answer you're looking for? Our team is here to help you with any specific inquiries.",
+        "primaryButton": "Contact Support",
+        "secondaryButton": "Visit Help Center"
+    }
+}

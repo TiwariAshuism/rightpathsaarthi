@@ -1,0 +1,117 @@
+{
+    "header": {
+        "logoText": "RightPath Saarthi",
+        "navLinks": [
+            {
+                "text": "Home",
+                "href": "/"
+            },
+            {
+                "text": "Services",
+                "href": "/services"
+            },
+            {
+                "text": "About",
+                "href": "/about"
+            },
+            {
+                "text": "Contact",
+                "href": "/contact"
+            },
+            {
+                "text": "FAQ",
+                "href": "/faq"
+            }
+        ],
+        "ctaButton": "Get Started"
+    },
+    "helplineBanner": {
+        "text": "Admission Helpline:",
+        "phoneNumber": "1800-123-4567",
+        "availability": "(Mon-Fri, 9am-6pm IST)",
+        "buttonText": "Call Now"
+    },
+    "whatsappFAB": {
+        "phoneNumber": "918210202489",
+        "message": "Hello! I'm interested in learning more about RightPath Saarthi's admission counseling services. Could you please help me?"
+    },
+    "footer": {
+        "logoText": "RightPath Saarthi",
+        "description": "Empowering students to achieve their academic dreams through expert guidance and personalized support.",
+        "socialLinks": [
+            {
+                "icon": "twitter",
+                "href": "#"
+            },
+            {
+                "icon": "linkedin",
+                "href": "#"
+            },
+            {
+                "icon": "instagram",
+                "href": "#"
+            }
+        ],
+        "columns": [
+            {
+                "title": "Services",
+                "links": [
+                    {
+                        "text": "University Admissions",
+                        "href": "#"
+                    },
+                    {
+                        "text": "Test Preparation",
+                        "href": "#"
+                    },
+                    {
+                        "text": "Career Counseling",
+                        "href": "#"
+                    },
+                    {
+                        "text": "Essay Editing",
+                        "href": "#"
+                    }
+                ]
+            },
+            {
+                "title": "Company",
+                "links": [
+                    {
+                        "text": "About Us",
+                        "href": "/about"
+                    },
+                    {
+                        "text": "Careers",
+                        "href": "#"
+                    },
+                    {
+                        "text": "Blog",
+                        "href": "#"
+                    },
+                    {
+                        "text": "Contact",
+                        "href": "/contact"
+                    }
+                ]
+            }
+        ],
+        "subscribe": {
+            "title": "Subscribe",
+            "description": "Get the latest admission tips and updates.",
+            "placeholder": "Enter your email",
+            "buttonText": "Subscribe"
+        },
+        "copyright": "© 2024 RightPath Saarthi Inc. All rights reserved.",
+        "legalLinks": [
+            {
+                "text": "Privacy Policy",
+                "href": "#"
+            },
+            {
+                "text": "Terms of Service",
+                "href": "#"
+            }
+        ]
+    }
+}

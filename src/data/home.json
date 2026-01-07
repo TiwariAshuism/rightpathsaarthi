@@ -1,0 +1,156 @@
+{
+    "hero": {
+        "typewriterTexts": [
+            "Navigate Your Future with Confidence",
+            "Achieve Your Academic Dreams"
+        ],
+        "subtitle": "Expert guidance for university admissions, exam preparation, and career counseling tailored to your goals.",
+        "ctaButtons": {
+            "primary": "Book Consultation",
+            "secondary": "Explore Services"
+        },
+        "trustText": "Trusted by 1,000+ students"
+    },
+    "partners": {
+        "title": "Our Global Partners & Collaborators",
+        "images": [
+            "/images/1.png",
+            "/images/2.png",
+            "/images/3.png",
+            "/images/4.png",
+            "/images/5.png",
+            "/images/6.png",
+            "/images/7.png",
+            "/images/8.png",
+            "/images/9.png",
+            "/images/10.png"
+        ]
+    },
+    "services": {
+        "tagline": "What We Do",
+        "title": "Our Core Services",
+        "description": "Comprehensive support for every step of your academic and professional journey.",
+        "items": [
+            {
+                "icon": "school",
+                "title": "University Admissions",
+                "description": "Get into your dream school with personalized application strategy, essay editing, and interview prep.",
+                "linkText": "Learn more"
+            },
+            {
+                "icon": "menu_book",
+                "title": "Exam Preparation",
+                "description": "Master the SAT, GRE, and GMAT with top-tier tutors, custom study plans, and regular mock tests.",
+                "linkText": "Learn more"
+            },
+            {
+                "icon": "explore",
+                "title": "Career Counseling",
+                "description": "Find the right path with professional aptitude assessments, industry insights, and career mapping.",
+                "linkText": "Learn more"
+            }
+        ]
+    },
+    "stats": [
+        {
+            "value": "1000+",
+            "label": "Students Placed"
+        },
+        {
+            "value": "50+",
+            "label": "Partner Universities"
+        },
+        {
+            "value": "98%",
+            "label": "Success Rate"
+        }
+    ],
+    "whyChooseUs": {
+        "tagline": "Why Choose RightPath Saarthi?",
+        "title": "Personalized Guidance for Proven Results",
+        "description": "We believe every student has a unique potential. Our approach is not one-size-fits-all; we tailor our strategies to fit your personal strengths and aspirations.",
+        "features": [
+            {
+                "title": "Expert Mentors",
+                "description": "Our team consists of alumni from Ivy League and top-tier universities."
+            },
+            {
+                "title": "Data-Driven Strategy",
+                "description": "We use historical admission data to maximize your acceptance chances."
+            },
+            {
+                "title": "End-to-End Support",
+                "description": "From profile building to visa counseling, we are with you throughout."
+            }
+        ]
+    },
+    "testimonials": {
+        "title": "Success Stories",
+        "items": [
+            {
+                "name": "Sarah Jenkins",
+                "subtitle": "Accepted to Harvard",
+                "quote": "RightPath Saarthi helped me get into my dream university! The essay editing service was a game changer for my application.",
+                "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuB0u_cZC0Cw055TnkoAi9fXl4FnI30zjvSM8azmJ0ZL7JqKTfNixgFppcs-xwnfvWxU4ER30zSj2q12NnfGnTtEYZQf499KH6sJBHhmuiRVcr6CwzOfiYEm39CDklERI8QoegqLYO_jjFC_XZ0AA-cx9KWN32m2GXNiegG4N8VCrFtwn-zvWDiCfxMhUbX68zNi_8FKFoMXYIZOgWtcwfTsdAWIBd-JJDYNaeRP2cU4eNcUcIqunjv1WRc3MTWLXlexZzvnguRq4SQ"
+            },
+            {
+                "name": "Michael Tran",
+                "subtitle": "GRE Score: 330",
+                "quote": "The exam prep tutors were incredibly knowledgeable. They helped me improve my score by over 20 points in just two months.",
+                "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuBzrr7f_-mfanYF9KMWmt21a0Zbay4uaa_iGpii_TWy4yyBgo4Voaha__XOi819hGIRPJXJxY0PoUi2WzTGKlzu9NZcFhEbJwdpfJZ_mYEePdQb0QQZRKilPv1sUxvvO0doh9_S_WdeeB1LFMX1csDsE-xpg1Fr6pavAmXJY_NfV6VqJc4JBJS1JTqikdjpMHmDaBMNqkjtVapDZEUV_IBekZ4IMIBTmEMferGF3xRF3Qqvx1IVBg9V9TxlaaYM7dcPtkKRaM_SCQ4"
+            },
+            {
+                "name": "Emily Rodriguez",
+                "subtitle": "Career Transition",
+                "quote": "I finally found a career path that fits my skills. The aptitude assessment was spot on and very detailed.",
+                "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuD_qq2wSZxKFAH1TlmmahbVmG7Ix0ehnEKdl4A2ccQn6ML5g7lAZVCyZ9qwXe7v2KUTkMeCKAwSxeHW8Un_--O8SeCU3F0XRPYuknXcdRsvq7bahVuqRpadEGEExmUJoJ5bolsjmq6Biov2ED8jMTAYoHWLt2ILfD7ci9_dq9U3z8R4OJuif5EJcCEqCwBUgsHLBp9I4uqH2Qz6t1r49JBkSzn9popom-MUdG-pXJNGSBVy4c06w01UQ2UT0EtB-t8vFvCH2m_uLYo"
+            }
+        ]
+    },
+    "founders": {
+        "tagline": "Our Visionaries",
+        "title": "What Our Founders Say",
+        "description": "Insights and inspiration from the leaders guiding RightPath Saarthi's mission.",
+        "items": [
+            {
+                "name": "Dr. Sarah Mitchell",
+                "role": "Co-Founder & CEO, RightPath Saarthi",
+                "quote": "Education has the power to transform lives. Our goal is to make expert guidance accessible to every aspiring student, bridging the gap between talent and opportunity.",
+                "subQuote": "We founded RightPath Saarthi to bring transparency and personalization to the admissions process. Seeing our students thrive at their dream universities is what drives us every single day.",
+                "image": "/images/founder1.jpg"
+            },
+            {
+                "name": "James Anderson",
+                "role": "Co-Founder & CTO, RightPath Saarthi",
+                "quote": "True mentorship goes beyond simple advice. It's about empowering students to discover their authentic selves and pursue paths that truly resonate with their ambitions.",
+                "subQuote": "At RightPath Saarthi, we don't just prepare you for exams; we prepare you for life's challenges. Our holistic approach ensures you are ready for whatever the future holds.",
+                "image": "/images/founder2.jpg"
+            }
+        ]
+    },
+    "enquiryForm": {
+        "tagline": "Start Your Journey",
+        "title": "Begin Your Academic Success Story",
+        "description": "Share a few details and we'll craft a personalized path for your goals.",
+        "steps": [
+            "Your Details",
+            "Preferences",
+            "Get Started"
+        ],
+        "fields": {
+            "name": "Full Name",
+            "email": "Email Address",
+            "phone": "Phone Number",
+            "country": "Country of Residence"
+        },
+        "button": "Continue"
+    },
+    "cta": {
+        "title": "Ready to Take the Next Step?",
+        "description": "Join thousands of students who have achieved their academic and career goals with RightPath Saarthi.",
+        "buttons": {
+            "primary": "Book Free Consultation",
+            "secondary": "View Pricing"
+        }
+    }
+}

@@ -1,0 +1,103 @@
+{
+    "hero": {
+        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuAb9slbH0lRuKb_P9uMBlBBYLmcCp_uNfZjb54KTI0dBsobMvHF9lzYB08Ah6htgVb1B0sIX-DjlEN6fdTVmZ8-2Mj_NSiLqqOjEjZtnQUmFnJsaWLFP24GgQeC0YS02L-PF1kcX24JVJB_jM8gJfZwVFQbmr2yz2_hpQgismKobbdz5mtiU3XF4EkxPuazc9hXg8VbmQQ4ywCksSfGx25zhGVlfNjyZ_UvzC8G5ZZQZUDfIgvrY2hVrZn2mGfY28XeAQgpNtjxu1s",
+        "title": "Guiding Your Academic Future",
+        "subtitle": "Bridging the gap between ambition and admission. We are your trusted partners in navigating the complex world of higher education.",
+        "buttonText": "Meet Our Team"
+    },
+    "stats": [
+        {
+            "value": "10+",
+            "label": "Years of Experience"
+        },
+        {
+            "value": "2,500+",
+            "label": "Students Placed"
+        },
+        {
+            "value": "98%",
+            "label": "Admission Rate"
+        },
+        {
+            "value": "$15M+",
+            "label": "Scholarships Secured"
+        }
+    ],
+    "intro": {
+        "title": "Who We Are",
+        "description": "RightPath Saarthi is a premier career counseling platform dedicated to demystifying the university admissions process. Founded by former admissions officers and education strategists, we understand what top-tier institutions are looking for. We bridge the gap between student ambition and academic reality through personalized guidance, data-driven strategies, and unwavering support."
+    },
+    "philosophy": {
+        "title": "Our Philosophy",
+        "description": "Driven by a commitment to student success, we believe that every student has a unique story worth telling. Our job is to help you tell it.",
+        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuBODogu4xp4rzF6O3cOBwVyg2Zqxo9eRkdd6WlMcbqvC8IczCHQ2-PURZeccEFIKbiTEHmEMB3QDMReVrY0h0vGfYPHO9Tw4TTHUbSvJ03B1SkGD32gcSqzwjy8dKxnfXdNIaZ_WA8CoISXyQkgG0HNKB4usgqhwvQwf3vnLzaXygV_YqYWQuHLG7029iIUuRhkHV3Jwa_sktGw2YheI0wp9gTCZDmLu743Xrd39d0gEK_U6NHK-SOnw8NHLLJJxup_-w4PmWdKi7E",
+        "cards": [
+            {
+                "icon": "target",
+                "title": "Our Mission",
+                "description": "To provide personalized counseling that demystifies the admissions process and empowers students to make informed decisions about their future."
+            },
+            {
+                "icon": "visibility",
+                "title": "Our Vision",
+                "description": "A world where every student has access to the best educational opportunities that align with their talents, regardless of their background or geography."
+            }
+        ]
+    },
+    "values": {
+        "title": "Core Values",
+        "subtitle": "The principles that guide every interaction",
+        "items": [
+            {
+                "icon": "verified",
+                "title": "Integrity",
+                "description": "We provide honest, unbiased advice. We prioritize your long-term success over short-term gains."
+            },
+            {
+                "icon": "lightbulb",
+                "title": "Innovation",
+                "description": "We leverage the latest data and technology to give our students a competitive edge in admissions."
+            },
+            {
+                "icon": "diversity_1",
+                "title": "Empathy",
+                "description": "We understand the pressure of admissions. We are here to listen, support, and guide with care."
+            }
+        ]
+    },
+    "team": {
+        "title": "Meet Our Experts",
+        "description": "Our team consists of former admissions officers from Ivy League universities, experienced career counselors, and industry experts.",
+        "members": [
+            {
+                "name": "Sarah Jenkins",
+                "role": "Head of Counseling",
+                "bio": "Former Harvard Admissions Officer with 15 years of experience in higher ed consulting.",
+                "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuCqcLPYiA1lApI0z6cOtSzSVTPkIoY-PNwzCFXf1JuI9BP647qPVw573UdLac8AxEDumVi-ndD5E_g4EddQ2yaq_lpRwuhZk_to8KOMZCyS2eXd5G-sr5Sbs5HbPbV4Z76-Nx7-AW67x0pnac7fTgrqN5YuKVio8cNfR1cg73Zm9DI28B5ILy6xlCOdGnFwaLyfrPwC6k3hyQsJ-FuyMJrvmJXFs1Fzret132pNTX8zLezsC52GzcQzFO0BVlStAQjl7ANG8JxuVfQ"
+            },
+            {
+                "name": "David Chen",
+                "role": "STEM Specialist",
+                "bio": "PhD in Engineering from MIT. Helps students navigate complex STEM program requirements.",
+                "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuAGwV_g_0ADNJsSw2RsoiJ3fLI3cMeYiPLhkNW54_I7dY53xX9klQwrEcJsKW_eG3Jvf8t48EvOtIyIVKJS3ZhDqorXuqk-9-MLwRBCc15RqZ1BY-HTjPorRgyFjaVlnruTT5PYTEwX-BPP_eqDVncnrZ_waN3iXSx-kV-kipdMKtz_-rfjtvtdXmPcZ0KUAFU2ZPc5tc5MtBWPZ6-tVu9WdLUWHmnvBHO3fi_a6MyHt21EgL4j0MQIAH2tJfHv_PxTg7bttMAI-1o"
+            },
+            {
+                "name": "Maria Rodriguez",
+                "role": "Lead Essay Coach",
+                "bio": "Award-winning writer and editor. Specializes in helping students craft compelling personal statements.",
+                "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuA5wGSTHBNJkCoHc66WdI7sh-5qx8P1d-n_pva_9ZBODjjH8tNB2Fnq_vSrsyfiRXSHRoz2gtSYpQD9z7FwlINgRjpmF8FtwiKAasyezFafrBIhP_r3NJpzj6f-vHXkwKTMr1PoUeiSiNkX3pLI1kLriet-aQQ_RgmykEXZkDuVgrqohZUbe6JolI23qaUJEwx03QgxZjIyMl_OXMbef-ajUPVmo1tEEEdwdPoy4SaZgFBi9d_EOgAix71CQaFNnefmCu2yhKH_-b0"
+            },
+            {
+                "name": "James Wilson",
+                "role": "International Admissions",
+                "bio": "Expert in visa processes and international scholarship opportunities for global students.",
+                "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuAh-U7jETq8Hyod08ZS3QVMtwjsiHRJYS2snKmF0mjCMgg2RPNzBapfv8vBdd6VrJNjzxdhZQ6q7O8IFY_mFwkHyyR_-fpthgpLhvJV25XwA4JiVMOaP1XqYSKzD7oNs8sBM0cGrGGBSx6Qnf7-DIPiKHj5ERBufVDl0Ui5rFcXj6XSbV_cAIzsvpIsn4nc9eHrfPPq7-609maCFNU1agLoI6PozT_fWyzFunqgpDCCJjmJD85jEFaJwtBxZzgBjklcqwzORLvbxJQ"
+            }
+        ]
+    },
+    "cta": {
+        "title": "Ready to Start Your Journey?",
+        "description": "The path to your dream university begins with a single step. Book a free consultation with our experts today and discover how we can help you succeed.",
+        "buttonText": "Book Free Consultation"
+    }
+}

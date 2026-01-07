@@ -1,0 +1,125 @@
+{
+    "hero": {
+        "title": "Courses We Consult On",
+        "description": "Expert guidance across every academic field. From university admissions to specialized exam prep, find the right path for your future.",
+        "searchPlaceholder": "Search for a course (e.g. MBA, Engineering, GRE)...",
+        "searchButtonText": "Find Course"
+    },
+    "categories": [
+        {
+            "id": "all",
+            "label": "All Fields",
+            "icon": "grid_view"
+        },
+        {
+            "id": "business",
+            "label": "Business & Mgmt",
+            "icon": "business_center"
+        },
+        {
+            "id": "engineering",
+            "label": "Engineering & Tech",
+            "icon": "memory"
+        },
+        {
+            "id": "medical",
+            "label": "Medical & Health",
+            "icon": "cardiology"
+        },
+        {
+            "id": "arts",
+            "label": "Arts & Humanities",
+            "icon": "palette"
+        },
+        {
+            "id": "study-abroad",
+            "label": "Study Abroad",
+            "icon": "public"
+        }
+    ],
+    "sections": [
+        {
+            "id": "business",
+            "title": "Business & Management",
+            "icon": "business_center",
+            "colorClass": "bg-red-100 dark:bg-red-900/30 text-primary",
+            "items": [
+                {
+                    "title": "MBA Admissions",
+                    "description": "Strategic profile building and interview prep for top-tier business schools globally.",
+                    "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuBqCgyQeXwAvqfMpgO8PviHDMniXwpax0f6mjuoxfuXDJPOAQJ7jcHVDUCl25E4QKI7viSIfFfjaKpll0j1fcOU5gc0M6VeE4X3oZntKjEDQ4grPGQpLM-0rSAW4E3RSH-MN9tLgBrXUgBv-V3Fc0Vc0DaVSPWG7m1MjdZlWYV-fbKdxRxNNGi5vWmgKuij93o4sKFUp2aOYwdcki3RPZqkOjyXiCNL9fuJPvbbquD-yUFYESYA8heACkcD_oEU-vjWri8gUusaZmo"
+                },
+                {
+                    "title": "Finance & Accounting",
+                    "description": "Specialized guidance for CPA, CFA, and university finance programs.",
+                    "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuBjEKGYFO8jdgAnMCHp7dx-L2ZIyPjtsR1LicDTnxLKOCIKh__RKbprlQ1L67r1XsR4pVB8SJ5MJoDIBaqK2ko6FhIgj7CKGrrlpLQg8vXabufs6_Nl8CwUz-eSA4OO731Hp5g1-nioN5yhcNRS4Kl-SwbY11T5rvN5hepSq8cWqc1ys_LgcjqqFCMb71bwmm3lBnSZfPCUSKakLSf2Xd0gVoYFnuKV74x3gSVAPlmjReKPsQJVGB9HMwgCcvLc-VBqy9jIucXQoHQ"
+                },
+                {
+                    "title": "Marketing & Sales",
+                    "description": "Build a creative portfolio and gain admission to leading marketing degrees.",
+                    "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuAN2YV9kntrnUhwGMc7ExG6ntlbZdvlAc8yF9ZVj44oP4YteYdTlTiTkeDIoEvlz7xK4bQ07bh1KsRmLpucUHucAVw4XhIzYdGbzRHG16il6_aERcjsIfePmdQ7iFk5HADjEG9h--lIbEMaJBMFARxzpZ9tz4ZWr4gSUZMfL0sH9dvR30xa-1XvZHcWV9CcCDbVOVegagDali1uHr-G5JLCwF5CttynuTbvjBpkpRyh_51-rcFxMzJqtLl660QbYhYXvjU2JrfwWpw"
+                }
+            ]
+        },
+        {
+            "id": "engineering",
+            "title": "Engineering & Tech",
+            "icon": "memory",
+            "colorClass": "bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400",
+            "items": [
+                {
+                    "title": "Computer Science",
+                    "description": "Navigating admissions for CS, AI, and Data Science programs worldwide.",
+                    "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuAFtNjAGNmFrR58FbaPRDQhPouYBav_TXJhAhARtY7Iph19HFh57R-9lDoZIii84Wjore9XYcVKB_sJBAPygJcRA5-dLUAFwogAugWo3EfvITNTVr3Xe7QwqMu5peDQ4N6B4-MxDdZGY4B_wJxgHrWTmMBYFlOnDDMLCswei10wjJIbjunSSaghx50vh9TMcb4YwjHJL3y0aK5qH1eKrW_XKgOgt6amCdxYzPRdyLmz_UsB1LSqefZyx-uw7zJJXJm5_CHjEBVYViM"
+                },
+                {
+                    "title": "Mechanical Engineering",
+                    "description": "Guidance for aspiring mechanical engineers, from core concepts to top university selection.",
+                    "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuAwbh_n_MWW373JZ1CbOdOUCxD5y8tyfqQv9Wbj3wCzNpZa2fUPExzAirYHcqnNPDPpbUwFTn16Bl38umgDxx2tl0ydjt1Hb2kGR4qEyUCrn7HHmZOJovc4XeA5bed7H6kQYcIZu5QfO9r7ul_FGfX365AIhUAxA5fFGixTZe8-UJ7A_1Hss4gvVoxpCK6eVICY7Jw7IzXn9o4V_qh4Ljgjr4rUB84h11QJfll9B5ceGHRR-eLJeQ5Xcqoj-eJ8u_Zf8F2HwR-wJXw"
+                }
+            ]
+        },
+        {
+            "id": "study-abroad",
+            "title": "Study Abroad Exams",
+            "icon": "public",
+            "colorClass": "bg-green-100 dark:bg-green-900/30 text-green-600 dark:text-green-400",
+            "items": [
+                {
+                    "title": "IELTS & TOEFL",
+                    "description": "Comprehensive language prep to secure your required band scores.",
+                    "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuDZoVbMfm8yHjghrWbtpJcEhCzL_t2ZSpjmU9jeu9ckc7FltrDsIcI18MSLYlBI3y_wpONbH8IGiarZo3b5e64VvYK2a2jop9RABZow29z73Bw-8uUa6wqfWsBvpIYJf81JeVFv1-Ao8FaVK5vpBcsqONvGeFq_uDrCuC4RwO7wGuR8ZnFfXZZYITchQYiaKGEXOG1NNYHh_W1CWLu3Za9LBXQHmaMPl71Hj5y0HRXPKoF5sdJmcd3ijP7MSxd2M7yM6ZQcZ1ONblQ"
+                },
+                {
+                    "title": "GMAT & GRE",
+                    "description": "Top-tier coaching to maximize your score for graduate school admissions.",
+                    "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuBlbdOkwbPSpnmfMi7GvP2O6S5g05VFNBl_CJ5H8twDJyRdG2MVDs_LntXmnmDuaq0n6LH_uwdazwHZUKBGphqx3cwl1W_bGrqk6pN84uWpeyaBB1Prd12pqTnMbhtc3hbQnuh11kjqo7v5wyyOB1SUGxNxhIkKcRVKu2eLUzwxR0ZJH-kVWHooLGw8CCGB0crnDEMQRIEdkqLIg7ibxPPBAGWaIKbmGHyyk1Qlza2_0Vg4IupgXrm47Rwj6fm7O9728Oph3ATL3BI"
+                }
+            ]
+        }
+    ],
+    "testimonials": {
+        "title": "Student Success Stories",
+        "items": [
+            {
+                "quote": "RightPath Saarthi's MBA consultation was pivotal. My counselor helped me refine my story for HBS.",
+                "name": "Sarah Jenkins",
+                "role": "MBA Candidate",
+                "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuDR_nS8r7-nvqZBRyAxDlI95Aepe3BYOHJAEBsDhlACpw_SEuq4qoC_YwVwG9VzTzFpjh3F6mgxMWTkXxK310yyArfCn-01sEo4EYbIk--2rRuovCioHgmLztmmEyI875BBBJYqjM9s3RqdCMHirCF3WHazXYHMNlFiTPPZ_5j1Wm4PhTEC4DD0rjIN6vxT5LXtgrEmDWDOkdZ_Dr2XK_OgbyG-Y3jWPYIRcbnolumrYaYt7Ck4-LK23DnorWT_bhpA1cvK8hBGNV4"
+            },
+            {
+                "quote": "The GRE prep course was intense but exactly what I needed to cross the 320 mark.",
+                "name": "Michael Chen",
+                "role": "Masters Applicant",
+                "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuAMZsCRB5RkhPvrbNqA3_MJiiC9iCM438bw-90nQVFAWn8eM_ul26xsm822Ry8Lz7uWetf-XCkS9akeXAwPDrlfu1cZH4vWX-G_qRMUZgwJ6HBwKHwgoQfm4ll6y8BTFjkggoVCCjdrV37cD9tByocTzdK1dXcNvaQbpObmNBYL3rplawSQNEZrMrmGiX7aWwGLfqJ27aTmthrehCop6jbGzUC3dCF-gYftFHqv6m-x5hvqz_AMJ6ZL0edZiRaXvH8TzEtBS7Kt7kM"
+            }
+        ]
+    },
+    "cta": {
+        "icon": "psychology_alt",
+        "title": "Don't see your specific course?",
+        "description": "We offer custom consultation packages for niche fields and unique academic paths. Talk to an expert today to find out how we can help.",
+        "primaryButton": "Book a Free Consultation",
+        "secondaryButton": "Contact Support"
+    }
+}

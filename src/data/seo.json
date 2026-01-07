@@ -1,0 +1,34 @@
+{
+    "site": {
+        "name": "RightPath Saarthi",
+        "url": "https://rightpathsaarthi.com",
+        "description": "Expert guidance for university admissions, exam preparation, and career counseling. We help students achieve their academic dreams through personalized support and proven strategies.",
+        "tagline": "From confusion to clarity",
+        "locale": "en_IN",
+        "type": "website"
+    },
+    "social": {
+        "twitter": "@rightpathsaarthi",
+        "facebook": "https://facebook.com/rightpathsaarthi",
+        "instagram": "https://instagram.com/rightpathsaarthi",
+        "linkedin": "https://linkedin.com/company/rightpathsaarthi"
+    },
+    "contact": {
+        "phone": "+91 82102 02489",
+        "email": "info@rightpathsaarthi.com",
+        "address": "India"
+    },
+    "organization": {
+        "name": "RightPath Saarthi",
+        "logo": "https://rightpathsaarthi.com/logo.png",
+        "foundingDate": "2024",
+        "description": "Leading educational consulting firm specializing in university admissions, test preparation, and career counseling for students aspiring to study in top universities worldwide."
+    },
+    "defaultMeta": {
+        "title": "RightPath Saarthi - Expert University Admission & Career Counseling",
+        "description": "Transform your academic journey with RightPath Saarthi. Expert guidance for university admissions, SAT/ACT prep, essay editing, and career counseling. Personalized support for your success.",
+        "keywords": "university admissions, career counseling, SAT preparation, ACT prep, study abroad, education consultant, college counseling, admission guidance, test prep, essay editing, university application, higher education, academic counseling, student guidance, college admission",
+        "image": "https://rightpathsaarthi.com/og-image.jpg",
+        "imageAlt": "RightPath Saarthi - Your guide to academic success"
+    }
+}

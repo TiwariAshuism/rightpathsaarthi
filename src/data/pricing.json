@@ -1,0 +1,66 @@
+{
+    "pricing": {
+        "tagline": "Transparent Pricing",
+        "title": "Choose the Right Path for Your Future",
+        "description": "Select a plan that best fits your academic goals and budget. All plans include an initial consultation.",
+        "plans": [
+            {
+                "name": "Standard Admission",
+                "price": "₹15,000",
+                "period": "per application",
+                "description": "Ideal for students seeking guidance for specific university applications.",
+                "features": [
+                    "Profile Evaluation",
+                    "University Selection (up to 3)",
+                    "Essay/SOP Editing",
+                    "Letter of Recommendation guidance",
+                    "Basic Interview Preparation"
+                ],
+                "buttonText": "Get Started",
+                "highlight": false
+            },
+            {
+                "name": "Premium Package",
+                "price": "₹45,000",
+                "period": "comprehensive",
+                "description": "Our most popular plan for end-to-end support throughout the admission cycle.",
+                "features": [
+                    "Everything in Standard+",
+                    "Unlimited University Selection",
+                    "Dedicated Mentor Support",
+                    "Scholarship Assistance",
+                    "Visa Counseling & Mock Interviews",
+                    "Pre-departure Orientation"
+                ],
+                "buttonText": "Book Now",
+                "highlight": true
+            },
+            {
+                "name": "Elite Counseling",
+                "price": "₹75,000",
+                "period": "premium mentorship",
+                "description": "Tailored for high-achieving students aiming for Ivy League and top-tier global universities.",
+                "features": [
+                    "Everything in Premium+",
+                    "Personal Branding & Profile Building",
+                    "Ivy League Alumni Mentorship",
+                    "Summer Program Guidance",
+                    "Research Paper Assistance",
+                    "Post-admission Career Mapping"
+                ],
+                "buttonText": "Inquire for Details",
+                "highlight": false
+            }
+        ],
+        "faqs": [
+            {
+                "question": "Can I upgrade my plan later?",
+                "answer": "Yes, you can upgrade to a more comprehensive package at any time by paying the difference."
+            },
+            {
+                "question": "Are there any hidden charges?",
+                "answer": "No, our pricing is transparent. University application fees and external test fees are not included."
+            }
+        ]
+    }
+}
