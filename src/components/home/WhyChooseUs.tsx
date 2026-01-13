@@ -25,7 +25,7 @@ export const WhyChooseUs = (): FunctionComponent => {
 					<h2 className="text-[#111418] dark:text-white text-3xl md:text-5xl font-black leading-tight max-w-[800px]">
 						{whyChooseUs.title}
 					</h2>
-					<p className="text-slate-600 dark:text-slate-400 text-lg max-w-[700px]">
+					<p className="text-slate-600 dark:text-slate-400 text-lg max-w-[700px]" style={{ whiteSpace: "pre-line" }}>
 						{whyChooseUs.description}
 					</p>
 				</div>

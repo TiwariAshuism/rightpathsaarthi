@@ -14,20 +14,20 @@
         "linkedin": "https://linkedin.com/company/rightpathsaarthi"
     },
     "contact": {
-        "phone": "+91 82102 02489",
-        "email": "info@rightpathsaarthi.com",
+        "phone": "+91 9731804312",
+        "email": "rightpathsaarthi4u@gmail.com",
         "address": "India"
     },
     "organization": {
         "name": "RightPath Saarthi",
-        "logo": "https://rightpathsaarthi.com/logo.png",
+        "logo": "/images/RightPathSaarthi.jpg",
         "foundingDate": "2024",
-        "description": "Leading educational consulting firm specializing in university admissions, test preparation, and career counseling for students aspiring to study in top universities worldwide."
+        "description": "Leading educational consulting firm specializing in Colleges & university admissions, exam preparation, and career counseling for students aspiring to study in top Colleges & university in India."
     },
     "defaultMeta": {
         "title": "RightPath Saarthi - Expert University Admission & Career Counseling",
-        "description": "Transform your academic journey with RightPath Saarthi. Expert guidance for university admissions, SAT/ACT prep, essay editing, and career counseling. Personalized support for your success.",
-        "keywords": "university admissions, career counseling, SAT preparation, ACT prep, study abroad, education consultant, college counseling, admission guidance, test prep, essay editing, university application, higher education, academic counseling, student guidance, college admission",
+        "description": "Transform your academic journey with RightPath Saarthi. Expert guidance for colleges & university admissions along with career counseling. Personalized support for your success.",
+        "keywords": "Colleges & university admissions, career counseling, education consultant, college counseling, admission guidance, exam prep, university application, higher education, academic counseling, student guidance, college admission",
         "image": "https://rightpathsaarthi.com/og-image.jpg",
         "imageAlt": "RightPath Saarthi - Your guide to academic success"
     }

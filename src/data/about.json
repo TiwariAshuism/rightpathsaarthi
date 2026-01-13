@@ -7,11 +7,11 @@
     },
     "stats": [
         {
-            "value": "10+",
+            "value": "7+",
             "label": "Years of Experience"
         },
         {
-            "value": "2,500+",
+            "value": "1,200+",
             "label": "Students Placed"
         },
         {
@@ -19,13 +19,13 @@
             "label": "Admission Rate"
         },
         {
-            "value": "$15M+",
+            "value": "15L",
             "label": "Scholarships Secured"
         }
     ],
     "intro": {
         "title": "Who We Are",
-        "description": "RightPath Saarthi is a premier career counseling platform dedicated to demystifying the university admissions process. Founded by former admissions officers and education strategists, we understand what top-tier institutions are looking for. We bridge the gap between student ambition and academic reality through personalized guidance, data-driven strategies, and unwavering support."
+        "description": "Choosing a career is a big decision for every student and parent. Many feel confused and unsure because there is too much information and too little honest guidance.\nRightPath Saarthi is here to help.\nWe guide students by understanding their interests and strengths, and we help parents with clear and honest advice. We do not make false promises. We focus on what is right and practical for the student.\nOur aim is simple: to help students choose the right path with confidence and clarity.\nRightPath Saarthi - A trusted guide for your child's future."
     },
     "philosophy": {
         "title": "Our Philosophy",
@@ -86,12 +86,6 @@
                 "role": "Lead Essay Coach",
                 "bio": "Award-winning writer and editor. Specializes in helping students craft compelling personal statements.",
                 "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuA5wGSTHBNJkCoHc66WdI7sh-5qx8P1d-n_pva_9ZBODjjH8tNB2Fnq_vSrsyfiRXSHRoz2gtSYpQD9z7FwlINgRjpmF8FtwiKAasyezFafrBIhP_r3NJpzj6f-vHXkwKTMr1PoUeiSiNkX3pLI1kLriet-aQQ_RgmykEXZkDuVgrqohZUbe6JolI23qaUJEwx03QgxZjIyMl_OXMbef-ajUPVmo1tEEEdwdPoy4SaZgFBi9d_EOgAix71CQaFNnefmCu2yhKH_-b0"
-            },
-            {
-                "name": "James Wilson",
-                "role": "International Admissions",
-                "bio": "Expert in visa processes and international scholarship opportunities for global students.",
-                "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuAh-U7jETq8Hyod08ZS3QVMtwjsiHRJYS2snKmF0mjCMgg2RPNzBapfv8vBdd6VrJNjzxdhZQ6q7O8IFY_mFwkHyyR_-fpthgpLhvJV25XwA4JiVMOaP1XqYSKzD7oNs8sBM0cGrGGBSx6Qnf7-DIPiKHj5ERBufVDl0Ui5rFcXj6XSbV_cAIzsvpIsn4nc9eHrfPPq7-609maCFNU1agLoI6PozT_fWyzFunqgpDCCJjmJD85jEFaJwtBxZzgBjklcqwzORLvbxJQ"
             }
         ]
     },

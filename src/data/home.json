@@ -12,7 +12,7 @@
         "trustText": "Trusted by 1,000+ students"
     },
     "partners": {
-        "title": "Our Global Partners & Collaborators",
+        "title": "Make your path to top colleges",
         "images": [
             "/images/1.png",
             "/images/2.png",
@@ -33,14 +33,14 @@
         "items": [
             {
                 "icon": "school",
-                "title": "University Admissions",
-                "description": "Get into your dream school with personalized application strategy, essay editing, and interview prep.",
+                "title": "Colleges & University Selection",
+                "description": "Confused about colleges or entrance exams? We guide you step by step—from choosing the right course and college to counseling, cutoffs, and final admission—so you can move forward with clarity and confidence.",
                 "linkText": "Learn more"
             },
             {
                 "icon": "menu_book",
-                "title": "Exam Preparation",
-                "description": "Master the SAT, GRE, and GMAT with top-tier tutors, custom study plans, and regular mock tests.",
+                "title": "Admission Support",
+                "description": "Navigate the entire college admission journey with ease—personalized guidance for entrance exams, college selection, counseling, cutoffs, and document submission to help you get into your dream college.",
                 "linkText": "Learn more"
             },
             {
@@ -57,8 +57,8 @@
             "label": "Students Placed"
         },
         {
-            "value": "50+",
-            "label": "Partner Universities"
+            "value": "7+",
+            "label": "Years of Experience"
         },
         {
             "value": "98%",
@@ -68,7 +68,7 @@
     "whyChooseUs": {
         "tagline": "Why Choose RightPath Saarthi?",
         "title": "Personalized Guidance for Proven Results",
-        "description": "We believe every student has a unique potential. Our approach is not one-size-fits-all; we tailor our strategies to fit your personal strengths and aspirations.",
+        "description": "🌟 7+ Years of Expertise in education & consultation services.\n🤝 Free One-on-One Counseling for students and parents.\n🎯 Personalized Career Guidance to help students choose the right path.\n🎓 Expert Support in College Selection for a successful academic journey.\n💰 Scholarship Assistance to make education affordable.\n🏦 Easy Help with Education Loans & Credit Cards through trusted banks.\n👨‍👩‍👧 Parent-Centric Approach ensuring clarity, trust, and confidence.\n🌉RightPath Saarthi – Your Trusted Guide for Education & Career Success.",
         "features": [
             {
                 "title": "Expert Mentors",
@@ -113,14 +113,14 @@
         "description": "Insights and inspiration from the leaders guiding RightPath Saarthi's mission.",
         "items": [
             {
-                "name": "Dr. Sarah Mitchell",
-                "role": "Co-Founder & CEO, RightPath Saarthi",
+                "name": "Adarsh Ranjan",
+                "role": "Founder & CEO, RightPath Saarthi",
                 "quote": "Education has the power to transform lives. Our goal is to make expert guidance accessible to every aspiring student, bridging the gap between talent and opportunity.",
-                "subQuote": "We founded RightPath Saarthi to bring transparency and personalization to the admissions process. Seeing our students thrive at their dream universities is what drives us every single day.",
-                "image": "/images/founder1.jpg"
+                "subQuote": "When I was in 10+2, I witnessed many of my friends struggle due to the lack of proper career counselling. Because of incorrect or incomplete guidance, they made mistakes while choosing their career paths. That experience made me realize how important the right guidance at the right time is for a student’s future.\nFrom that moment, career counselling became not just a profession for me, but a dream and a responsibility—to help students choose the best possible career option through honest and personalized guidance.\nToday, with over 7+ years of experience in the career counselling field, I am proud to share that I have helped 1000+ students choose the right career and college. We strongly believe that financial challenges should never stop a child from completing their education, which is why our team also supports students in securing scholarships, education loans, and credit card facilities.\nAt present, RightPath Saarthi stands as one of the young and trusted career counselling teams, committed to guiding students and parents with transparency, care, and long-term vision.\nI am confident that in the coming years, RightPath Saarthi will continue to help many more students build a secure and successful future.\nBecause for us — “Your Dream, Our Goal!!”\nWarm Regards,\nDirector\nRightPath Saarthi.",
+                "image": "/images/RightPathSaarthi.jpg"
             },
             {
-                "name": "James Anderson",
+                "name": "Aditya Prakash",
                 "role": "Co-Founder & CTO, RightPath Saarthi",
                 "quote": "True mentorship goes beyond simple advice. It's about empowering students to discover their authentic selves and pursue paths that truly resonate with their ambitions.",
                 "subQuote": "At RightPath Saarthi, we don't just prepare you for exams; we prepare you for life's challenges. Our holistic approach ensures you are ready for whatever the future holds.",
@@ -141,7 +141,7 @@
             "name": "Full Name",
             "email": "Email Address",
             "phone": "Phone Number",
-            "country": "Country of Residence"
+            "State": "City of Residence"
         },
         "button": "Continue"
     },
@@ -150,7 +150,7 @@
         "description": "Join thousands of students who have achieved their academic and career goals with RightPath Saarthi.",
         "buttons": {
             "primary": "Book Free Consultation",
-            "secondary": "View Pricing"
+            "secondary": "Know about your dream colleges"
         }
     }
 }

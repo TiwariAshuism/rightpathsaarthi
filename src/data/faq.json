@@ -18,16 +18,6 @@
             "active": false
         },
         {
-            "icon": "checklist",
-            "label": "Exam Prep",
-            "active": false
-        },
-        {
-            "icon": "credit_card",
-            "label": "Pricing",
-            "active": false
-        },
-        {
             "icon": "support_agent",
             "label": "Support",
             "active": false
@@ -43,54 +33,26 @@
                     "answer": "You can book a session directly through our platform by visiting the <a class=\"text-primary font-medium hover:underline\" href=\"#\">Counseling page</a>. Simply choose a counselor, select a convenient time slot from their calendar, and confirm your booking."
                 },
                 {
-                    "question": "What is the refund policy?",
-                    "answer": "We offer a full refund if you cancel at least 24 hours before your scheduled session. Cancellations made within 24 hours may be subject to a 50% fee. Please contact our support team for assistance with refunds."
-                },
-                {
                     "question": "Do you offer scholarship guidance?",
                     "answer": "Yes! Our counselors specialize in finding financial aid and scholarship opportunities relevant to your chosen universities and degree programs."
                 }
             ]
         },
         {
-            "title": "University Admissions",
+            "title": "Colleges & University Admissions",
             "icon": "school",
             "items": [
                 {
-                    "question": "Which universities do you cover?",
-                    "answer": "We cover admissions for universities in the US, UK, Canada, Australia, and select European countries. Our database includes over 5,000 institutions."
+                    "question": "Which colleges and universities do you cover in India?",
+                    "answer": "We provide admission guidance for leading Indian institutions including IITs, NITs, IIITs, central universities, state universities, deemed universities, and top private colleges across India."
                 },
                 {
-                    "question": "Can you help with essay writing?",
-                    "answer": "We provide comprehensive essay review and feedback services. While we do not write essays for you, our mentors help you structure your story and refine your voice."
-                }
-            ]
-        },
-        {
-            "title": "Exam Prep Questions",
-            "icon": "checklist",
-            "items": [
-                {
-                    "question": "Do you offer SAT/ACT coaching?",
-                    "answer": "Yes, we offer comprehensive coaching for SAT, ACT, GRE, GMAT, and IELTS/TOEFL. Our courses are designed by top scorers."
+                    "question": "Do you help with entrance exam preparation and counseling?",
+                    "answer": "Yes, we guide students through major Indian entrance exams such as JEE, NEET, CUET, state-level exams, and provide counseling support for choice filling, cut-offs, and seat allocation."
                 },
                 {
-                    "question": "Are the classes online or offline?",
-                    "answer": "We offer both online live classes and offline sessions at select centers. You can choose the mode that suits you best."
-                }
-            ]
-        },
-        {
-            "title": "Pricing & Plans",
-            "icon": "credit_card",
-            "items": [
-                {
-                    "question": "Do you have a free trial?",
-                    "answer": "Yes, we offer a free initial consultation and a demo class for our exam prep courses."
-                },
-                {
-                    "question": "What payment methods do you accept?",
-                    "answer": "We accept all major credit/debit cards, UPI, and net banking."
+                    "question": "Can you assist with application forms and documentation?",
+                    "answer": "We assist with college application forms, document verification, counseling registration, preference selection, and deadline tracking to ensure a smooth admission process."
                 }
             ]
         },
