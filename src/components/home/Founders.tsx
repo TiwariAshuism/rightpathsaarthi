@@ -72,7 +72,7 @@ export const Founders = (): FunctionComponent => {
 									</span>
 									{founder.quote}
 								</h3>
-								<p
+								<p style={{ whiteSpace: "pre-line" }}
 									className={`text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-3 italic ${index === 0
 											? "border-l-4 border-primary/30 pl-4"
 											: "border-r-4 border-accent/30 pr-4"

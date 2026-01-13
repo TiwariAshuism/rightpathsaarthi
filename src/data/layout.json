@@ -32,7 +32,7 @@
         "buttonText": "Call Now"
     },
     "whatsappFAB": {
-        "phoneNumber": "918210202489",
+        "phoneNumber": "9731804312",
         "message": "Hello! I'm interested in learning more about RightPath Saarthi's admission counseling services. Could you please help me?"
     },
     "footer": {
@@ -57,19 +57,15 @@
                 "title": "Services",
                 "links": [
                     {
-                        "text": "University Admissions",
+                        "text": "University & Colleges Admissions",
                         "href": "#"
                     },
                     {
-                        "text": "Test Preparation",
+                        "text": "Exam Preparation",
                         "href": "#"
                     },
                     {
                         "text": "Career Counseling",
-                        "href": "#"
-                    },
-                    {
-                        "text": "Essay Editing",
                         "href": "#"
                     }
                 ]

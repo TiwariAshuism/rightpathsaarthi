@@ -14,7 +14,7 @@
             {
                 "icon": "mail",
                 "label": "Email",
-                "value": "support@RightPath Saarthi.com"
+                "value": "rightpathsaarthi4u@gmail.com"
             },
             {
                 "icon": "location_on",
@@ -36,14 +36,14 @@
                 "placeholder": "john@example.com"
             },
             "phone": {
-                "label": "Phone Number (Optional)",
+                "label": "Phone Number",
                 "placeholder": "+1 (555) 000-0000"
             },
             "subject": {
                 "label": "Subject",
                 "options": [
                     "General Inquiry",
-                    "University Admissions",
+                    "College & University Admissions",
                     "Exam Preparation",
                     "Career Counseling"
                 ]
