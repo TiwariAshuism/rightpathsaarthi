@@ -3,17 +3,17 @@
  */
 
 interface EmailData {
-	name: string;
-	email: string;
-	phone?: string;
-	subject?: string;
-	message?: string;
-	state?: string;
+    name: string;
+    email: string;
+    phone?: string;
+    subject?: string;
+    message?: string;
+    state?: string;
 }
 
 interface EmailResponse {
-	success: boolean;
-	message: string;
+    success: boolean;
+    message: string;
 }
 
 /**
@@ -23,36 +23,37 @@ interface EmailResponse {
  * @returns Promise with success status and message
  */
 export async function sendContactEmail(
-	data: EmailData
+    data: EmailData
 ): Promise<EmailResponse> {
-	try {
-		const response = await fetch("/api/send-email", {
-			method: "POST",
-			headers: {
-				"Content-Type": "application/json",
-			},
-			body: JSON.stringify({
-				type: "contact",
-				data,
-			}),
-		});
+    try {
+        const response = await fetch("/api/send-email", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+                type: "contact",
+                data,
+            }),
+        });
 
-		if (!response.ok) {
-			throw new Error("Failed to send email");
-		}
+        if (!response.ok) {
+            throw new Error("Failed to send email");
+        }
 
-		const result = await response.json();
-		return {
-			success: true,
-			message: "Email sent successfully!",
-		};
-	} catch (error) {
-		console.error("Error sending email:", error);
-		return {
-			success: false,
-			message: "Failed to send email. Please try again later.",
-		};
-	}
+        // Parse response to ensure valid JSON
+        await response.json();
+        return {
+            success: true,
+            message: "Email sent successfully!",
+        };
+    } catch (error) {
+        console.error("Error sending email:", error);
+        return {
+            success: false,
+            message: "Failed to send email. Please try again later.",
+        };
+    }
 }
 
 /**
@@ -62,43 +63,44 @@ export async function sendContactEmail(
  * @returns Promise with success status and message
  */
 export async function sendEnquiryEmail(
-	data: EmailData
+    data: EmailData
 ): Promise<EmailResponse> {
-	try {
-		const response = await fetch("/api/send-email", {
-			method: "POST",
-			headers: {
-				"Content-Type": "application/json",
-			},
-			body: JSON.stringify({
-				type: "enquiry",
-				data,
-			}),
-		});
+    try {
+        const response = await fetch("/api/send-email", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+                type: "enquiry",
+                data,
+            }),
+        });
 
-		if (!response.ok) {
-			throw new Error("Failed to send email");
-		}
+        if (!response.ok) {
+            throw new Error("Failed to send email");
+        }
 
-		const result = await response.json();
-		return {
-			success: true,
-			message: "Enquiry submitted successfully!",
-		};
-	} catch (error) {
-		console.error("Error sending email:", error);
-		return {
-			success: false,
-			message: "Failed to submit enquiry. Please try again later.",
-		};
-	}
+        // Parse response to ensure valid JSON
+        await response.json();
+        return {
+            success: true,
+            message: "Enquiry submitted successfully!",
+        };
+    } catch (error) {
+        console.error("Error sending email:", error);
+        return {
+            success: false,
+            message: "Failed to submit enquiry. Please try again later.",
+        };
+    }
 }
 
 /**
  * Email template for contact form submissions
  */
 export function getContactEmailTemplate(data: EmailData): string {
-	return `
+    return `
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -164,7 +166,7 @@ export function getContactEmailTemplate(data: EmailData): string {
  * Email template for enquiry form submissions
  */
 export function getEnquiryEmailTemplate(data: EmailData): string {
-	return `
+    return `
 <!DOCTYPE html>
 <html lang="en">
 <head>
