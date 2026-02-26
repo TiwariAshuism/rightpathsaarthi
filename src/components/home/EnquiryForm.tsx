@@ -2,6 +2,7 @@ import { useState } from "react";
 import { DotLottiePlayer } from "@dotlottie/react-player";
 import type { FunctionComponent } from "../../common/types";
 import homeData from "../../data/home.json";
+import { sendEnquiryEmail } from "../../utils/email";
 
 export const EnquiryForm = (): FunctionComponent => {
 	const { enquiryForm } = homeData;
@@ -11,31 +12,48 @@ export const EnquiryForm = (): FunctionComponent => {
 		name: "",
 		email: "",
 		phone: "",
-		country: ""
+		state: ""
 	});
 	const [isSubmitting, setIsSubmitting] = useState(false);
+	const [submitStatus, setSubmitStatus] = useState<{ type: "success" | "error" | null; message: string }>({
+		type: null,
+		message: "",
+	});
 
 	const handleNext = (e: React.FormEvent) => {
 		e.preventDefault();
 		if (currentStep < 3) {
 			setCurrentStep(currentStep + 1);
+			setSubmitStatus({ type: null, message: "" }); // Clear any previous errors
 		}
 	};
 
 	const handleBack = () => {
 		if (currentStep > 1) {
 			setCurrentStep(currentStep - 1);
+			setSubmitStatus({ type: null, message: "" }); // Clear any previous errors
 		}
 	};
 
-	const handleSubmit = (e: React.FormEvent) => {
+	const handleSubmit = async (e: React.FormEvent) => {
 		e.preventDefault();
 		setIsSubmitting(true);
-		// Simulate API call
-		setTimeout(() => {
-			setIsSubmitting(false);
+		setSubmitStatus({ type: null, message: "" });
+
+		const result = await sendEnquiryEmail({
+			name: formData.name,
+			email: formData.email,
+			phone: formData.phone,
+			state: formData.state,
+		});
+
+		setIsSubmitting(false);
+		if (result.success) {
+			setSubmitStatus({ type: "success", message: result.message });
 			setCurrentStep(3);
-		}, 1500);
+		} else {
+			setSubmitStatus({ type: "error", message: result.message });
+		}
 	};
 
 	return (
@@ -98,7 +116,7 @@ export const EnquiryForm = (): FunctionComponent => {
 											required
 											className="w-full p-4 border border-slate-200 dark:border-slate-700 rounded-2xl bg-slate-50 dark:bg-slate-800/50 text-text-light dark:text-text-dark focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all outline-none"
 											id="name"
-											placeholder="Jane Smith"
+											placeholder="Ashutosh Kumar"
 											type="text"
 											value={formData.name}
 											onChange={(e) => setFormData({ ...formData, name: e.target.value })}
@@ -112,7 +130,7 @@ export const EnquiryForm = (): FunctionComponent => {
 											required
 											className="w-full p-4 border border-slate-200 dark:border-slate-700 rounded-2xl bg-slate-50 dark:bg-slate-800/50 text-text-light dark:text-text-dark focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all outline-none"
 											id="email"
-											placeholder="jane@example.com"
+											placeholder="ashutoshkumar@gmail.com"
 											type="email"
 											value={formData.email}
 											onChange={(e) => setFormData({ ...formData, email: e.target.value })}
@@ -131,6 +149,16 @@ export const EnquiryForm = (): FunctionComponent => {
 
 						{currentStep === 2 && (
 							<form key="step2" onSubmit={handleSubmit} className="flex flex-col gap-6 animate-fade-in-right">
+								{submitStatus.type && (
+									<div
+										className={`p-4 rounded-2xl ${submitStatus.type === "success"
+											? "bg-green-50 dark:bg-green-900/20 text-green-700 dark:text-green-400 border border-green-200 dark:border-green-800"
+											: "bg-red-50 dark:bg-red-900/20 text-red-700 dark:text-red-400 border border-red-200 dark:border-red-800"
+											}`}
+									>
+										<p className="font-semibold">{submitStatus.message}</p>
+									</div>
+								)}
 								<div className="grid grid-cols-1 md:grid-cols-2 gap-6">
 									<div className="space-y-2">
 										<label className="block text-sm font-bold text-text-light dark:text-text-dark ml-1" htmlFor="phone">
@@ -147,22 +175,53 @@ export const EnquiryForm = (): FunctionComponent => {
 										/>
 									</div>
 									<div className="space-y-2">
-										<label className="block text-sm font-bold text-text-light dark:text-text-dark ml-1" htmlFor="country">
-											{enquiryForm.fields.country}
+										<label className="block text-sm font-bold text-text-light dark:text-text-dark ml-1" htmlFor="state">
+											State (India)
 										</label>
 										<select
 											required
 											className="w-full p-4 border border-slate-200 dark:border-slate-700 rounded-2xl bg-slate-50 dark:bg-slate-800/50 text-text-light dark:text-text-dark focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all outline-none appearance-none"
-											id="country"
-											value={formData.country}
-											onChange={(e) => setFormData({ ...formData, country: e.target.value })}
+											id="state"
+											value={formData.state}
+											onChange={(e) => setFormData({ ...formData, state: e.target.value })}
 										>
-											<option value="">Select Country</option>
-											<option value="US">United States</option>
-											<option value="UK">United Kingdom</option>
-											<option value="CA">Canada</option>
-											<option value="IN">India</option>
-											<option value="AU">Australia</option>
+											<option value="">Select State</option>
+											<option value="AP">Andhra Pradesh</option>
+											<option value="AR">Arunachal Pradesh</option>
+											<option value="AS">Assam</option>
+											<option value="BR">Bihar</option>
+											<option value="CT">Chhattisgarh</option>
+											<option value="GA">Goa</option>
+											<option value="GJ">Gujarat</option>
+											<option value="HR">Haryana</option>
+											<option value="HP">Himachal Pradesh</option>
+											<option value="JK">Jammu and Kashmir</option>
+											<option value="JH">Jharkhand</option>
+											<option value="KA">Karnataka</option>
+											<option value="KL">Kerala</option>
+											<option value="MP">Madhya Pradesh</option>
+											<option value="MH">Maharashtra</option>
+											<option value="MN">Manipur</option>
+											<option value="ML">Meghalaya</option>
+											<option value="MZ">Mizoram</option>
+											<option value="NL">Nagaland</option>
+											<option value="OR">Odisha</option>
+											<option value="PB">Punjab</option>
+											<option value="RJ">Rajasthan</option>
+											<option value="SK">Sikkim</option>
+											<option value="TN">Tamil Nadu</option>
+											<option value="TG">Telangana</option>
+											<option value="TR">Tripura</option>
+											<option value="UP">Uttar Pradesh</option>
+											<option value="UT">Uttarakhand</option>
+											<option value="WB">West Bengal</option>
+											<option value="AN">Andaman and Nicobar Islands</option>
+											<option value="CH">Chandigarh</option>
+											<option value="DN">Dadra and Nagar Haveli</option>
+											<option value="DD">Daman and Diu</option>
+											<option value="DL">Delhi</option>
+											<option value="LD">Lakshadweep</option>
+											<option value="PY">Puducherry</option>
 										</select>
 									</div>
 								</div>

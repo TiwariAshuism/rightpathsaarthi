@@ -66,28 +66,28 @@
         ]
     },
     "team": {
-        "title": "Meet Our Experts",
-        "description": "Our team consists of former admissions officers from Ivy League universities, experienced career counselors, and industry experts.",
-        "members": [
-            {
-                "name": "Sarah Jenkins",
-                "role": "Head of Counseling",
-                "bio": "Former Harvard Admissions Officer with 15 years of experience in higher ed consulting.",
-                "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuCqcLPYiA1lApI0z6cOtSzSVTPkIoY-PNwzCFXf1JuI9BP647qPVw573UdLac8AxEDumVi-ndD5E_g4EddQ2yaq_lpRwuhZk_to8KOMZCyS2eXd5G-sr5Sbs5HbPbV4Z76-Nx7-AW67x0pnac7fTgrqN5YuKVio8cNfR1cg73Zm9DI28B5ILy6xlCOdGnFwaLyfrPwC6k3hyQsJ-FuyMJrvmJXFs1Fzret132pNTX8zLezsC52GzcQzFO0BVlStAQjl7ANG8JxuVfQ"
-            },
-            {
-                "name": "David Chen",
-                "role": "STEM Specialist",
-                "bio": "PhD in Engineering from MIT. Helps students navigate complex STEM program requirements.",
-                "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuAGwV_g_0ADNJsSw2RsoiJ3fLI3cMeYiPLhkNW54_I7dY53xX9klQwrEcJsKW_eG3Jvf8t48EvOtIyIVKJS3ZhDqorXuqk-9-MLwRBCc15RqZ1BY-HTjPorRgyFjaVlnruTT5PYTEwX-BPP_eqDVncnrZ_waN3iXSx-kV-kipdMKtz_-rfjtvtdXmPcZ0KUAFU2ZPc5tc5MtBWPZ6-tVu9WdLUWHmnvBHO3fi_a6MyHt21EgL4j0MQIAH2tJfHv_PxTg7bttMAI-1o"
-            },
-            {
-                "name": "Maria Rodriguez",
-                "role": "Lead Essay Coach",
-                "bio": "Award-winning writer and editor. Specializes in helping students craft compelling personal statements.",
-                "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuA5wGSTHBNJkCoHc66WdI7sh-5qx8P1d-n_pva_9ZBODjjH8tNB2Fnq_vSrsyfiRXSHRoz2gtSYpQD9z7FwlINgRjpmF8FtwiKAasyezFafrBIhP_r3NJpzj6f-vHXkwKTMr1PoUeiSiNkX3pLI1kLriet-aQQ_RgmykEXZkDuVgrqohZUbe6JolI23qaUJEwx03QgxZjIyMl_OXMbef-ajUPVmo1tEEEdwdPoy4SaZgFBi9d_EOgAix71CQaFNnefmCu2yhKH_-b0"
-            }
-        ]
+        "title": "Why Choose Us?",
+        "description": "See how we stand out from the competition",
+        "otherPlatforms": {
+            "title": "Other Platforms",
+            "features": [
+                "Biased suggestions",
+                "Vanish after admission",
+                "Generic rankings",
+                "Hidden charges",
+                "Automated, impersonal"
+            ]
+        },
+        "rightPathSarthi": {
+            "title": "RightPath Sarthi",
+            "features": [
+                "Transparent recommendations",
+                "Support till placement",
+                "Real data, no fluff",
+                "Free first consultation",
+                "One-on-one mentoring"
+            ]
+        }
     },
     "cta": {
         "title": "Ready to Start Your Journey?",

@@ -23,16 +23,16 @@
                 "href": "/faq"
             }
         ],
-        "ctaButton": "Get Started"
+        "ctaButton": "Free Counselling"
     },
     "helplineBanner": {
         "text": "Admission Helpline:",
-        "phoneNumber": "1800-123-4567",
+        "phoneNumber": "+91 97318 22220",
         "availability": "(Mon-Fri, 9am-6pm IST)",
         "buttonText": "Call Now"
     },
     "whatsappFAB": {
-        "phoneNumber": "9731804312",
+        "phoneNumber": "9731822220",
         "message": "Hello! I'm interested in learning more about RightPath Saarthi's admission counseling services. Could you please help me?"
     },
     "footer": {
@@ -92,11 +92,25 @@
                 ]
             }
         ],
-        "subscribe": {
-            "title": "Subscribe",
-            "description": "Get the latest admission tips and updates.",
-            "placeholder": "Enter your email",
-            "buttonText": "Subscribe"
+        "contactDetails": {
+            "title": "Contact Details",
+            "items": [
+                {
+                    "icon": "call",
+                    "label": "Phone",
+                    "value": "+91 97318 22220"
+                },
+                {
+                    "icon": "mail",
+                    "label": "Email",
+                    "value": "rightpathsaarthi4u@gmail.com"
+                },
+                {
+                    "icon": "location_on",
+                    "label": "Address",
+                    "value": "Noida, Uttar Pradesh, India"
+                }
+            ]
         },
         "copyright": "© 2024 RightPath Saarthi Inc. All rights reserved.",
         "legalLinks": [

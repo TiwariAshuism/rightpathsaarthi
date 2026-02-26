@@ -88,19 +88,19 @@
         "title": "Success Stories",
         "items": [
             {
-                "name": "Sarah Jenkins",
-                "subtitle": "Accepted to Harvard",
+                "name": "Priya Sharma",
+                "subtitle": "Accepted to IIT Delhi",
                 "quote": "RightPath Saarthi helped me get into my dream university! The essay editing service was a game changer for my application.",
                 "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuB0u_cZC0Cw055TnkoAi9fXl4FnI30zjvSM8azmJ0ZL7JqKTfNixgFppcs-xwnfvWxU4ER30zSj2q12NnfGnTtEYZQf499KH6sJBHhmuiRVcr6CwzOfiYEm39CDklERI8QoegqLYO_jjFC_XZ0AA-cx9KWN32m2GXNiegG4N8VCrFtwn-zvWDiCfxMhUbX68zNi_8FKFoMXYIZOgWtcwfTsdAWIBd-JJDYNaeRP2cU4eNcUcIqunjv1WRc3MTWLXlexZzvnguRq4SQ"
             },
             {
-                "name": "Michael Tran",
-                "subtitle": "GRE Score: 330",
+                "name": "Rahul Kumar",
+                "subtitle": "JEE Score: 98.5%",
                 "quote": "The exam prep tutors were incredibly knowledgeable. They helped me improve my score by over 20 points in just two months.",
                 "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuBzrr7f_-mfanYF9KMWmt21a0Zbay4uaa_iGpii_TWy4yyBgo4Voaha__XOi819hGIRPJXJxY0PoUi2WzTGKlzu9NZcFhEbJwdpfJZ_mYEePdQb0QQZRKilPv1sUxvvO0doh9_S_WdeeB1LFMX1csDsE-xpg1Fr6pavAmXJY_NfV6VqJc4JBJS1JTqikdjpMHmDaBMNqkjtVapDZEUV_IBekZ4IMIBTmEMferGF3xRF3Qqvx1IVBg9V9TxlaaYM7dcPtkKRaM_SCQ4"
             },
             {
-                "name": "Emily Rodriguez",
+                "name": "Ananya Patel",
                 "subtitle": "Career Transition",
                 "quote": "I finally found a career path that fits my skills. The aptitude assessment was spot on and very detailed.",
                 "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuD_qq2wSZxKFAH1TlmmahbVmG7Ix0ehnEKdl4A2ccQn6ML5g7lAZVCyZ9qwXe7v2KUTkMeCKAwSxeHW8Un_--O8SeCU3F0XRPYuknXcdRsvq7bahVuqRpadEGEExmUJoJ5bolsjmq6Biov2ED8jMTAYoHWLt2ILfD7ci9_dq9U3z8R4OJuif5EJcCEqCwBUgsHLBp9I4uqH2Qz6t1r49JBkSzn9popom-MUdG-pXJNGSBVy4c06w01UQ2UT0EtB-t8vFvCH2m_uLYo"
@@ -141,7 +141,7 @@
             "name": "Full Name",
             "email": "Email Address",
             "phone": "Phone Number",
-            "country": "Country"
+            "state": "State (India)"
         },
         "button": "Continue"
     },

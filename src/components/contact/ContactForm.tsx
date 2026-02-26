@@ -1,12 +1,48 @@
+import { useState } from "react";
 import type { FunctionComponent } from "../../common/types";
 import contactData from "../../data/contact.json";
 import { useScrollReveal } from "../../hooks/useScrollReveal";
 import { useMouseTilt } from "../../hooks/useMouseTilt";
+import { sendContactEmail } from "../../utils/email";
 
 export const ContactForm = (): FunctionComponent => {
 	const { form } = contactData;
 	const { ref, isVisible } = useScrollReveal<HTMLDivElement>();
 	const tiltRef = useMouseTilt<HTMLDivElement>({ max: 5, perspective: 1000, scale: 1.01 });
+	const [formData, setFormData] = useState({
+		fullName: "",
+		email: "",
+		phone: "",
+		subject: "",
+		message: "",
+	});
+	const [isSubmitting, setIsSubmitting] = useState(false);
+	const [submitStatus, setSubmitStatus] = useState<{ type: "success" | "error" | null; message: string }>({
+		type: null,
+		message: "",
+	});
+
+	const handleSubmit = async (e: React.FormEvent) => {
+		e.preventDefault();
+		setIsSubmitting(true);
+		setSubmitStatus({ type: null, message: "" });
+
+		const result = await sendContactEmail({
+			name: formData.fullName,
+			email: formData.email,
+			phone: formData.phone,
+			subject: formData.subject,
+			message: formData.message,
+		});
+
+		setIsSubmitting(false);
+		if (result.success) {
+			setSubmitStatus({ type: "success", message: result.message });
+			setFormData({ fullName: "", email: "", phone: "", subject: "", message: "" });
+		} else {
+			setSubmitStatus({ type: "error", message: result.message });
+		}
+	};
 
 	return (
 		<div ref={ref} className="lg:col-span-7">
@@ -18,7 +54,7 @@ export const ContactForm = (): FunctionComponent => {
 				<h3 className="text-[#111418] dark:text-white text-3xl font-black mb-8 tracking-tight">
 					{form.title}
 				</h3>
-				<form className="flex flex-col gap-8">
+				<form className="flex flex-col gap-8" onSubmit={handleSubmit}>
 					<div className="grid grid-cols-1 md:grid-cols-2 gap-8">
 						<div className={`flex flex-col gap-2 transition-all duration-700 delay-100 ${isVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-10"}`}>
 							<label
@@ -28,10 +64,13 @@ export const ContactForm = (): FunctionComponent => {
 								{form.fields.fullName.label}
 							</label>
 							<input
+								required
 								className="w-full h-14 rounded-2xl border border-[#d1d5db] dark:border-gray-700 bg-slate-50/50 dark:bg-slate-800/50 px-5 text-base text-[#111418] dark:text-white placeholder:text-[#9ca3af] focus:border-primary focus:ring-4 focus:ring-primary/10 outline-none transition-all"
 								id="fullName"
 								placeholder={form.fields.fullName.placeholder}
 								type="text"
+								value={formData.fullName}
+								onChange={(e) => setFormData({ ...formData, fullName: e.target.value })}
 							/>
 						</div>
 						<div className={`flex flex-col gap-2 transition-all duration-700 delay-200 ${isVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-10"}`}>
@@ -42,10 +81,13 @@ export const ContactForm = (): FunctionComponent => {
 								{form.fields.email.label}
 							</label>
 							<input
+								required
 								className="w-full h-14 rounded-2xl border border-[#d1d5db] dark:border-gray-700 bg-slate-50/50 dark:bg-slate-800/50 px-5 text-base text-[#111418] dark:text-white placeholder:text-[#9ca3af] focus:border-primary focus:ring-4 focus:ring-primary/10 outline-none transition-all"
 								id="email"
 								placeholder={form.fields.email.placeholder}
 								type="email"
+								value={formData.email}
+								onChange={(e) => setFormData({ ...formData, email: e.target.value })}
 							/>
 						</div>
 					</div>
@@ -62,6 +104,8 @@ export const ContactForm = (): FunctionComponent => {
 								id="phone"
 								placeholder={form.fields.phone.placeholder}
 								type="tel"
+								value={formData.phone}
+								onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
 							/>
 						</div>
 						<div className={`flex flex-col gap-2 transition-all duration-700 delay-400 ${isVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-10"}`}>
@@ -73,11 +117,15 @@ export const ContactForm = (): FunctionComponent => {
 							</label>
 							<div className="relative">
 								<select
+									required
 									className="w-full h-14 rounded-2xl border border-[#d1d5db] dark:border-gray-700 bg-slate-50/50 dark:bg-slate-800/50 px-5 text-base text-[#111418] dark:text-white focus:border-primary focus:ring-4 focus:ring-primary/10 outline-none appearance-none transition-all cursor-pointer"
 									id="subject"
+									value={formData.subject}
+									onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
 								>
+									<option value="">Select a subject</option>
 									{form.fields.subject.options.map((option, index) => (
-										<option key={index} className="dark:bg-[#1a2632]">
+										<option key={index} value={option} className="dark:bg-[#1a2632]">
 											{option}
 										</option>
 									))}
@@ -96,19 +144,43 @@ export const ContactForm = (): FunctionComponent => {
 							{form.fields.message.label}
 						</label>
 						<textarea
+							required
 							className="w-full rounded-2xl border border-[#d1d5db] dark:border-gray-700 bg-slate-50/50 dark:bg-slate-800/50 p-5 text-base text-[#111418] dark:text-white placeholder:text-[#9ca3af] focus:border-primary focus:ring-4 focus:ring-primary/10 outline-none transition-all resize-none"
 							id="message"
 							placeholder={form.fields.message.placeholder}
 							rows={5}
+							value={formData.message}
+							onChange={(e) => setFormData({ ...formData, message: e.target.value })}
 						></textarea>
 					</div>
+					{submitStatus.type && (
+						<div
+							className={`p-4 rounded-2xl ${
+								submitStatus.type === "success"
+									? "bg-green-50 dark:bg-green-900/20 text-green-700 dark:text-green-400 border border-green-200 dark:border-green-800"
+									: "bg-red-50 dark:bg-red-900/20 text-red-700 dark:text-red-400 border border-red-200 dark:border-red-800"
+							}`}
+						>
+							<p className="font-semibold">{submitStatus.message}</p>
+						</div>
+					)}
 					<div className={`pt-4 transition-all duration-700 delay-600 ${isVisible ? "opacity-100 scale-100" : "opacity-0 scale-95"}`}>
 						<button
-							className="group w-full md:w-auto min-w-[200px] h-14 rounded-2xl bg-primary hover:bg-[#D41C25] text-white text-lg font-black shadow-xl shadow-primary/25 transition-all flex items-center justify-center gap-3 active:scale-95"
-							type="button"
+							className="group w-full md:w-auto min-w-[200px] h-14 rounded-2xl bg-primary hover:bg-[#D41C25] text-white text-lg font-black shadow-xl shadow-primary/25 transition-all flex items-center justify-center gap-3 active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed"
+							type="submit"
+							disabled={isSubmitting}
 						>
-							<span>{form.buttonText}</span>
-							<span className="material-symbols-outlined text-xl group-hover:translate-x-2 transition-transform">send</span>
+							{isSubmitting ? (
+								<>
+									<div className="size-5 border-2 border-white/30 border-t-white rounded-full animate-spin"></div>
+									<span>Sending...</span>
+								</>
+							) : (
+								<>
+									<span>{form.buttonText}</span>
+									<span className="material-symbols-outlined text-xl group-hover:translate-x-2 transition-transform">send</span>
+								</>
+							)}
 						</button>
 					</div>
 				</form>

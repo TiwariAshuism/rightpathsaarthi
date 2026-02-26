@@ -14,12 +14,15 @@ export const AdmissionHelplineBanner: React.FC = () => {
 					</span>{" "}
 					{helplineBanner.availability}
 				</p>
-				<button className="flex items-center justify-center rounded-lg h-10 px-6 bg-white hover:bg-gray-100 text-primary text-sm font-bold tracking-[0.015em] transition-all shadow-md hover:scale-105 active:scale-95 group">
+				<a 
+					href={`tel:${helplineBanner.phoneNumber.replace(/\s/g, "")}`}
+					className="flex items-center justify-center rounded-lg h-10 px-6 bg-white hover:bg-gray-100 text-primary text-sm font-bold tracking-[0.015em] transition-all shadow-md hover:scale-105 active:scale-95 group"
+				>
 					<span className="material-symbols-outlined mr-2 text-base group-hover:animate-bounce">
 						call
 					</span>
 					<span className="truncate">{helplineBanner.buttonText}</span>
-				</button>
+				</a>
 			</div>
 		</section>
 	);

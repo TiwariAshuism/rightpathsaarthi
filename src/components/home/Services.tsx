@@ -1,3 +1,4 @@
+import { Link } from "@tanstack/react-router";
 import type { FunctionComponent } from "../../common/types";
 import homeData from "../../data/home.json";
 import { useScrollReveal } from "../../hooks/useScrollReveal";
@@ -55,15 +56,15 @@ export const Services = (): FunctionComponent => {
 									{service.description}
 								</p>
 							</div>
-							<a
+							<Link
 								className="relative z-10 mt-2 text-primary font-bold text-sm flex items-center gap-1 group-hover:gap-2 transition-all"
-								href="#"
+								to="/services"
 							>
 								{service.linkText}{" "}
 								<span className="material-symbols-outlined text-sm font-bold">
 									arrow_forward
 								</span>
-							</a>
+							</Link>
 						</div>
 					))}
 				</div>
