@@ -12,25 +12,25 @@
 import { Resend } from "resend";
 
 // Initialize Resend client
-const resend = new Resend(process.env.RESEND_API_KEY);
+const resend = new Resend(process.env["RESEND_API_KEY"]);
 
 interface EmailRequest {
-	type: "contact" | "enquiry";
-	data: {
-		name: string;
-		email: string;
-		phone?: string;
-		subject?: string;
-		message?: string;
-		state?: string;
-	};
+    type: "contact" | "enquiry";
+    data: {
+        name: string;
+        email: string;
+        phone?: string;
+        subject?: string;
+        message?: string;
+        state?: string;
+    };
 }
 
 /**
  * Contact form email template
  */
 function getContactEmailHTML(data: EmailRequest["data"]): string {
-	return `
+    return `
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -96,7 +96,7 @@ function getContactEmailHTML(data: EmailRequest["data"]): string {
  * Enquiry form email template
  */
 function getEnquiryEmailHTML(data: EmailRequest["data"]): string {
-	return `
+    return `
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -163,76 +163,76 @@ function getEnquiryEmailHTML(data: EmailRequest["data"]): string {
  * - Or integrate into your Express/Next.js backend
  */
 export async function handler(request: Request): Promise<Response> {
-	try {
-		// Only allow POST requests
-		if (request.method !== "POST") {
-			return new Response(
-				JSON.stringify({ error: "Method not allowed" }),
-				{ status: 405, headers: { "Content-Type": "application/json" } }
-			);
-		}
+    try {
+        // Only allow POST requests
+        if (request.method !== "POST") {
+            return new Response(
+                JSON.stringify({ error: "Method not allowed" }),
+                { status: 405, headers: { "Content-Type": "application/json" } }
+            );
+        }
 
-		// Parse request body
-		const body: EmailRequest = await request.json();
+        // Parse request body
+        const body: EmailRequest = await request.json();
 
-		// Validate required fields
-		if (!body.data.name || !body.data.email) {
-			return new Response(
-				JSON.stringify({ error: "Name and email are required" }),
-				{ status: 400, headers: { "Content-Type": "application/json" } }
-			);
-		}
+        // Validate required fields
+        if (!body.data.name || !body.data.email) {
+            return new Response(
+                JSON.stringify({ error: "Name and email are required" }),
+                { status: 400, headers: { "Content-Type": "application/json" } }
+            );
+        }
 
-		// Get recipient email from environment variable
-		const toEmail = process.env.TO_EMAIL || "rightpathsaarthi4u@gmail.com";
-		const fromEmail = process.env.FROM_EMAIL || "noreply@rightpathsaarthi.com";
+        // Get recipient email from environment variable
+        const toEmail = process.env["TO_EMAIL"] ?? "";
+        const fromEmail = process.env["FROM_EMAIL"] || "";
 
-		// Determine email content based on type
-		const subject =
-			body.type === "contact"
-				? `New Contact Form Submission from ${body.data.name}`
-				: `New Enquiry Form Submission from ${body.data.name}`;
+        // Determine email content based on type
+        const subject =
+            body.type === "contact"
+                ? `New Contact Form Submission from ${body.data.name}`
+                : `New Enquiry Form Submission from ${body.data.name}`;
 
-		const html =
-			body.type === "contact"
-				? getContactEmailHTML(body.data)
-				: getEnquiryEmailHTML(body.data);
+        const html =
+            body.type === "contact"
+                ? getContactEmailHTML(body.data)
+                : getEnquiryEmailHTML(body.data);
 
-		// Send email via Resend
-		const { data, error } = await resend.emails.send({
-			from: fromEmail,
-			to: [toEmail],
-			replyTo: body.data.email,
-			subject: subject,
-			html: html,
-		});
+        // Send email via Resend
+        const { data, error } = await resend.emails.send({
+            from: fromEmail,
+            to: [toEmail],
+            replyTo: body.data.email,
+            subject: subject,
+            html: html,
+        });
 
-		if (error) {
-			console.error("Resend error:", error);
-			return new Response(
-				JSON.stringify({ error: "Failed to send email", details: error }),
-				{ status: 500, headers: { "Content-Type": "application/json" } }
-			);
-		}
+        if (error) {
+            console.error("Resend error:", error);
+            return new Response(
+                JSON.stringify({ error: "Failed to send email", details: error }),
+                { status: 500, headers: { "Content-Type": "application/json" } }
+            );
+        }
 
-		return new Response(
-			JSON.stringify({
-				success: true,
-				message: "Email sent successfully",
-				id: data?.id,
-			}),
-			{ status: 200, headers: { "Content-Type": "application/json" } }
-		);
-	} catch (error) {
-		console.error("Error processing email request:", error);
-		return new Response(
-			JSON.stringify({
-				error: "Internal server error",
-				message: error instanceof Error ? error.message : "Unknown error",
-			}),
-			{ status: 500, headers: { "Content-Type": "application/json" } }
-		);
-	}
+        return new Response(
+            JSON.stringify({
+                success: true,
+                message: "Email sent successfully",
+                id: data?.id,
+            }),
+            { status: 200, headers: { "Content-Type": "application/json" } }
+        );
+    } catch (error) {
+        console.error("Error processing email request:", error);
+        return new Response(
+            JSON.stringify({
+                error: "Internal server error",
+                message: error instanceof Error ? error.message : "Unknown error",
+            }),
+            { status: 500, headers: { "Content-Type": "application/json" } }
+        );
+    }
 }
 
 // For serverless function deployment (Vercel, Netlify, etc.)
