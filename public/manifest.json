@@ -1,0 +1,29 @@
+{
+  "name": "RightPath Saarthi - Expert University Admission & Career Counseling",
+  "short_name": "RightPath Saarthi",
+  "description": "Expert guidance for college & university admissions, career counseling, and exam preparation. 7+ years experience, 1000+ students placed.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#E63946",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/images/RightPathSaarthi-icon.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/images/RightPathSaarthi-icon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["education", "business"],
+  "lang": "en-IN",
+  "dir": "ltr",
+  "scope": "/",
+  "prefer_related_applications": false
+}

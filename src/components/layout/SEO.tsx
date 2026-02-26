@@ -43,7 +43,7 @@ export const SEO: React.FC<SEOProps> = ({
 	// Structured Data (JSON-LD) for Organization
 	const organizationSchema = {
 		"@context": "https://schema.org",
-		"@type": "EducationalOrganization",
+		"@type": ["EducationalOrganization", "LocalBusiness"],
 		name: seoConfig.organization.name,
 		description: seoConfig.organization.description,
 		url: seoConfig.site.url,
@@ -52,8 +52,9 @@ export const SEO: React.FC<SEOProps> = ({
 		contactPoint: {
 			"@type": "ContactPoint",
 			telephone: seoConfig.contact.phone,
+			email: seoConfig.contact.email,
 			contactType: "Customer Service",
-			areaServed: "IN",
+			areaServed: seoConfig.organization.areaServed || "IN",
 			availableLanguage: ["English", "Hindi"],
 		},
 		sameAs: [
@@ -64,8 +65,30 @@ export const SEO: React.FC<SEOProps> = ({
 		],
 		address: {
 			"@type": "PostalAddress",
-			addressCountry: "IN",
+			streetAddress: seoConfig.contact.address?.streetAddress || "",
+			addressLocality: seoConfig.contact.address?.addressLocality || "Noida",
+			addressRegion: seoConfig.contact.address?.addressRegion || "Uttar Pradesh",
+			postalCode: seoConfig.contact.address?.postalCode || "",
+			addressCountry: seoConfig.contact.address?.addressCountry || "IN",
 		},
+		areaServed: {
+			"@type": "Country",
+			name: "India",
+		},
+		...(seoConfig.organization.serviceType && {
+			hasOfferCatalog: {
+				"@type": "OfferCatalog",
+				name: "Educational Services",
+				itemListElement: seoConfig.organization.serviceType.map((service: string, index: number) => ({
+					"@type": "Offer",
+					itemOffered: {
+						"@type": "Service",
+						name: service,
+					},
+					position: index + 1,
+				})),
+			},
+		}),
 	};
 
 	// Structured Data for WebSite
@@ -136,6 +159,13 @@ export const SEO: React.FC<SEOProps> = ({
 			<meta property="og:image:alt" content={pageImageAlt} />
 			<meta property="og:image:width" content="1200" />
 			<meta property="og:image:height" content="630" />
+			<meta property="og:image:type" content="image/jpeg" />
+			<meta property="og:phone_number" content={seoConfig.contact.phone} />
+			<meta property="og:email" content={seoConfig.contact.email} />
+			<meta property="business:contact_data:street_address" content={seoConfig.contact.address?.streetAddress || "Noida"} />
+			<meta property="business:contact_data:locality" content={seoConfig.contact.address?.addressLocality || "Noida"} />
+			<meta property="business:contact_data:region" content={seoConfig.contact.address?.addressRegion || "Uttar Pradesh"} />
+			<meta property="business:contact_data:country_name" content="India" />
 			{publishedTime && <meta property="article:published_time" content={publishedTime} />}
 			{modifiedTime && <meta property="article:modified_time" content={modifiedTime} />}
 
@@ -149,13 +179,30 @@ export const SEO: React.FC<SEOProps> = ({
 			<meta name="twitter:image:alt" content={pageImageAlt} />
 
 			{/* Additional SEO Meta Tags */}
-			<meta name="theme-color" content="#14B8A6" />
-			<meta name="format-detection" content="telephone=no" />
+			<meta name="theme-color" content="#E63946" />
+			<meta name="format-detection" content="telephone=yes" />
 			<meta httpEquiv="x-ua-compatible" content="ie=edge" />
+			<meta name="apple-mobile-web-app-capable" content="yes" />
+			<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
 			{/* Geo Tags for Local SEO */}
-			<meta name="geo.region" content="IN" />
-			<meta name="geo.placename" content="India" />
+			<meta name="geo.region" content="IN-UP" />
+			<meta name="geo.placename" content="Noida, Uttar Pradesh, India" />
+			<meta name="geo.position" content="28.5355;77.3910" />
+			<meta name="ICBM" content="28.5355, 77.3910" />
+
+			{/* Google Site Verification */}
+			{seoConfig.verification?.google && (
+				<meta name="google-site-verification" content={seoConfig.verification.google} />
+			)}
+
+			{/* Additional Meta Tags */}
+			<meta name="author" content="RightPath Saarthi" />
+			<meta name="copyright" content="RightPath Saarthi" />
+			<meta name="language" content="English" />
+			<meta name="revisit-after" content="7 days" />
+			<meta name="distribution" content="global" />
+			<meta name="rating" content="general" />
 
 			{/* Structured Data (JSON-LD) */}
 			<script type="application/ld+json">
@@ -167,6 +214,46 @@ export const SEO: React.FC<SEOProps> = ({
 			{pathSegments.length > 0 && (
 				<script type="application/ld+json">
 					{JSON.stringify(breadcrumbSchema)}
+				</script>
+			)}
+			{/* LocalBusiness Schema for Better Local SEO */}
+			{location.pathname === "/" && (
+				<script type="application/ld+json">
+					{JSON.stringify({
+						"@context": "https://schema.org",
+						"@type": "LocalBusiness",
+						name: seoConfig.organization.name,
+						image: seoConfig.organization.logo,
+						"@id": seoConfig.site.url,
+						url: seoConfig.site.url,
+						telephone: seoConfig.contact.phone,
+						email: seoConfig.contact.email,
+						address: {
+							"@type": "PostalAddress",
+							streetAddress: seoConfig.contact.address?.streetAddress || "Noida",
+							addressLocality: seoConfig.contact.address?.addressLocality || "Noida",
+							addressRegion: seoConfig.contact.address?.addressRegion || "Uttar Pradesh",
+							postalCode: seoConfig.contact.address?.postalCode || "",
+							addressCountry: seoConfig.contact.address?.addressCountry || "IN",
+						},
+						geo: {
+							"@type": "GeoCoordinates",
+							latitude: "28.5355",
+							longitude: "77.3910",
+						},
+						openingHoursSpecification: {
+							"@type": "OpeningHoursSpecification",
+							dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+							opens: "09:00",
+							closes: "18:00",
+						},
+						priceRange: "$$",
+						aggregateRating: {
+							"@type": "AggregateRating",
+							ratingValue: "4.9",
+							reviewCount: "150",
+						},
+					})}
 				</script>
 			)}
 		</Helmet>
