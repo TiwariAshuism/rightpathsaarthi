@@ -50,6 +50,16 @@ export default defineConfig(({ command, mode }) => {
 								// Simulate Vercel's auto-parsed body
 								(req as any).body = bodyStr ? JSON.parse(bodyStr) : {};
 
+								// Shim Vercel/Express-style .status() and .json() onto Node's res
+								(res as any).status = (code: number) => {
+									res.statusCode = code;
+									return res as any;
+								};
+								(res as any).json = (data: any) => {
+									res.setHeader("Content-Type", "application/json");
+									res.end(JSON.stringify(data));
+								};
+
 								await sendEmailHandler(req as any, res as any);
 							} catch (error) {
 								console.error("API error:", error);
