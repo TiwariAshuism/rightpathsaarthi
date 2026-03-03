@@ -1,14 +1,15 @@
 /**
  * API endpoint for sending emails via Resend
  * 
- * This file should be deployed as a serverless function (Vercel, Netlify, etc.)
- * or integrated into your backend server.
+ * This file is deployed as a Vercel serverless function.
  * 
- * Environment variables required:
+ * Environment variables required (set in Vercel Dashboard → Settings → Environment Variables):
  * - RESEND_API_KEY: Your Resend API key
  * - TO_EMAIL: The email address to receive form submissions
+ * - FROM_EMAIL: The sender email address
  */
 
+import type { VercelRequest, VercelResponse } from "@vercel/node";
 import { Resend } from "resend";
 
 interface EmailRequest {
@@ -153,48 +154,54 @@ function getEnquiryEmailHTML(data: EmailRequest["data"]): string {
 }
 
 /**
- * API handler for sending emails
+ * Vercel Serverless Function handler
  * 
- * Usage:
- * - Deploy this as a serverless function (Vercel, Netlify, Cloudflare Workers, etc.)
- * - Or integrate into your Express/Next.js backend
+ * On Vercel, req.body is automatically parsed from JSON.
+ * Locally, the Vite middleware adapter handles the conversion.
  */
-export async function handler(request: Request): Promise<Response> {
-    try {
-        // Only allow POST requests
-        if (request.method !== "POST") {
-            return new Response(
-                JSON.stringify({ error: "Method not allowed" }),
-                { status: 405, headers: { "Content-Type": "application/json" } }
-            );
-        }
+export default async function handler(
+    req: VercelRequest,
+    res: VercelResponse
+): Promise<void> {
+    // Set CORS headers
+    res.setHeader("Access-Control-Allow-Origin", "*");
+    res.setHeader("Access-Control-Allow-Methods", "POST, OPTIONS");
+    res.setHeader("Access-Control-Allow-Headers", "Content-Type");
 
-        // Parse request body
-        const body: EmailRequest = await request.json();
+    // Handle preflight
+    if (req.method === "OPTIONS") {
+        res.status(200).end();
+        return;
+    }
+
+    // Only allow POST requests
+    if (req.method !== "POST") {
+        res.status(405).json({ error: "Method not allowed" });
+        return;
+    }
+
+    try {
+        // Vercel auto-parses JSON body into req.body
+        const body: EmailRequest = req.body;
 
         // Validate required fields
-        if (!body.data.name || !body.data.email) {
-            return new Response(
-                JSON.stringify({ error: "Name and email are required" }),
-                { status: 400, headers: { "Content-Type": "application/json" } }
-            );
+        if (!body.data?.name || !body.data?.email) {
+            res.status(400).json({ error: "Name and email are required" });
+            return;
         }
-
-        // Get recipient email from environment variable
-        const toEmail = process.env["TO_EMAIL"] ?? "";
-        const fromEmail = process.env["FROM_EMAIL"] || "";
 
         // Validate Resend API key
-        const resendApiKey = process.env["RESEND_API_KEY"];
+        const resendApiKey = process.env.RESEND_API_KEY;
         if (!resendApiKey) {
             console.error("Missing RESEND_API_KEY environment variable");
-            return new Response(
-                JSON.stringify({ error: "Email service not configured" }),
-                { status: 500, headers: { "Content-Type": "application/json" } }
-            );
+            res.status(500).json({ error: "Email service not configured" });
+            return;
         }
 
-        // Initialize Resend client at runtime
+        const toEmail = process.env.TO_EMAIL ?? "";
+        const fromEmail = process.env.FROM_EMAIL || "onboarding@resend.dev";
+
+        // Initialize Resend client
         const resend = new Resend(resendApiKey);
 
         // Determine email content based on type
@@ -219,32 +226,21 @@ export async function handler(request: Request): Promise<Response> {
 
         if (error) {
             console.error("Resend error:", error);
-            return new Response(
-                JSON.stringify({ error: "Failed to send email", details: error }),
-                { status: 500, headers: { "Content-Type": "application/json" } }
-            );
+            res.status(500).json({ error: "Failed to send email", details: error });
+            return;
         }
 
-        return new Response(
-            JSON.stringify({
-                success: true,
-                message: "Email sent successfully",
-                id: data?.id,
-            }),
-            { status: 200, headers: { "Content-Type": "application/json" } }
-        );
+        res.status(200).json({
+            success: true,
+            message: "Email sent successfully",
+            id: data?.id,
+        });
     } catch (error) {
         console.error("Error processing email request:", error);
-        return new Response(
-            JSON.stringify({
-                error: "Internal server error",
-                message: error instanceof Error ? error.message : "Unknown error",
-            }),
-            { status: 500, headers: { "Content-Type": "application/json" } }
-        );
+        res.status(500).json({
+            error: "Internal server error",
+            message: error instanceof Error ? error.message : "Unknown error",
+        });
     }
 }
 
-// For serverless function deployment (Vercel, Netlify, etc.)
-// Export the handler as default
-export default handler;

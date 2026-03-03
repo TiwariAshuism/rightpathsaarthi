@@ -5,7 +5,7 @@ import { normalizePath, loadEnv } from "vite";
 import { viteStaticCopy } from "vite-plugin-static-copy";
 import { defineConfig } from "vitest/config";
 import tailwindcss from "@tailwindcss/vite";
-import { handler as sendEmailHandler } from "./api/send-email";
+import sendEmailHandler from "./api/send-email";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ command, mode }) => {
@@ -29,7 +29,7 @@ export default defineConfig(({ command, mode }) => {
 				],
 			}),
 
-			// ✅ Custom API middleware plugin
+			// ✅ Custom API middleware plugin for local development
 			{
 				name: "custom-api-middleware",
 				configureServer(server) {
@@ -46,34 +46,11 @@ export default defineConfig(({ command, mode }) => {
 
 						req.on("end", async () => {
 							try {
-								const body = Buffer.concat(chunks).toString("utf-8");
+								const bodyStr = Buffer.concat(chunks).toString("utf-8");
+								// Simulate Vercel's auto-parsed body
+								(req as any).body = bodyStr ? JSON.parse(bodyStr) : {};
 
-								const request = new Request(
-									`http://${req.headers.host}${req.url}`,
-									{
-										method: req.method,
-										headers: Object.entries(req.headers).reduce(
-											(acc, [key, value]) => {
-												if (typeof value === "string") {
-													acc[key] = value;
-												}
-												return acc;
-											},
-											{} as Record<string, string>
-										),
-										body: body || undefined,
-									}
-								);
-
-								const response = await sendEmailHandler(request);
-
-								res.statusCode = response.status;
-
-								response.headers.forEach((value, key) => {
-									res.setHeader(key, value);
-								});
-
-								res.end(await response.text());
+								await sendEmailHandler(req as any, res as any);
 							} catch (error) {
 								console.error("API error:", error);
 								res.statusCode = 500;
