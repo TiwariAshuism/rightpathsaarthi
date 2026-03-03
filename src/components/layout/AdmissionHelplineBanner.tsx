@@ -14,7 +14,7 @@ export const AdmissionHelplineBanner: React.FC = () => {
 					</span>{" "}
 					{helplineBanner.availability}
 				</p>
-				<a 
+				<a
 					href={`tel:${helplineBanner.phoneNumber.replace(/\s/g, "")}`}
 					className="flex items-center justify-center rounded-lg h-10 px-6 bg-white hover:bg-gray-100 text-primary text-sm font-bold tracking-[0.015em] transition-all shadow-md hover:scale-105 active:scale-95 group"
 				>

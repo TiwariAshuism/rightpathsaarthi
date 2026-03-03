@@ -3,104 +3,104 @@
  */
 
 interface EmailData {
-    name: string;
-    email: string;
-    phone?: string;
-    subject?: string;
-    message?: string;
-    state?: string;
+	name: string;
+	email: string;
+	phone?: string;
+	subject?: string;
+	message?: string;
+	state?: string;
 }
 
 interface EmailResponse {
-    success: boolean;
-    message: string;
+	success: boolean;
+	message: string;
 }
 
 /**
  * Sends a contact form email via Resend API
- * 
+ *
  * @param data - The form data containing name, email, phone, subject, and message
  * @returns Promise with success status and message
  */
 export async function sendContactEmail(
-    data: EmailData
+	data: EmailData
 ): Promise<EmailResponse> {
-    try {
-        const response = await fetch("/api/send-email", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json",
-            },
-            body: JSON.stringify({
-                type: "contact",
-                data,
-            }),
-        });
+	try {
+		const response = await fetch("/api/send-email", {
+			method: "POST",
+			headers: {
+				"Content-Type": "application/json",
+			},
+			body: JSON.stringify({
+				type: "contact",
+				data,
+			}),
+		});
 
-        if (!response.ok) {
-            throw new Error("Failed to send email");
-        }
+		if (!response.ok) {
+			throw new Error("Failed to send email");
+		}
 
-        // Parse response to ensure valid JSON
-        await response.json();
-        return {
-            success: true,
-            message: "Email sent successfully!",
-        };
-    } catch (error) {
-        console.error("Error sending email:", error);
-        return {
-            success: false,
-            message: "Failed to send email. Please try again later.",
-        };
-    }
+		// Parse response to ensure valid JSON
+		await response.json();
+		return {
+			success: true,
+			message: "Email sent successfully!",
+		};
+	} catch (error) {
+		console.error("Error sending email:", error);
+		return {
+			success: false,
+			message: "Failed to send email. Please try again later.",
+		};
+	}
 }
 
 /**
  * Sends an enquiry form email via Resend API
- * 
+ *
  * @param data - The form data containing name, email, phone, and state
  * @returns Promise with success status and message
  */
 export async function sendEnquiryEmail(
-    data: EmailData
+	data: EmailData
 ): Promise<EmailResponse> {
-    try {
-        const response = await fetch("/api/send-email", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json",
-            },
-            body: JSON.stringify({
-                type: "enquiry",
-                data,
-            }),
-        });
+	try {
+		const response = await fetch("/api/send-email", {
+			method: "POST",
+			headers: {
+				"Content-Type": "application/json",
+			},
+			body: JSON.stringify({
+				type: "enquiry",
+				data,
+			}),
+		});
 
-        if (!response.ok) {
-            throw new Error("Failed to send email");
-        }
+		if (!response.ok) {
+			throw new Error("Failed to send email");
+		}
 
-        // Parse response to ensure valid JSON
-        await response.json();
-        return {
-            success: true,
-            message: "Enquiry submitted successfully!",
-        };
-    } catch (error) {
-        console.error("Error sending email:", error);
-        return {
-            success: false,
-            message: "Failed to submit enquiry. Please try again later.",
-        };
-    }
+		// Parse response to ensure valid JSON
+		await response.json();
+		return {
+			success: true,
+			message: "Enquiry submitted successfully!",
+		};
+	} catch (error) {
+		console.error("Error sending email:", error);
+		return {
+			success: false,
+			message: "Failed to submit enquiry. Please try again later.",
+		};
+	}
 }
 
 /**
  * Email template for contact form submissions
  */
 export function getContactEmailTemplate(data: EmailData): string {
-    return `
+	return `
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -127,30 +127,42 @@ export function getContactEmailTemplate(data: EmailData): string {
                     <a href="mailto:${data.email}" style="color: #E63946; text-decoration: none;">${data.email}</a>
                 </td>
             </tr>
-            ${data.phone ? `
+            ${
+							data.phone
+								? `
             <tr>
                 <td style="padding: 10px; background: white; border-bottom: 1px solid #e0e0e0; font-weight: bold;">Phone:</td>
                 <td style="padding: 10px; background: white; border-bottom: 1px solid #e0e0e0;">
                     <a href="tel:${data.phone}" style="color: #E63946; text-decoration: none;">${data.phone}</a>
                 </td>
             </tr>
-            ` : ""}
-            ${data.subject ? `
+            `
+								: ""
+						}
+            ${
+							data.subject
+								? `
             <tr>
                 <td style="padding: 10px; background: #f5f5f5; border-bottom: 1px solid #e0e0e0; font-weight: bold;">Subject:</td>
                 <td style="padding: 10px; background: #f5f5f5; border-bottom: 1px solid #e0e0e0;">${data.subject}</td>
             </tr>
-            ` : ""}
+            `
+								: ""
+						}
         </table>
         
-        ${data.message ? `
+        ${
+					data.message
+						? `
         <div style="margin-top: 20px;">
             <h3 style="color: #E63946; margin-bottom: 10px;">Message:</h3>
             <div style="background: white; padding: 15px; border-left: 4px solid #E63946; border-radius: 4px;">
                 <p style="margin: 0; white-space: pre-wrap;">${data.message}</p>
             </div>
         </div>
-        ` : ""}
+        `
+						: ""
+				}
         
         <div style="margin-top: 30px; padding-top: 20px; border-top: 2px solid #e0e0e0; text-align: center; color: #666; font-size: 12px;">
             <p>This email was sent from the RightPath Saarthi contact form.</p>
@@ -166,7 +178,7 @@ export function getContactEmailTemplate(data: EmailData): string {
  * Email template for enquiry form submissions
  */
 export function getEnquiryEmailTemplate(data: EmailData): string {
-    return `
+	return `
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -193,20 +205,28 @@ export function getEnquiryEmailTemplate(data: EmailData): string {
                     <a href="mailto:${data.email}" style="color: #E63946; text-decoration: none;">${data.email}</a>
                 </td>
             </tr>
-            ${data.phone ? `
+            ${
+							data.phone
+								? `
             <tr>
                 <td style="padding: 10px; background: white; border-bottom: 1px solid #e0e0e0; font-weight: bold;">Phone:</td>
                 <td style="padding: 10px; background: white; border-bottom: 1px solid #e0e0e0;">
                     <a href="tel:${data.phone}" style="color: #E63946; text-decoration: none;">${data.phone}</a>
                 </td>
             </tr>
-            ` : ""}
-            ${data.state ? `
+            `
+								: ""
+						}
+            ${
+							data.state
+								? `
             <tr>
                 <td style="padding: 10px; background: #f5f5f5; border-bottom: 1px solid #e0e0e0; font-weight: bold;">State:</td>
                 <td style="padding: 10px; background: #f5f5f5; border-bottom: 1px solid #e0e0e0;">${data.state}</td>
             </tr>
-            ` : ""}
+            `
+								: ""
+						}
         </table>
         
         <div style="background: #fff3cd; padding: 15px; border-left: 4px solid #ffc107; border-radius: 4px; margin-top: 20px;">

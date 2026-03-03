@@ -7,10 +7,16 @@ export const Founders = (): FunctionComponent => {
 	const { ref, isVisible } = useScrollReveal();
 
 	return (
-		<section ref={ref} className="w-full px-4 md:px-10 lg:px-40 py-8 lg:py-12 bg-gradient-to-br from-primary/10 to-accent/10 dark:from-background-dark dark:to-accent/20 border-t border-slate-200 dark:border-slate-800">
+		<section
+			ref={ref}
+			className="w-full px-4 md:px-10 lg:px-40 py-8 lg:py-12 bg-gradient-to-br from-primary/10 to-accent/10 dark:from-background-dark dark:to-accent/20 border-t border-slate-200 dark:border-slate-800"
+		>
 			<div className="max-w-[1280px] w-full mx-auto">
-				<div className={`flex flex-col gap-6 text-center items-center mb-8 transition-all duration-1000 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-					}`}>
+				<div
+					className={`flex flex-col gap-6 text-center items-center mb-8 transition-all duration-1000 ${
+						isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+					}`}
+				>
 					<span className="text-primary font-bold text-sm tracking-wider uppercase">
 						{founders.tagline}
 					</span>
@@ -25,8 +31,11 @@ export const Founders = (): FunctionComponent => {
 					{founders.items.map((founder, index) => (
 						<div
 							key={index}
-							className={`relative flex flex-col items-center p-4 bg-white dark:bg-slate-900 rounded-2xl shadow-xl border border-slate-200 dark:border-slate-800 group overflow-hidden transition-all duration-1000 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-20"
-								}`}
+							className={`relative flex flex-col items-center p-4 bg-white dark:bg-slate-900 rounded-2xl shadow-xl border border-slate-200 dark:border-slate-800 group overflow-hidden transition-all duration-1000 ${
+								isVisible
+									? "opacity-100 translate-y-0"
+									: "opacity-0 translate-y-20"
+							}`}
 							style={{ transitionDelay: `${index * 0.2}s` }}
 						>
 							<div className="absolute inset-0 z-0 opacity-20 dark:opacity-10">
@@ -44,8 +53,9 @@ export const Founders = (): FunctionComponent => {
 							</div>
 							<div className="relative group flex-shrink-0 z-10">
 								<div
-									className={`relative w-32 h-32 md:w-40 md:h-40 rounded-full p-2 border-2 border-dashed ${index === 0 ? "border-primary/50" : "border-accent/50"
-										} animate-pulse-glow`}
+									className={`relative w-32 h-32 md:w-40 md:h-40 rounded-full p-2 border-2 border-dashed ${
+										index === 0 ? "border-primary/50" : "border-accent/50"
+									} animate-pulse-glow`}
 								>
 									<div
 										className="w-full h-full rounded-full overflow-hidden bg-cover bg-center shadow-2xl transition-transform duration-500 group-hover:scale-105"
@@ -55,10 +65,11 @@ export const Founders = (): FunctionComponent => {
 									></div>
 								</div>
 								<div
-									className={`absolute ${index === 0
+									className={`absolute ${
+										index === 0
 											? "bottom-0 right-0 md:bottom-2 md:right-2 bg-primary"
 											: "bottom-0 left-0 md:bottom-2 md:left-2 bg-accent"
-										} text-white w-8 h-8 rounded-full flex items-center justify-center shadow-lg border-2 border-white dark:border-slate-900`}
+									} text-white w-8 h-8 rounded-full flex items-center justify-center shadow-lg border-2 border-white dark:border-slate-900`}
 								>
 									<span className="material-symbols-outlined text-base">
 										format_quote
@@ -72,11 +83,13 @@ export const Founders = (): FunctionComponent => {
 									</span>
 									{founder.quote}
 								</h3>
-								<p style={{ whiteSpace: "pre-line" }}
-									className={`text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-3 italic ${index === 0
+								<p
+									style={{ whiteSpace: "pre-line" }}
+									className={`text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-3 italic ${
+										index === 0
 											? "border-l-4 border-primary/30 pl-4"
 											: "border-r-4 border-accent/30 pr-4"
-										}`}
+									}`}
 								>
 									"{founder.subQuote}"
 								</p>

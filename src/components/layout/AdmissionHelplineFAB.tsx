@@ -7,7 +7,6 @@ export const AdmissionHelplineFAB = (): FunctionComponent => {
 	const message = encodeURIComponent(defaultMessage);
 	const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
 
-
 	return (
 		<a
 			className="fixed bottom-8 right-8 z-50 flex items-center gap-4 rounded-[2rem] p-2 pr-8 bg-[#25D366] hover:bg-[#20BA5A] text-white shadow-2xl transition-all duration-500 hover:scale-105 active:scale-95 group overflow-hidden border border-white/10"

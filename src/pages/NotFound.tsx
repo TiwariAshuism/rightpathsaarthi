@@ -32,7 +32,8 @@ export const NotFound = (): FunctionComponent => {
 						</h2>
 						<p className="text-xl lg:text-2xl text-slate-500 dark:text-slate-400 font-medium leading-relaxed">
 							Looks like you've wandered into an empty classroom. The page
-							you're looking for might have been moved or doesn't exist in our curriculum.
+							you're looking for might have been moved or doesn't exist in our
+							curriculum.
 						</p>
 					</div>
 
@@ -54,15 +55,17 @@ export const NotFound = (): FunctionComponent => {
 
 				{/* Suggested Links */}
 				<div className="mt-32 w-full grid grid-cols-2 md:grid-cols-4 gap-6 opacity-60 hover:opacity-100 transition-opacity duration-500">
-					{['Universities', 'Exam Prep', 'Career Guide', 'Help Center'].map((item, i) => (
-						<Link
-							key={i}
-							to="/"
-							className="p-6 rounded-2xl bg-white/50 dark:bg-slate-900/50 backdrop-blur-md border border-slate-100 dark:border-slate-800 text-slate-500 dark:text-slate-400 font-bold hover:text-primary dark:hover:text-primary hover:border-primary/30 transition-all text-sm uppercase tracking-widest"
-						>
-							{item}
-						</Link>
-					))}
+					{["Universities", "Exam Prep", "Career Guide", "Help Center"].map(
+						(item, i) => (
+							<Link
+								key={i}
+								to="/"
+								className="p-6 rounded-2xl bg-white/50 dark:bg-slate-900/50 backdrop-blur-md border border-slate-100 dark:border-slate-800 text-slate-500 dark:text-slate-400 font-bold hover:text-primary dark:hover:text-primary hover:border-primary/30 transition-all text-sm uppercase tracking-widest"
+							>
+								{item}
+							</Link>
+						)
+					)}
 				</div>
 			</main>
 		</div>

@@ -14,13 +14,19 @@ export const Services = (): FunctionComponent => {
 	const tiltRefs = [tiltRef1, tiltRef2, tiltRef3];
 
 	return (
-		<section ref={revealRef} className="w-full px-4 md:px-10 lg:px-40 py-16 lg:py-24 bg-white dark:bg-[#101922] transition-colors duration-1000 relative">
+		<section
+			ref={revealRef}
+			className="w-full px-4 md:px-10 lg:px-40 py-16 lg:py-24 bg-white dark:bg-[#101922] transition-colors duration-1000 relative"
+		>
 			{/* Subtle background pattern */}
 			<div className="absolute inset-0 dots-pattern opacity-50 pointer-events-none"></div>
 
 			<div className="max-w-[1280px] w-full mx-auto flex flex-col gap-12 relative z-10">
-				<div className={`flex flex-col gap-4 text-center items-center transition-all duration-1000 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-					}`}>
+				<div
+					className={`flex flex-col gap-4 text-center items-center transition-all duration-1000 ${
+						isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+					}`}
+				>
 					<span className="text-primary font-bold text-sm tracking-wider uppercase">
 						{services.tagline}
 					</span>
@@ -36,8 +42,11 @@ export const Services = (): FunctionComponent => {
 						<div
 							key={index}
 							ref={tiltRefs[index] as any}
-							className={`group relative flex flex-col gap-4 rounded-xl border border-[#e5e7eb] dark:border-slate-800 bg-white dark:bg-[#1a2632] p-8 hover:shadow-2xl hover:shadow-primary/10 hover:border-primary hover:-translate-y-2 transition-all duration-700 overflow-hidden ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-20"
-								}`}
+							className={`group relative flex flex-col gap-4 rounded-xl border border-[#e5e7eb] dark:border-slate-800 bg-white dark:bg-[#1a2632] p-8 hover:shadow-2xl hover:shadow-primary/10 hover:border-primary hover:-translate-y-2 transition-all duration-700 overflow-hidden ${
+								isVisible
+									? "opacity-100 translate-y-0"
+									: "opacity-0 translate-y-20"
+							}`}
 							style={{ transitionDelay: `${(index + 1) * 0.15}s` }}
 						>
 							{/* Hover Gradient Background */}

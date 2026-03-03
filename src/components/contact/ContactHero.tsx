@@ -7,13 +7,19 @@ export const ContactHero = (): FunctionComponent => {
 	const { ref, isVisible } = useScrollReveal<HTMLDivElement>();
 
 	return (
-		<div ref={ref} className="px-4 md:px-40 pt-20 pb-12 bg-white dark:bg-[#101922] flex justify-center relative overflow-hidden transition-colors duration-1000">
+		<div
+			ref={ref}
+			className="px-4 md:px-40 pt-20 pb-12 bg-white dark:bg-[#101922] flex justify-center relative overflow-hidden transition-colors duration-1000"
+		>
 			{/* Decorative Blobs */}
 			<div className="absolute top-[-10%] right-[-5%] w-[400px] h-[400px] bg-primary/10 rounded-full blur-[100px] animate-pulse"></div>
 			<div className="absolute bottom-[-20%] left-[-10%] w-[500px] h-[500px] bg-accent/5 rounded-full blur-[120px] animate-float"></div>
 
-			<div className={`w-full max-w-[1100px] flex flex-col gap-6 relative z-10 transition-all duration-1000 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-				}`}>
+			<div
+				className={`w-full max-w-[1100px] flex flex-col gap-6 relative z-10 transition-all duration-1000 ${
+					isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+				}`}
+			>
 				<span className="text-primary font-bold text-sm tracking-widest uppercase mb-1">
 					Get in Touch
 				</span>

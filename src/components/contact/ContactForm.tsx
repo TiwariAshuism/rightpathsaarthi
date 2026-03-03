@@ -8,7 +8,11 @@ import { sendContactEmail } from "../../utils/email";
 export const ContactForm = (): FunctionComponent => {
 	const { form } = contactData;
 	const { ref, isVisible } = useScrollReveal<HTMLDivElement>();
-	const tiltRef = useMouseTilt<HTMLDivElement>({ max: 5, perspective: 1000, scale: 1.01 });
+	const tiltRef = useMouseTilt<HTMLDivElement>({
+		max: 5,
+		perspective: 1000,
+		scale: 1.01,
+	});
 	const [formData, setFormData] = useState({
 		fullName: "",
 		email: "",
@@ -17,7 +21,10 @@ export const ContactForm = (): FunctionComponent => {
 		message: "",
 	});
 	const [isSubmitting, setIsSubmitting] = useState(false);
-	const [submitStatus, setSubmitStatus] = useState<{ type: "success" | "error" | null; message: string }>({
+	const [submitStatus, setSubmitStatus] = useState<{
+		type: "success" | "error" | null;
+		message: string;
+	}>({
 		type: null,
 		message: "",
 	});
@@ -38,7 +45,13 @@ export const ContactForm = (): FunctionComponent => {
 		setIsSubmitting(false);
 		if (result.success) {
 			setSubmitStatus({ type: "success", message: result.message });
-			setFormData({ fullName: "", email: "", phone: "", subject: "", message: "" });
+			setFormData({
+				fullName: "",
+				email: "",
+				phone: "",
+				subject: "",
+				message: "",
+			});
 		} else {
 			setSubmitStatus({ type: "error", message: result.message });
 		}
@@ -48,15 +61,18 @@ export const ContactForm = (): FunctionComponent => {
 		<div ref={ref} className="lg:col-span-7">
 			<div
 				ref={tiltRef}
-				className={`bg-white/80 dark:bg-slate-900/80 backdrop-blur-2xl p-8 md:p-12 rounded-[2.5rem] shadow-2xl border border-white dark:border-slate-800 h-full transition-all duration-1000 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-20"
-					}`}
+				className={`bg-white/80 dark:bg-slate-900/80 backdrop-blur-2xl p-8 md:p-12 rounded-[2.5rem] shadow-2xl border border-white dark:border-slate-800 h-full transition-all duration-1000 ${
+					isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-20"
+				}`}
 			>
 				<h3 className="text-[#111418] dark:text-white text-3xl font-black mb-8 tracking-tight">
 					{form.title}
 				</h3>
 				<form className="flex flex-col gap-8" onSubmit={handleSubmit}>
 					<div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-						<div className={`flex flex-col gap-2 transition-all duration-700 delay-100 ${isVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-10"}`}>
+						<div
+							className={`flex flex-col gap-2 transition-all duration-700 delay-100 ${isVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-10"}`}
+						>
 							<label
 								className="text-[#111418] dark:text-gray-200 text-sm font-bold ml-1"
 								htmlFor="fullName"
@@ -70,10 +86,14 @@ export const ContactForm = (): FunctionComponent => {
 								placeholder={form.fields.fullName.placeholder}
 								type="text"
 								value={formData.fullName}
-								onChange={(e) => setFormData({ ...formData, fullName: e.target.value })}
+								onChange={(e) =>
+									setFormData({ ...formData, fullName: e.target.value })
+								}
 							/>
 						</div>
-						<div className={`flex flex-col gap-2 transition-all duration-700 delay-200 ${isVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-10"}`}>
+						<div
+							className={`flex flex-col gap-2 transition-all duration-700 delay-200 ${isVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-10"}`}
+						>
 							<label
 								className="text-[#111418] dark:text-gray-200 text-sm font-bold ml-1"
 								htmlFor="email"
@@ -87,12 +107,16 @@ export const ContactForm = (): FunctionComponent => {
 								placeholder={form.fields.email.placeholder}
 								type="email"
 								value={formData.email}
-								onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+								onChange={(e) =>
+									setFormData({ ...formData, email: e.target.value })
+								}
 							/>
 						</div>
 					</div>
 					<div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-						<div className={`flex flex-col gap-2 transition-all duration-700 delay-300 ${isVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-10"}`}>
+						<div
+							className={`flex flex-col gap-2 transition-all duration-700 delay-300 ${isVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-10"}`}
+						>
 							<label
 								className="text-[#111418] dark:text-gray-200 text-sm font-bold ml-1"
 								htmlFor="phone"
@@ -105,10 +129,14 @@ export const ContactForm = (): FunctionComponent => {
 								placeholder={form.fields.phone.placeholder}
 								type="tel"
 								value={formData.phone}
-								onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+								onChange={(e) =>
+									setFormData({ ...formData, phone: e.target.value })
+								}
 							/>
 						</div>
-						<div className={`flex flex-col gap-2 transition-all duration-700 delay-400 ${isVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-10"}`}>
+						<div
+							className={`flex flex-col gap-2 transition-all duration-700 delay-400 ${isVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-10"}`}
+						>
 							<label
 								className="text-[#111418] dark:text-gray-200 text-sm font-bold ml-1"
 								htmlFor="subject"
@@ -121,11 +149,17 @@ export const ContactForm = (): FunctionComponent => {
 									className="w-full h-14 rounded-2xl border border-[#d1d5db] dark:border-gray-700 bg-slate-50/50 dark:bg-slate-800/50 px-5 text-base text-[#111418] dark:text-white focus:border-primary focus:ring-4 focus:ring-primary/10 outline-none appearance-none transition-all cursor-pointer"
 									id="subject"
 									value={formData.subject}
-									onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
+									onChange={(e) =>
+										setFormData({ ...formData, subject: e.target.value })
+									}
 								>
 									<option value="">Select a subject</option>
 									{form.fields.subject.options.map((option, index) => (
-										<option key={index} value={option} className="dark:bg-[#1a2632]">
+										<option
+											key={index}
+											value={option}
+											className="dark:bg-[#1a2632]"
+										>
 											{option}
 										</option>
 									))}
@@ -136,7 +170,9 @@ export const ContactForm = (): FunctionComponent => {
 							</div>
 						</div>
 					</div>
-					<div className={`flex flex-col gap-2 transition-all duration-700 delay-500 ${isVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-10"}`}>
+					<div
+						className={`flex flex-col gap-2 transition-all duration-700 delay-500 ${isVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-10"}`}
+					>
 						<label
 							className="text-[#111418] dark:text-gray-200 text-sm font-bold ml-1"
 							htmlFor="message"
@@ -150,7 +186,9 @@ export const ContactForm = (): FunctionComponent => {
 							placeholder={form.fields.message.placeholder}
 							rows={5}
 							value={formData.message}
-							onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+							onChange={(e) =>
+								setFormData({ ...formData, message: e.target.value })
+							}
 						></textarea>
 					</div>
 					{submitStatus.type && (
@@ -164,7 +202,9 @@ export const ContactForm = (): FunctionComponent => {
 							<p className="font-semibold">{submitStatus.message}</p>
 						</div>
 					)}
-					<div className={`pt-4 transition-all duration-700 delay-600 ${isVisible ? "opacity-100 scale-100" : "opacity-0 scale-95"}`}>
+					<div
+						className={`pt-4 transition-all duration-700 delay-600 ${isVisible ? "opacity-100 scale-100" : "opacity-0 scale-95"}`}
+					>
 						<button
 							className="group w-full md:w-auto min-w-[200px] h-14 rounded-2xl bg-primary hover:bg-[#D41C25] text-white text-lg font-black shadow-xl shadow-primary/25 transition-all flex items-center justify-center gap-3 active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed"
 							type="submit"
@@ -178,7 +218,9 @@ export const ContactForm = (): FunctionComponent => {
 							) : (
 								<>
 									<span>{form.buttonText}</span>
-									<span className="material-symbols-outlined text-xl group-hover:translate-x-2 transition-transform">send</span>
+									<span className="material-symbols-outlined text-xl group-hover:translate-x-2 transition-transform">
+										send
+									</span>
 								</>
 							)}
 						</button>

@@ -11,9 +11,6 @@
 
 import { Resend } from "resend";
 
-// Initialize Resend client
-const resend = new Resend(process.env["RESEND_API_KEY"]);
-
 interface EmailRequest {
     type: "contact" | "enquiry";
     data: {
@@ -186,6 +183,19 @@ export async function handler(request: Request): Promise<Response> {
         // Get recipient email from environment variable
         const toEmail = process.env["TO_EMAIL"] ?? "";
         const fromEmail = process.env["FROM_EMAIL"] || "";
+
+        // Validate Resend API key
+        const resendApiKey = process.env["RESEND_API_KEY"];
+        if (!resendApiKey) {
+            console.error("Missing RESEND_API_KEY environment variable");
+            return new Response(
+                JSON.stringify({ error: "Email service not configured" }),
+                { status: 500, headers: { "Content-Type": "application/json" } }
+            );
+        }
+
+        // Initialize Resend client at runtime
+        const resend = new Resend(resendApiKey);
 
         // Determine email content based on type
         const subject =

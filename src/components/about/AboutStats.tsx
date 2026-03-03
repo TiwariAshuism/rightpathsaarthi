@@ -16,7 +16,10 @@ export const AboutStats = (): FunctionComponent => {
 	};
 
 	return (
-		<section ref={ref} className="bg-white dark:bg-[#101922] transition-colors duration-1000">
+		<section
+			ref={ref}
+			className="bg-white dark:bg-[#101922] transition-colors duration-1000"
+		>
 			<div className="max-w-[1200px] mx-auto px-4 py-16 md:px-10">
 				<div className="grid grid-cols-2 md:grid-cols-4 gap-12 text-center">
 					{stats.map((stat, index) => {
@@ -24,8 +27,11 @@ export const AboutStats = (): FunctionComponent => {
 						return (
 							<div
 								key={index}
-								className={`flex flex-col items-center gap-2 transition-all duration-1000 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
-									}`}
+								className={`flex flex-col items-center gap-2 transition-all duration-1000 ${
+									isVisible
+										? "opacity-100 translate-y-0"
+										: "opacity-0 translate-y-4"
+								}`}
 								style={{ transitionDelay: `${index * 0.1}s` }}
 							>
 								<span className="text-5xl font-black text-primary tracking-tighter">

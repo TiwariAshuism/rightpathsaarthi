@@ -23,17 +23,25 @@ export const Hero = (): FunctionComponent => {
 										loop={true}
 									/>
 								</h1>
-								<h2 className="text-[#111418]/80 dark:text-slate-300 text-lg font-normal leading-relaxed max-w-xl animate-fade-in-up" style={{ animationDelay: "0.4s" }}>
+								<h2
+									className="text-[#111418]/80 dark:text-slate-300 text-lg font-normal leading-relaxed max-w-xl animate-fade-in-up"
+									style={{ animationDelay: "0.4s" }}
+								>
 									{hero.subtitle}
 								</h2>
 							</div>
-							<div className="flex flex-wrap gap-3 mt-2 animate-fade-in-up" style={{ animationDelay: "0.6s" }}>
+							<div
+								className="flex flex-wrap gap-3 mt-2 animate-fade-in-up"
+								style={{ animationDelay: "0.6s" }}
+							>
 								<Link
 									to="/contact"
 									className="group relative flex items-center justify-center rounded-lg h-12 px-6 bg-primary hover:bg-[#D41C25] text-white text-base font-bold tracking-[0.015em] transition-all shadow-lg shadow-primary/20 hover:scale-105 active:scale-95 overflow-hidden"
 								>
 									<span className="absolute inset-0 bg-white/20 scale-0 group-hover:scale-150 transition-transform duration-700 rounded-full animate-spotlight pointer-events-none"></span>
-									<span className="truncate relative z-10">{hero.ctaButtons.primary}</span>
+									<span className="truncate relative z-10">
+										{hero.ctaButtons.primary}
+									</span>
 								</Link>
 								<Link
 									to="/about"
@@ -42,7 +50,10 @@ export const Hero = (): FunctionComponent => {
 									<span className="truncate">{hero.ctaButtons.secondary}</span>
 								</Link>
 							</div>
-							<div className="pt-6 flex items-center gap-4 text-sm text-slate-500 dark:text-slate-400 animate-fade-in-up" style={{ animationDelay: "0.8s" }}>
+							<div
+								className="pt-6 flex items-center gap-4 text-sm text-slate-500 dark:text-slate-400 animate-fade-in-up"
+								style={{ animationDelay: "0.8s" }}
+							>
 								<div className="flex -space-x-2">
 									<div
 										className="w-8 h-8 rounded-full border-2 border-white dark:border-slate-800 bg-cover bg-center hover:scale-110 transition-transform duration-300"
@@ -75,9 +86,7 @@ export const Hero = (): FunctionComponent => {
 								<p>{hero.trustText}</p>
 							</div>
 						</div>
-						<div
-							className="w-full lg:w-1/2 animate-float"
-						>
+						<div className="w-full lg:w-1/2 animate-float">
 							<Parallax speed={-0.05}>
 								<div className="w-full aspect-[4/3] bg-transparent rounded-xl overflow-hidden hover:scale-[1.02] transition-transform duration-500 drop-shadow-2xl">
 									<DotLottiePlayer

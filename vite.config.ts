@@ -1,33 +1,108 @@
 import { TanStackRouterVite } from "@tanstack/router-plugin/vite";
 import react from "@vitejs/plugin-react-swc";
 import path from "node:path";
-import { normalizePath } from "vite";
+import { normalizePath, loadEnv } from "vite";
 import { viteStaticCopy } from "vite-plugin-static-copy";
 import { defineConfig } from "vitest/config";
 import tailwindcss from "@tailwindcss/vite";
+import { handler as sendEmailHandler } from "./api/send-email";
 
 // https://vitejs.dev/config/
-export default defineConfig({
-	plugins: [
-		react(),
-		tailwindcss(),
-		TanStackRouterVite(),
-		viteStaticCopy({
-			targets: [
-				{
-					src: normalizePath(path.resolve("./src/assets/locales")),
-					dest: normalizePath(path.resolve("./dist")),
+export default defineConfig(({ command, mode }) => {
+	// Load ALL env files (no prefix filter) and inject into process.env
+	// so that the API handler can access them at runtime
+	const env = loadEnv(mode, process.cwd(), "");
+	Object.assign(process.env, env);
+
+	return {
+		plugins: [
+			react(),
+			tailwindcss(),
+			TanStackRouterVite(),
+
+			viteStaticCopy({
+				targets: [
+					{
+						src: normalizePath(path.resolve("./src/assets/locales")),
+						dest: normalizePath(path.resolve("./dist")),
+					},
+				],
+			}),
+
+			// ✅ Custom API middleware plugin
+			{
+				name: "custom-api-middleware",
+				configureServer(server) {
+					server.middlewares.use(async (req, res, next) => {
+						if (!req.url?.startsWith("/api/send-email")) {
+							return next();
+						}
+
+						const chunks: Uint8Array[] = [];
+
+						req.on("data", (chunk: Uint8Array) => {
+							chunks.push(chunk);
+						});
+
+						req.on("end", async () => {
+							try {
+								const body = Buffer.concat(chunks).toString("utf-8");
+
+								const request = new Request(
+									`http://${req.headers.host}${req.url}`,
+									{
+										method: req.method,
+										headers: Object.entries(req.headers).reduce(
+											(acc, [key, value]) => {
+												if (typeof value === "string") {
+													acc[key] = value;
+												}
+												return acc;
+											},
+											{} as Record<string, string>
+										),
+										body: body || undefined,
+									}
+								);
+
+								const response = await sendEmailHandler(request);
+
+								res.statusCode = response.status;
+
+								response.headers.forEach((value, key) => {
+									res.setHeader(key, value);
+								});
+
+								res.end(await response.text());
+							} catch (error) {
+								console.error("API error:", error);
+								res.statusCode = 500;
+								res.setHeader("Content-Type", "application/json");
+								res.end(
+									JSON.stringify({
+										error: "Internal server error",
+										message:
+											error instanceof Error
+												? error.message
+												: "Unknown error",
+									})
+								);
+							}
+						});
+					});
 				},
-			],
-		}),
-	],
-	server: {
-		host: true,
-		strictPort: true,
-	},
-	test: {
-		environment: "jsdom",
-		setupFiles: ["./vitest.setup.ts"],
-		css: true,
-	},
+			},
+		],
+
+		server: {
+			host: true,
+			strictPort: true,
+		},
+
+		test: {
+			environment: "jsdom",
+			setupFiles: ["./vitest.setup.ts"],
+			css: true,
+		},
+	};
 });

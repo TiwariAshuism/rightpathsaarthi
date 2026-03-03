@@ -7,9 +7,15 @@ export const Partners = (): FunctionComponent => {
 	const { ref, isVisible } = useScrollReveal();
 
 	return (
-		<section ref={ref} className="w-full py-10 bg-white dark:bg-[#101922] border-t border-slate-100 dark:border-slate-800 overflow-hidden">
-			<div className={`max-w-[1280px] mx-auto px-4 md:px-10 lg:px-40 mb-6 text-center transition-all duration-1000 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-				}`}>
+		<section
+			ref={ref}
+			className="w-full py-10 bg-white dark:bg-[#101922] border-t border-slate-100 dark:border-slate-800 overflow-hidden"
+		>
+			<div
+				className={`max-w-[1280px] mx-auto px-4 md:px-10 lg:px-40 mb-6 text-center transition-all duration-1000 ${
+					isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+				}`}
+			>
 				<p className="text-sm font-bold text-slate-500 dark:text-slate-400 uppercase tracking-widest">
 					{partners.title}
 				</p>

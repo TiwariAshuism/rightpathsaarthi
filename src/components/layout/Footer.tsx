@@ -75,9 +75,7 @@ export const Footer = (): FunctionComponent => {
 										<span className="text-slate-400 text-xs font-semibold uppercase tracking-wider">
 											{item.label}
 										</span>
-										<span className="text-white text-sm">
-											{item.value}
-										</span>
+										<span className="text-white text-sm">{item.value}</span>
 									</div>
 								</div>
 							))}
@@ -95,7 +93,11 @@ export const Footer = (): FunctionComponent => {
 					</div>
 					<div className="flex gap-6 text-xs text-slate-500">
 						{footer.legalLinks.map((link, index) => (
-							<a key={index} className="hover:text-white transition-colors" href={link.href}>
+							<a
+								key={index}
+								className="hover:text-white transition-colors"
+								href={link.href}
+							>
 								{link.text}
 							</a>
 						))}

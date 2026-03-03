@@ -14,7 +14,8 @@ export const Header = (): FunctionComponent => {
 	useEffect(() => {
 		const updateScrollProgress = () => {
 			const currentScroll = window.scrollY;
-			const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
+			const scrollHeight =
+				document.documentElement.scrollHeight - window.innerHeight;
 			if (scrollHeight > 0) {
 				setScrollProgress((currentScroll / scrollHeight) * 100);
 			}

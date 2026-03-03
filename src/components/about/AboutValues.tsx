@@ -8,19 +8,37 @@ export const AboutValues = (): FunctionComponent => {
 	const { ref: revealRef, isVisible } = useScrollReveal<HTMLElement>();
 
 	// Create separate refs for tilt cards
-	const tiltRef1 = useMouseTilt<HTMLDivElement>({ max: 10, perspective: 1000, scale: 1.05 });
-	const tiltRef2 = useMouseTilt<HTMLDivElement>({ max: 10, perspective: 1000, scale: 1.05 });
-	const tiltRef3 = useMouseTilt<HTMLDivElement>({ max: 10, perspective: 1000, scale: 1.05 });
+	const tiltRef1 = useMouseTilt<HTMLDivElement>({
+		max: 10,
+		perspective: 1000,
+		scale: 1.05,
+	});
+	const tiltRef2 = useMouseTilt<HTMLDivElement>({
+		max: 10,
+		perspective: 1000,
+		scale: 1.05,
+	});
+	const tiltRef3 = useMouseTilt<HTMLDivElement>({
+		max: 10,
+		perspective: 1000,
+		scale: 1.05,
+	});
 	const tiltRefs = [tiltRef1, tiltRef2, tiltRef3];
 
 	return (
-		<section ref={revealRef} className="relative bg-white dark:bg-[#101922] py-24 px-4 md:px-10 lg:px-40 overflow-hidden">
+		<section
+			ref={revealRef}
+			className="relative bg-white dark:bg-[#101922] py-24 px-4 md:px-10 lg:px-40 overflow-hidden"
+		>
 			{/* Decorative Dots Pattern */}
 			<div className="absolute inset-0 dots-pattern opacity-40 pointer-events-none"></div>
 
 			<div className="max-w-[1200px] mx-auto relative z-10">
-				<div className={`text-center mb-16 transition-all duration-1000 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-					}`}>
+				<div
+					className={`text-center mb-16 transition-all duration-1000 ${
+						isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+					}`}
+				>
 					<span className="text-primary font-bold text-sm tracking-wider uppercase mb-2 block">
 						Core Foundations
 					</span>
@@ -36,8 +54,11 @@ export const AboutValues = (): FunctionComponent => {
 						<div
 							key={index}
 							ref={tiltRefs[index]}
-							className={`flex flex-col items-center text-center p-10 bg-white/80 dark:bg-slate-900/80 backdrop-blur-xl rounded-[2rem] shadow-xl border border-slate-100 dark:border-slate-800 transition-all duration-1000 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-20"
-								}`}
+							className={`flex flex-col items-center text-center p-10 bg-white/80 dark:bg-slate-900/80 backdrop-blur-xl rounded-[2rem] shadow-xl border border-slate-100 dark:border-slate-800 transition-all duration-1000 ${
+								isVisible
+									? "opacity-100 translate-y-0"
+									: "opacity-0 translate-y-20"
+							}`}
 							style={{ transitionDelay: `${index * 0.2}s` }}
 						>
 							<div className="w-20 h-20 text-primary mb-8 bg-primary/10 flex items-center justify-center rounded-3xl shadow-inner group transition-all duration-500 hover:scale-110">

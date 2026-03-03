@@ -10,7 +10,10 @@ export const AboutIntro = (): FunctionComponent => {
 				<h2 className="text-3xl md:text-4xl font-bold tracking-tight text-slate-900 dark:text-white">
 					{intro.title}
 				</h2>
-				<p className="text-lg text-slate-600 dark:text-slate-300 leading-relaxed" style={{ whiteSpace: "pre-line" }}>
+				<p
+					className="text-lg text-slate-600 dark:text-slate-300 leading-relaxed"
+					style={{ whiteSpace: "pre-line" }}
+				>
 					{intro.description}
 				</p>
 			</div>

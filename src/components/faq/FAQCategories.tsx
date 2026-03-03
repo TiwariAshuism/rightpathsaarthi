@@ -24,10 +24,11 @@ const FAQCategories: React.FC<FAQCategoriesProps> = ({
 					<button
 						key={index}
 						onClick={() => setSelectedCategory(category.label)}
-						className={`flex h-12 items-center justify-center gap-x-3 rounded-2xl px-8 shadow-sm transition-all duration-300 active:scale-95 border ${selectedCategory === category.label
+						className={`flex h-12 items-center justify-center gap-x-3 rounded-2xl px-8 shadow-sm transition-all duration-300 active:scale-95 border ${
+							selectedCategory === category.label
 								? "bg-primary text-white border-primary shadow-xl shadow-primary/20"
 								: "bg-white dark:bg-slate-900 border-slate-100 dark:border-slate-800 hover:border-primary/50 text-slate-700 dark:text-slate-300 group"
-							}`}
+						}`}
 						style={{ transitionDelay: `${index * 0.05}s` }}
 					>
 						<span
@@ -35,7 +36,9 @@ const FAQCategories: React.FC<FAQCategoriesProps> = ({
 						>
 							{category.icon}
 						</span>
-						<span className="text-base font-black tracking-tight">{category.label}</span>
+						<span className="text-base font-black tracking-tight">
+							{category.label}
+						</span>
 					</button>
 				))}
 			</div>

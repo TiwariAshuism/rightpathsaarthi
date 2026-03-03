@@ -18,18 +18,22 @@ interface FAQListProps {
 
 const FAQList: React.FC<FAQListProps> = ({ sections }) => {
 	const { ref, isVisible } = useScrollReveal<HTMLDivElement>();
-	const [openItems, setOpenItems] = useState<Record<string, boolean>>({ "0-0": true });
+	const [openItems, setOpenItems] = useState<Record<string, boolean>>({
+		"0-0": true,
+	});
 
 	const toggleItem = (sectionIdx: number, itemIdx: number) => {
 		const key = `${sectionIdx}-${itemIdx}`;
-		setOpenItems(prev => ({ ...prev, [key]: !prev[key] }));
+		setOpenItems((prev) => ({ ...prev, [key]: !prev[key] }));
 	};
 
 	if (sections.length === 0) {
 		return (
 			<div className="text-center py-20 animate-fade-in-up">
 				<div className="inline-flex items-center justify-center size-20 rounded-full bg-slate-50 dark:bg-slate-900 mb-6">
-					<span className="material-symbols-outlined text-4xl text-slate-400">search_off</span>
+					<span className="material-symbols-outlined text-4xl text-slate-400">
+						search_off
+					</span>
 				</div>
 				<p className="text-slate-500 dark:text-slate-400 text-xl font-medium">
 					No FAQs found matching your criteria.
@@ -48,7 +52,9 @@ const FAQList: React.FC<FAQListProps> = ({ sections }) => {
 				>
 					<div className="flex items-center gap-4 mb-10">
 						<div className="size-14 bg-primary/10 rounded-2xl text-primary flex items-center justify-center shadow-inner">
-							<span className="material-symbols-outlined text-3xl font-black">{section.icon}</span>
+							<span className="material-symbols-outlined text-3xl font-black">
+								{section.icon}
+							</span>
 						</div>
 						<h2 className="text-3xl font-black text-slate-900 dark:text-white tracking-tight">
 							{section.title}
@@ -60,19 +66,24 @@ const FAQList: React.FC<FAQListProps> = ({ sections }) => {
 							return (
 								<div
 									key={itemIndex}
-									className={`group rounded-[2rem] border transition-all duration-500 overflow-hidden ${isOpen
+									className={`group rounded-[2rem] border transition-all duration-500 overflow-hidden ${
+										isOpen
 											? "border-primary/30 bg-white dark:bg-slate-900/80 shadow-[0_20px_40px_-12px_rgba(227,30,36,0.1)]"
 											: "border-slate-100 dark:border-slate-800 bg-slate-50/50 dark:bg-slate-900/30 hover:border-primary/20"
-										}`}
+									}`}
 								>
 									<button
 										onClick={() => toggleItem(sectionIndex, itemIndex)}
 										className="w-full flex items-center justify-between gap-6 p-8 text-left transition-colors"
 									>
-										<span className={`text-xl font-bold tracking-tight transition-colors ${isOpen ? "text-primary" : "text-slate-900 dark:text-white"}`}>
+										<span
+											className={`text-xl font-bold tracking-tight transition-colors ${isOpen ? "text-primary" : "text-slate-900 dark:text-white"}`}
+										>
 											{item.question}
 										</span>
-										<div className={`shrink-0 size-8 rounded-full flex items-center justify-center transition-all duration-500 ${isOpen ? "bg-primary text-white rotate-180" : "bg-slate-200/50 dark:bg-slate-800 text-slate-500"}`}>
+										<div
+											className={`shrink-0 size-8 rounded-full flex items-center justify-center transition-all duration-500 ${isOpen ? "bg-primary text-white rotate-180" : "bg-slate-200/50 dark:bg-slate-800 text-slate-500"}`}
+										>
 											<span className="material-symbols-outlined text-xl font-black">
 												expand_more
 											</span>

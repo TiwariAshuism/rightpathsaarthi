@@ -67,7 +67,8 @@ export const SEO: React.FC<SEOProps> = ({
 			"@type": "PostalAddress",
 			streetAddress: seoConfig.contact.address?.streetAddress || "",
 			addressLocality: seoConfig.contact.address?.addressLocality || "Noida",
-			addressRegion: seoConfig.contact.address?.addressRegion || "Uttar Pradesh",
+			addressRegion:
+				seoConfig.contact.address?.addressRegion || "Uttar Pradesh",
 			postalCode: seoConfig.contact.address?.postalCode || "",
 			addressCountry: seoConfig.contact.address?.addressCountry || "IN",
 		},
@@ -79,14 +80,16 @@ export const SEO: React.FC<SEOProps> = ({
 			hasOfferCatalog: {
 				"@type": "OfferCatalog",
 				name: "Educational Services",
-				itemListElement: seoConfig.organization.serviceType.map((service: string, index: number) => ({
-					"@type": "Offer",
-					itemOffered: {
-						"@type": "Service",
-						name: service,
-					},
-					position: index + 1,
-				})),
+				itemListElement: seoConfig.organization.serviceType.map(
+					(service: string, index: number) => ({
+						"@type": "Offer",
+						itemOffered: {
+							"@type": "Service",
+							name: service,
+						},
+						position: index + 1,
+					})
+				),
 			},
 		}),
 	};
@@ -142,7 +145,10 @@ export const SEO: React.FC<SEOProps> = ({
 			{noindex ? (
 				<meta name="robots" content="noindex, nofollow" />
 			) : (
-				<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+				<meta
+					name="robots"
+					content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+				/>
 			)}
 
 			{/* Canonical URL */}
@@ -162,12 +168,25 @@ export const SEO: React.FC<SEOProps> = ({
 			<meta property="og:image:type" content="image/jpeg" />
 			<meta property="og:phone_number" content={seoConfig.contact.phone} />
 			<meta property="og:email" content={seoConfig.contact.email} />
-			<meta property="business:contact_data:street_address" content={seoConfig.contact.address?.streetAddress || "Noida"} />
-			<meta property="business:contact_data:locality" content={seoConfig.contact.address?.addressLocality || "Noida"} />
-			<meta property="business:contact_data:region" content={seoConfig.contact.address?.addressRegion || "Uttar Pradesh"} />
+			<meta
+				property="business:contact_data:street_address"
+				content={seoConfig.contact.address?.streetAddress || "Noida"}
+			/>
+			<meta
+				property="business:contact_data:locality"
+				content={seoConfig.contact.address?.addressLocality || "Noida"}
+			/>
+			<meta
+				property="business:contact_data:region"
+				content={seoConfig.contact.address?.addressRegion || "Uttar Pradesh"}
+			/>
 			<meta property="business:contact_data:country_name" content="India" />
-			{publishedTime && <meta property="article:published_time" content={publishedTime} />}
-			{modifiedTime && <meta property="article:modified_time" content={modifiedTime} />}
+			{publishedTime && (
+				<meta property="article:published_time" content={publishedTime} />
+			)}
+			{modifiedTime && (
+				<meta property="article:modified_time" content={modifiedTime} />
+			)}
 
 			{/* Twitter Card Meta Tags */}
 			<meta name="twitter:card" content="summary_large_image" />
@@ -183,7 +202,10 @@ export const SEO: React.FC<SEOProps> = ({
 			<meta name="format-detection" content="telephone=yes" />
 			<meta httpEquiv="x-ua-compatible" content="ie=edge" />
 			<meta name="apple-mobile-web-app-capable" content="yes" />
-			<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+			<meta
+				name="apple-mobile-web-app-status-bar-style"
+				content="black-translucent"
+			/>
 
 			{/* Geo Tags for Local SEO */}
 			<meta name="geo.region" content="IN-UP" />
@@ -193,7 +215,10 @@ export const SEO: React.FC<SEOProps> = ({
 
 			{/* Google Site Verification */}
 			{seoConfig.verification?.google && (
-				<meta name="google-site-verification" content={seoConfig.verification.google} />
+				<meta
+					name="google-site-verification"
+					content={seoConfig.verification.google}
+				/>
 			)}
 
 			{/* Additional Meta Tags */}
@@ -230,9 +255,12 @@ export const SEO: React.FC<SEOProps> = ({
 						email: seoConfig.contact.email,
 						address: {
 							"@type": "PostalAddress",
-							streetAddress: seoConfig.contact.address?.streetAddress || "Noida",
-							addressLocality: seoConfig.contact.address?.addressLocality || "Noida",
-							addressRegion: seoConfig.contact.address?.addressRegion || "Uttar Pradesh",
+							streetAddress:
+								seoConfig.contact.address?.streetAddress || "Noida",
+							addressLocality:
+								seoConfig.contact.address?.addressLocality || "Noida",
+							addressRegion:
+								seoConfig.contact.address?.addressRegion || "Uttar Pradesh",
 							postalCode: seoConfig.contact.address?.postalCode || "",
 							addressCountry: seoConfig.contact.address?.addressCountry || "IN",
 						},
@@ -243,7 +271,13 @@ export const SEO: React.FC<SEOProps> = ({
 						},
 						openingHoursSpecification: {
 							"@type": "OpeningHoursSpecification",
-							dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+							dayOfWeek: [
+								"Monday",
+								"Tuesday",
+								"Wednesday",
+								"Thursday",
+								"Friday",
+							],
 							opens: "09:00",
 							closes: "18:00",
 						},

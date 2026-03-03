@@ -12,10 +12,13 @@ export const EnquiryForm = (): FunctionComponent => {
 		name: "",
 		email: "",
 		phone: "",
-		state: ""
+		state: "",
 	});
 	const [isSubmitting, setIsSubmitting] = useState(false);
-	const [submitStatus, setSubmitStatus] = useState<{ type: "success" | "error" | null; message: string }>({
+	const [submitStatus, setSubmitStatus] = useState<{
+		type: "success" | "error" | null;
+		message: string;
+	}>({
 		type: null,
 		message: "",
 	});
@@ -85,18 +88,26 @@ export const EnquiryForm = (): FunctionComponent => {
 
 						{[1, 2, 3].map((step) => (
 							<div key={step} className="flex flex-col items-center gap-3">
-								<div className={`w-10 h-10 rounded-full flex items-center justify-center font-bold transition-all duration-500 ${currentStep >= step
-									? "bg-primary text-white scale-110 shadow-lg shadow-primary/30"
-									: "bg-slate-200 dark:bg-slate-800 text-slate-500 dark:text-slate-400"
-									}`}>
+								<div
+									className={`w-10 h-10 rounded-full flex items-center justify-center font-bold transition-all duration-500 ${currentStep >= step
+											? "bg-primary text-white scale-110 shadow-lg shadow-primary/30"
+											: "bg-slate-200 dark:bg-slate-800 text-slate-500 dark:text-slate-400"
+										}`}
+								>
 									{currentStep > step ? (
-										<span className="material-symbols-outlined text-xl">check</span>
+										<span className="material-symbols-outlined text-xl">
+											check
+										</span>
 									) : (
 										step
 									)}
 								</div>
-								<p className={`text-xs font-bold uppercase tracking-widest transition-colors duration-500 ${currentStep >= step ? "text-primary" : "text-slate-400 dark:text-slate-600"
-									}`}>
+								<p
+									className={`text-xs font-bold uppercase tracking-widest transition-colors duration-500 ${currentStep >= step
+											? "text-primary"
+											: "text-slate-400 dark:text-slate-600"
+										}`}
+								>
 									{enquiryForm.steps[step - 1]}
 								</p>
 							</div>
@@ -106,10 +117,17 @@ export const EnquiryForm = (): FunctionComponent => {
 					{/* Form Steps */}
 					<div className="relative overflow-hidden min-h-[300px]">
 						{currentStep === 1 && (
-							<form key="step1" onSubmit={handleNext} className="flex flex-col gap-6 animate-fade-in-right">
+							<form
+								key="step1"
+								onSubmit={handleNext}
+								className="flex flex-col gap-6 animate-fade-in-right"
+							>
 								<div className="grid grid-cols-1 md:grid-cols-2 gap-6">
 									<div className="space-y-2">
-										<label className="block text-sm font-bold text-text-light dark:text-text-dark ml-1" htmlFor="name">
+										<label
+											className="block text-sm font-bold text-text-light dark:text-text-dark ml-1"
+											htmlFor="name"
+										>
 											{enquiryForm.fields.name}
 										</label>
 										<input
@@ -119,11 +137,16 @@ export const EnquiryForm = (): FunctionComponent => {
 											placeholder="Ashutosh Kumar"
 											type="text"
 											value={formData.name}
-											onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+											onChange={(e) =>
+												setFormData({ ...formData, name: e.target.value })
+											}
 										/>
 									</div>
 									<div className="space-y-2">
-										<label className="block text-sm font-bold text-text-light dark:text-text-dark ml-1" htmlFor="email">
+										<label
+											className="block text-sm font-bold text-text-light dark:text-text-dark ml-1"
+											htmlFor="email"
+										>
 											{enquiryForm.fields.email}
 										</label>
 										<input
@@ -133,7 +156,9 @@ export const EnquiryForm = (): FunctionComponent => {
 											placeholder="ashutoshkumar@gmail.com"
 											type="email"
 											value={formData.email}
-											onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+											onChange={(e) =>
+												setFormData({ ...formData, email: e.target.value })
+											}
 										/>
 									</div>
 								</div>
@@ -142,18 +167,24 @@ export const EnquiryForm = (): FunctionComponent => {
 									type="submit"
 								>
 									<span className="relative z-10">{enquiryForm.button}</span>
-									<span className="material-symbols-outlined relative z-10 group-hover:translate-x-1 transition-transform">arrow_forward</span>
+									<span className="material-symbols-outlined relative z-10 group-hover:translate-x-1 transition-transform">
+										arrow_forward
+									</span>
 								</button>
 							</form>
 						)}
 
 						{currentStep === 2 && (
-							<form key="step2" onSubmit={handleSubmit} className="flex flex-col gap-6 animate-fade-in-right">
+							<form
+								key="step2"
+								onSubmit={handleSubmit}
+								className="flex flex-col gap-6 animate-fade-in-right"
+							>
 								{submitStatus.type && (
 									<div
 										className={`p-4 rounded-2xl ${submitStatus.type === "success"
-											? "bg-green-50 dark:bg-green-900/20 text-green-700 dark:text-green-400 border border-green-200 dark:border-green-800"
-											: "bg-red-50 dark:bg-red-900/20 text-red-700 dark:text-red-400 border border-red-200 dark:border-red-800"
+												? "bg-green-50 dark:bg-green-900/20 text-green-700 dark:text-green-400 border border-green-200 dark:border-green-800"
+												: "bg-red-50 dark:bg-red-900/20 text-red-700 dark:text-red-400 border border-red-200 dark:border-red-800"
 											}`}
 									>
 										<p className="font-semibold">{submitStatus.message}</p>
@@ -161,7 +192,10 @@ export const EnquiryForm = (): FunctionComponent => {
 								)}
 								<div className="grid grid-cols-1 md:grid-cols-2 gap-6">
 									<div className="space-y-2">
-										<label className="block text-sm font-bold text-text-light dark:text-text-dark ml-1" htmlFor="phone">
+										<label
+											className="block text-sm font-bold text-text-light dark:text-text-dark ml-1"
+											htmlFor="phone"
+										>
 											{enquiryForm.fields.phone}
 										</label>
 										<input
@@ -171,11 +205,16 @@ export const EnquiryForm = (): FunctionComponent => {
 											placeholder="+91 99999 99999"
 											type="tel"
 											value={formData.phone}
-											onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+											onChange={(e) =>
+												setFormData({ ...formData, phone: e.target.value })
+											}
 										/>
 									</div>
 									<div className="space-y-2">
-										<label className="block text-sm font-bold text-text-light dark:text-text-dark ml-1" htmlFor="state">
+										<label
+											className="block text-sm font-bold text-text-light dark:text-text-dark ml-1"
+											htmlFor="state"
+										>
 											State (India)
 										</label>
 										<select
@@ -183,7 +222,9 @@ export const EnquiryForm = (): FunctionComponent => {
 											className="w-full p-4 border border-slate-200 dark:border-slate-700 rounded-2xl bg-slate-50 dark:bg-slate-800/50 text-text-light dark:text-text-dark focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all outline-none appearance-none"
 											id="state"
 											value={formData.state}
-											onChange={(e) => setFormData({ ...formData, state: e.target.value })}
+											onChange={(e) =>
+												setFormData({ ...formData, state: e.target.value })
+											}
 										>
 											<option value="">Select State</option>
 											<option value="AP">Andhra Pradesh</option>
@@ -231,7 +272,9 @@ export const EnquiryForm = (): FunctionComponent => {
 										className="flex-1 h-14 px-8 rounded-2xl border-2 border-slate-200 dark:border-slate-700 text-slate-600 dark:text-white text-lg font-bold hover:bg-slate-50 dark:hover:bg-slate-800 transition-all flex items-center justify-center gap-2"
 										type="button"
 									>
-										<span className="material-symbols-outlined">arrow_back</span>
+										<span className="material-symbols-outlined">
+											arrow_back
+										</span>
 										Back
 									</button>
 									<button
@@ -253,18 +296,22 @@ export const EnquiryForm = (): FunctionComponent => {
 						)}
 
 						{currentStep === 3 && (
-							<div key="step3" className="flex flex-col items-center text-center py-8 animate-fade-in-up">
+							<div
+								key="step3"
+								className="flex flex-col items-center text-center py-8 animate-fade-in-up"
+							>
 								<div className="size-40 flex items-center justify-center mb-6">
 									<DotLottiePlayer
 										src="/images/success.lottie"
 										autoplay
-										loop={false}
+										loop={true}
 										style={{ width: "100%", height: "100%" }}
 									/>
 								</div>
 								<h3 className="text-3xl font-black mb-4">You're All Set!</h3>
 								<p className="text-slate-600 dark:text-slate-400 text-lg max-w-sm">
-									Thanks {formData.name.split(' ')[0]}! Our lead counselor will reach out to you within the next 24 hours.
+									Thanks {formData.name.split(" ")[0]}! Our lead counselor will
+									reach out to you within the next 24 hours.
 								</p>
 								<button
 									onClick={() => setCurrentStep(1)}

@@ -6,7 +6,11 @@ import { useMouseTilt } from "../../hooks/useMouseTilt";
 export const AboutHero = (): FunctionComponent => {
 	const { hero } = aboutData;
 	const { ref: revealRef, isVisible } = useScrollReveal<HTMLElement>();
-	const tiltRef = useMouseTilt<HTMLDivElement>({ max: 5, perspective: 1000, scale: 1.01 });
+	const tiltRef = useMouseTilt<HTMLDivElement>({
+		max: 5,
+		perspective: 1000,
+		scale: 1.01,
+	});
 
 	return (
 		<section ref={revealRef} className="relative w-full overflow-hidden">
@@ -17,8 +21,11 @@ export const AboutHero = (): FunctionComponent => {
 				<div className="max-w-[1200px] mx-auto relative z-10 text-center">
 					<div
 						ref={tiltRef}
-						className={`relative overflow-hidden rounded-[2rem] bg-slate-900 shadow-2xl transition-all duration-1000 transform ${isVisible ? "opacity-100 translate-y-0 scale-100" : "opacity-0 translate-y-10 scale-95"
-							}`}
+						className={`relative overflow-hidden rounded-[2rem] bg-slate-900 shadow-2xl transition-all duration-1000 transform ${
+							isVisible
+								? "opacity-100 translate-y-0 scale-100"
+								: "opacity-0 translate-y-10 scale-95"
+						}`}
 					>
 						<div className="absolute inset-0 opacity-60">
 							<div

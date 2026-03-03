@@ -36,7 +36,9 @@ const ServicesCTA: React.FC = () => {
 								className="flex items-center justify-center gap-3 bg-primary hover:bg-[#D41C25] text-white px-10 py-5 rounded-2xl font-black text-lg transition-all shadow-2xl shadow-primary/30 active:scale-95"
 							>
 								<span>{cta.primaryButton}</span>
-								<span className="material-symbols-outlined font-black text-xl">arrow_forward</span>
+								<span className="material-symbols-outlined font-black text-xl">
+									arrow_forward
+								</span>
 							</Link>
 							<Link
 								to="/contact"

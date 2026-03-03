@@ -45,10 +45,7 @@ const ServicesList: React.FC<ServicesListProps> = ({ sections }) => {
 	}
 
 	return (
-		<div
-			ref={ref}
-			className="flex-1 flex flex-col gap-20"
-		>
+		<div ref={ref} className="flex-1 flex flex-col gap-20">
 			{sections.map((section, sIdx) => (
 				<section
 					key={section.id}
@@ -56,8 +53,12 @@ const ServicesList: React.FC<ServicesListProps> = ({ sections }) => {
 					style={{ transitionDelay: `${sIdx * 0.1}s` }}
 				>
 					<div className="flex items-center gap-4 mb-10">
-						<div className={`size-12 rounded-xl flex items-center justify-center shadow-inner ${section.colorClass}`}>
-							<span className="material-symbols-outlined text-3xl font-black">{section.icon}</span>
+						<div
+							className={`size-12 rounded-xl flex items-center justify-center shadow-inner ${section.colorClass}`}
+						>
+							<span className="material-symbols-outlined text-3xl font-black">
+								{section.icon}
+							</span>
 						</div>
 						<h2 className="text-3xl font-black tracking-tight text-slate-900 dark:text-white">
 							{section.title}
