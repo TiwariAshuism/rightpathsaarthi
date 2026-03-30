@@ -67,7 +67,7 @@ export const Footer = (): FunctionComponent => {
 						<h4 className="font-bold text-lg">{footer.contactDetails.title}</h4>
 						<div className="flex flex-col gap-3">
 							{footer.contactDetails.items.map((item, index) => (
-								<div key={index} className="flex items-start gap-3">
+								<div key={index} className="flex items-start gap-3" style={{ whiteSpace: "pre-line" }}>
 									<span className="material-symbols-outlined text-primary text-xl mt-0.5">
 										{item.icon}
 									</span>

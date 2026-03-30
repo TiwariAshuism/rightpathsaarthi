@@ -17,17 +17,40 @@
             "icon": "memory"
         },
         {
-            "id": "medical",
-            "label": "Medical & Health",
-            "icon": "cardiology"
-        },
-        {
             "id": "business",
             "label": "Business & Mgmt",
             "icon": "business_center"
+        },
+        {
+            "id": "medical",
+            "label": "Medical & Health",
+            "icon": "cardiology"
         }
     ],
     "sections": [
+        {
+            "id": "engineering",
+            "title": "Engineering & Tech",
+            "icon": "memory",
+            "colorClass": "bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400",
+            "items": [
+                {
+                    "title": "Computer Science - AI , DS , CS",
+                    "description": "Navigating admissions for Artificial intelligence, Cs, and Data Science programs in.",
+                    "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuAFtNjAGNmFrR58FbaPRDQhPouYBav_TXJhAhARtY7Iph19HFh57R-9lDoZIii84Wjore9XYcVKB_sJBAPygJcRA5-dLUAFwogAugWo3EfvITNTVr3Xe7QwqMu5peDQ4N6B4-MxDdZGY4B_wJxgHrWTmMBYFlOnDDMLCswei10wjJIbjunSSaghx50vh9TMcb4YwjHJL3y0aK5qH1eKrW_XKgOgt6amCdxYzPRdyLmz_UsB1LSqefZyx-uw7zJJXJm5_CHjEBVYViM"
+                },
+                {
+                    "title": "Information Technology(IT)",
+                    "description": "Join top IT courses and build your future in tech.",
+                    "image": "/images/ITIcon.png"
+                },
+                {
+                    "title": "Mechanical Engineering",
+                    "description": "Guidance for aspiring mechanical engineers, from core concepts to top university selection.",
+                    "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuAwbh_n_MWW373JZ1CbOdOUCxD5y8tyfqQv9Wbj3wCzNpZa2fUPExzAirYHcqnNPDPpbUwFTn16Bl38umgDxx2tl0ydjt1Hb2kGR4qEyUCrn7HHmZOJovc4XeA5bed7H6kQYcIZu5QfO9r7ul_FGfX365AIhUAxA5fFGixTZe8-UJ7A_1Hss4gvVoxpCK6eVICY7Jw7IzXn9o4V_qh4Ljgjr4rUB84h11QJfll9B5ceGHRR-eLJeQ5Xcqoj-eJ8u_Zf8F2HwR-wJXw"
+                }
+            ]
+        },
         {
             "id": "business",
             "title": "Business & Management",
@@ -48,24 +71,6 @@
                     "title": "BCA",
                     "description": "Build a creative portfolio and gain admission to leading marketing degrees.",
                     "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuAN2YV9kntrnUhwGMc7ExG6ntlbZdvlAc8yF9ZVj44oP4YteYdTlTiTkeDIoEvlz7xK4bQ07bh1KsRmLpucUHucAVw4XhIzYdGbzRHG16il6_aERcjsIfePmdQ7iFk5HADjEG9h--lIbEMaJBMFARxzpZ9tz4ZWr4gSUZMfL0sH9dvR30xa-1XvZHcWV9CcCDbVOVegagDali1uHr-G5JLCwF5CttynuTbvjBpkpRyh_51-rcFxMzJqtLl660QbYhYXvjU2JrfwWpw"
-                }
-            ]
-        },
-        {
-            "id": "engineering",
-            "title": "Engineering & Tech",
-            "icon": "memory",
-            "colorClass": "bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400",
-            "items": [
-                {
-                    "title": "Computer Science - AI , DS , CS",
-                    "description": "Navigating admissions for Artificial intelligence, Cs, and Data Science programs in.",
-                    "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuAFtNjAGNmFrR58FbaPRDQhPouYBav_TXJhAhARtY7Iph19HFh57R-9lDoZIii84Wjore9XYcVKB_sJBAPygJcRA5-dLUAFwogAugWo3EfvITNTVr3Xe7QwqMu5peDQ4N6B4-MxDdZGY4B_wJxgHrWTmMBYFlOnDDMLCswei10wjJIbjunSSaghx50vh9TMcb4YwjHJL3y0aK5qH1eKrW_XKgOgt6amCdxYzPRdyLmz_UsB1LSqefZyx-uw7zJJXJm5_CHjEBVYViM"
-                },
-                {
-                    "title": "Mechanical Engineering",
-                    "description": "Guidance for aspiring mechanical engineers, from core concepts to top university selection.",
-                    "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuAwbh_n_MWW373JZ1CbOdOUCxD5y8tyfqQv9Wbj3wCzNpZa2fUPExzAirYHcqnNPDPpbUwFTn16Bl38umgDxx2tl0ydjt1Hb2kGR4qEyUCrn7HHmZOJovc4XeA5bed7H6kQYcIZu5QfO9r7ul_FGfX365AIhUAxA5fFGixTZe8-UJ7A_1Hss4gvVoxpCK6eVICY7Jw7IzXn9o4V_qh4Ljgjr4rUB84h11QJfll9B5ceGHRR-eLJeQ5Xcqoj-eJ8u_Zf8F2HwR-wJXw"
                 }
             ]
         }
