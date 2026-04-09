@@ -17,17 +17,60 @@
             "icon": "memory"
         },
         {
-            "id": "medical",
-            "label": "Medical & Health",
-            "icon": "cardiology"
-        },
-        {
             "id": "business",
             "label": "Business & Mgmt",
             "icon": "business_center"
+        },
+        {
+            "id": "medical",
+            "label": "Medical & Health",
+            "icon": "cardiology"
         }
     ],
     "sections": [
+        {
+            "id": "engineering",
+            "title": "Engineering & Tech",
+            "icon": "memory",
+            "colorClass": "bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400",
+            "items": [
+                {
+                    "title": "Computer Science - AI , DS , CS",
+                    "description": "Navigating admissions for Artificial intelligence, Cs, and Data Science programs in.",
+                    "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuAFtNjAGNmFrR58FbaPRDQhPouYBav_TXJhAhARtY7Iph19HFh57R-9lDoZIii84Wjore9XYcVKB_sJBAPygJcRA5-dLUAFwogAugWo3EfvITNTVr3Xe7QwqMu5peDQ4N6B4-MxDdZGY4B_wJxgHrWTmMBYFlOnDDMLCswei10wjJIbjunSSaghx50vh9TMcb4YwjHJL3y0aK5qH1eKrW_XKgOgt6amCdxYzPRdyLmz_UsB1LSqefZyx-uw7zJJXJm5_CHjEBVYViM"
+                },
+                {
+                    "title": "Information Technology(IT)",
+                    "description": "Join top IT courses and build your future in tech.",
+                    "image": "/images/ITIcon.png"
+                },
+                {
+                    "title": "Electronics and Communication Engineering(ECE)",
+                    "description": "Build tomorrow’s tech with leading ECE programs in top colleges",
+                    "image": "/images/ECE.png"
+                },
+                {
+                    "title": "Electrical Engineering(EE)",
+                    "description": "Start your journey in Electrical Engineering",
+                    "image": "/images/EE.png"
+                },
+                {
+                    "title": "Mechanical Engineering",
+                    "description": "Guidance for aspiring mechanical engineers, from core concepts to top university selection.",
+                    "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuAwbh_n_MWW373JZ1CbOdOUCxD5y8tyfqQv9Wbj3wCzNpZa2fUPExzAirYHcqnNPDPpbUwFTn16Bl38umgDxx2tl0ydjt1Hb2kGR4qEyUCrn7HHmZOJovc4XeA5bed7H6kQYcIZu5QfO9r7ul_FGfX365AIhUAxA5fFGixTZe8-UJ7A_1Hss4gvVoxpCK6eVICY7Jw7IzXn9o4V_qh4Ljgjr4rUB84h11QJfll9B5ceGHRR-eLJeQ5Xcqoj-eJ8u_Zf8F2HwR-wJXw"
+                },
+                {
+                    "title": "Civil Engineering",
+                    "description": "Shape your career with leading Civil Engineering Colleges",
+                    "image": "/images/civil_eng.png"
+                },
+                {
+                    "title": "Chemical Engineering",
+                    "description": "Fuel your future with top Chemical Engineering Colleges",
+                    "image": "/images/chem_eng.png"
+                }
+            ]
+        },
         {
             "id": "business",
             "title": "Business & Management",
@@ -52,20 +95,30 @@
             ]
         },
         {
-            "id": "engineering",
-            "title": "Engineering & Tech",
-            "icon": "memory",
-            "colorClass": "bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400",
+            "id": "medical",
+            "title": "Medical & Health",
+            "icon": "cardiology",
+            "colorClass": "bg-red-100 dark:bg-red-900/30 text-primary",
             "items": [
                 {
-                    "title": "Computer Science - AI , DS , CS",
-                    "description": "Navigating admissions for Artificial intelligence, Cs, and Data Science programs in.",
-                    "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuAFtNjAGNmFrR58FbaPRDQhPouYBav_TXJhAhARtY7Iph19HFh57R-9lDoZIii84Wjore9XYcVKB_sJBAPygJcRA5-dLUAFwogAugWo3EfvITNTVr3Xe7QwqMu5peDQ4N6B4-MxDdZGY4B_wJxgHrWTmMBYFlOnDDMLCswei10wjJIbjunSSaghx50vh9TMcb4YwjHJL3y0aK5qH1eKrW_XKgOgt6amCdxYzPRdyLmz_UsB1LSqefZyx-uw7zJJXJm5_CHjEBVYViM"
+                    "title": "MBBS",
+                    "description": "Start your journey in medicine—join top MBBS courses",
+                    "image": "images/mbbs_icon.png"
                 },
                 {
-                    "title": "Mechanical Engineering",
-                    "description": "Guidance for aspiring mechanical engineers, from core concepts to top university selection.",
-                    "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuAwbh_n_MWW373JZ1CbOdOUCxD5y8tyfqQv9Wbj3wCzNpZa2fUPExzAirYHcqnNPDPpbUwFTn16Bl38umgDxx2tl0ydjt1Hb2kGR4qEyUCrn7HHmZOJovc4XeA5bed7H6kQYcIZu5QfO9r7ul_FGfX365AIhUAxA5fFGixTZe8-UJ7A_1Hss4gvVoxpCK6eVICY7Jw7IzXn9o4V_qh4Ljgjr4rUB84h11QJfll9B5ceGHRR-eLJeQ5Xcqoj-eJ8u_Zf8F2HwR-wJXw"
+                    "title": "Dental",
+                    "description": "Build confident smiles—join leading Dental courses",
+                    "image": "images/dentist_icon.png"
+                },
+                {
+                    "title": "Nursing",
+                    "description": "Care, heal, and make a difference—join top Nursing courses",
+                    "image": "images/nursing_icon.png"
+                },
+                {
+                    "title": "Pharmacy",
+                    "description": "Shape the future of healthcare—join top Pharmacy courses",
+                    "image": "images/pharmacy_icon.png"
                 }
             ]
         }
@@ -74,8 +127,8 @@
         "title": "Student Success Stories",
         "items": [
             {
-                "quote": "RightPath Saarthi's MBA consultation was pivotal. My counselor helped me refine my story for HBS.",
-                "name": "Sarah Jenkins",
+                "quote": "After completing my graduation, I was honestly very confused about whether MBA was the right choice for me. There were so many specializations and colleges, and I did not want to make the wrong decision. That’s when I reached out for counseling. They didn’t just suggest ‘do an MBA’—they actually helped me understand which specialization suits my strengths and long-term goals. The way they explained everything—colleges, placements, future scope—made things much clearer. With their guidance, I chose the right college and specialization. Looking back, taking guidance at the right time made all the difference.",
+                "name": "Shruti Kumari",
                 "role": "MBA Candidate",
                 "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuDR_nS8r7-nvqZBRyAxDlI95Aepe3BYOHJAEBsDhlACpw_SEuq4qoC_YwVwG9VzTzFpjh3F6mgxMWTkXxK310yyArfCn-01sEo4EYbIk--2rRuovCioHgmLztmmEyI875BBBJYqjM9s3RqdCMHirCF3WHazXYHMNlFiTPPZ_5j1Wm4PhTEC4DD0rjIN6vxT5LXtgrEmDWDOkdZ_Dr2XK_OgbyG-Y3jWPYIRcbnolumrYaYt7Ck4-LK23DnorWT_bhpA1cvK8hBGNV4"
             }

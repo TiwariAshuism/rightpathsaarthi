@@ -80,6 +80,7 @@ export const Testimonials = (): FunctionComponent => {
 					style={{
 						paddingLeft: "2px",
 						scrollPaddingLeft: "2px",
+						whiteSpace: "pre-line",
 					}}
 				>
 					{testimonials.items.map((testimonial, index) => (

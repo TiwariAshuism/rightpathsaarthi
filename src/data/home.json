@@ -88,22 +88,27 @@
         "title": "Success Stories",
         "items": [
             {
-                "name": "Priya Sharma",
-                "subtitle": "Accepted to IIT Delhi",
-                "quote": "RightPath Saarthi helped me get into my dream university! The essay editing service was a game changer for my application.",
-                "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuB0u_cZC0Cw055TnkoAi9fXl4FnI30zjvSM8azmJ0ZL7JqKTfNixgFppcs-xwnfvWxU4ER30zSj2q12NnfGnTtEYZQf499KH6sJBHhmuiRVcr6CwzOfiYEm39CDklERI8QoegqLYO_jjFC_XZ0AA-cx9KWN32m2GXNiegG4N8VCrFtwn-zvWDiCfxMhUbX68zNi_8FKFoMXYIZOgWtcwfTsdAWIBd-JJDYNaeRP2cU4eNcUcIqunjv1WRc3MTWLXlexZzvnguRq4SQ"
+                "name": "Amit Das",
+                "subtitle": "Haldia, West Bengal\nB.Tech CSE, 2023-27",
+                "quote": "Their step-by-step guidance helped me choose the right college and career path. Truly thankful to them for their support and help.",
+                "image": "/images/AmitDas.png"
+            },{
+                "name": "Ritwik Paladhi",
+                "subtitle": "IEM, Kolkata\nB.Tech CSE-AI & Robotics, 2025-29",
+                "quote": "I was honestly very confused about which branch to take. They explained AI & Robotics in a simple way, and it just clicked for me. Glad I chose CSE.",
+                "image": "/images/ritwik_paladhi.png"
             },
             {
-                "name": "Rahul Kumar",
-                "subtitle": "JEE Score: 98.5%",
-                "quote": "The exam prep tutors were incredibly knowledgeable. They helped me improve my score by over 20 points in just two months.",
+                "name": "Nitish Kumar Ray",
+                "subtitle": "Haldia, West Bengal\nB.Tech ECE, 2023-27",
+                "quote": "I was completely lost after 12th like most students. Didn’t know which branch was right for me. Their guidance made it much clearer and easier to decide.",
+                "image": "/images/nitish.jpeg"
+            },
+            {
+                "name": "Ayush Kumar Yadav",
+                "subtitle": "NIT, Kolkata\nB.Tech ME, 2025-29",
+                "quote": "I wasn’t sure if Mechanical was a good option for me, but their explanation and support really helped me take the right call.",
                 "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuBzrr7f_-mfanYF9KMWmt21a0Zbay4uaa_iGpii_TWy4yyBgo4Voaha__XOi819hGIRPJXJxY0PoUi2WzTGKlzu9NZcFhEbJwdpfJZ_mYEePdQb0QQZRKilPv1sUxvvO0doh9_S_WdeeB1LFMX1csDsE-xpg1Fr6pavAmXJY_NfV6VqJc4JBJS1JTqikdjpMHmDaBMNqkjtVapDZEUV_IBekZ4IMIBTmEMferGF3xRF3Qqvx1IVBg9V9TxlaaYM7dcPtkKRaM_SCQ4"
-            },
-            {
-                "name": "Ananya Patel",
-                "subtitle": "Career Transition",
-                "quote": "I finally found a career path that fits my skills. The aptitude assessment was spot on and very detailed.",
-                "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuD_qq2wSZxKFAH1TlmmahbVmG7Ix0ehnEKdl4A2ccQn6ML5g7lAZVCyZ9qwXe7v2KUTkMeCKAwSxeHW8Un_--O8SeCU3F0XRPYuknXcdRsvq7bahVuqRpadEGEExmUJoJ5bolsjmq6Biov2ED8jMTAYoHWLt2ILfD7ci9_dq9U3z8R4OJuif5EJcCEqCwBUgsHLBp9I4uqH2Qz6t1r49JBkSzn9popom-MUdG-pXJNGSBVy4c06w01UQ2UT0EtB-t8vFvCH2m_uLYo"
             }
         ]
     },
@@ -123,7 +128,7 @@
                 "name": "Aditya Prakash",
                 "role": "Co-Founder & CTO, RightPath Saarthi",
                 "quote": "True mentorship goes beyond simple advice. It's about empowering students to discover their authentic selves and pursue paths that truly resonate with their ambitions.",
-                "subQuote": "At RightPath Saarthi, we don't just prepare you for exams; we prepare you for life's challenges. Our holistic approach ensures you are ready for whatever the future holds.",
+                "subQuote": "Every year, I see thousands of students standing at the same crossroad after 10+2—unsure, pressured, and often influenced by trends rather than the right information.\nWhat stood out to me was not just the confusion, but the lack of structured support available to them. Students and parents are expected to make life-changing decisions without having access to clear, practical, and unbiased guidance.\nThat’s exactly what we set out to change.\nAt RightPath Saarthi, my focus has always been on making the entire process—from career selection to college admission—simple, transparent, and well-informed. We work closely with students to break down their options, align them with real opportunities, and guide them step by step.\nSeeing students move from uncertainty to clarity, and then to confidence, is what drives me every day.\nWe are not just guiding careers—we are helping families make informed decisions for a better future.",
                 "image": "/images/founder2.jpg"
             }
         ]
