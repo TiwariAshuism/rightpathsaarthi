@@ -27,7 +27,7 @@
     },
     "helplineBanner": {
         "text": "Admission Helpline:",
-        "phoneNumber": "+91 97318 02220",
+        "phoneNumber": "+91 9731802220",
         "availability": "(Mon-Sat, 9am-6pm IST)",
         "buttonText": "Call Now"
     },
@@ -98,7 +98,7 @@
                 {
                     "icon": "call",
                     "label": "Phone",
-                    "value": "+91 97318 02220\n +91 9731804312"
+                    "value": "+91 9731802220\n +91 9731804312"
                 },
                 {
                     "icon": "mail",

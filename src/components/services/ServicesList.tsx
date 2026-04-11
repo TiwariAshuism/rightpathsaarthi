@@ -1,6 +1,7 @@
 import React from "react";
 import { useScrollReveal } from "../../hooks/useScrollReveal";
 import { DotLottiePlayer } from "@dotlottie/react-player";
+import { Link } from "@tanstack/react-router";
 
 interface ServiceItem {
 	title: string;
@@ -84,15 +85,14 @@ const ServicesList: React.FC<ServicesListProps> = ({ sections }) => {
 									<p className="text-base text-slate-600 dark:text-slate-400 font-medium leading-relaxed line-clamp-3">
 										{item.description}
 									</p>
-									<a
+									<Link to="/contact"
 										className="text-primary font-black text-base flex items-center gap-2 group/btn transition-all mt-4"
-										href="#"
 									>
 										<span>View Details</span>
 										<span className="material-symbols-outlined text-xl transition-transform group-hover/btn:translate-x-2">
 											arrow_forward
 										</span>
-									</a>
+									</Link>
 								</div>
 							</div>
 						))}
