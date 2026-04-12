@@ -1,5 +1,6 @@
 import type { FunctionComponent } from "../../common/types";
 import aboutData from "../../data/about.json";
+import { Link } from "@tanstack/react-router";
 
 export const AboutCTA = (): FunctionComponent => {
 	const { cta } = aboutData;
@@ -15,9 +16,9 @@ export const AboutCTA = (): FunctionComponent => {
 						{cta.title}
 					</h2>
 					<p className="text-blue-100 text-lg max-w-2xl">{cta.description}</p>
-					<button className="mt-4 flex items-center justify-center h-12 px-8 rounded-lg bg-white text-primary font-bold text-base hover:bg-slate-50 transition-colors shadow-lg">
+					<Link to="/contact" className="mt-4 flex items-center justify-center h-12 px-8 rounded-lg bg-white text-primary font-bold text-base hover:bg-slate-50 transition-colors shadow-lg">
 						{cta.buttonText}
-					</button>
+					</Link>
 				</div>
 			</div>
 		</section>

@@ -63,9 +63,9 @@ export const Header = (): FunctionComponent => {
 							</Link>
 						))}
 					</nav>
-					<button className="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-6 bg-primary hover:bg-[#D41C25] text-white text-sm font-bold transition-colors">
+					<Link to="/contact" className="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-6 bg-primary hover:bg-[#D41C25] text-white text-sm font-bold transition-colors">
 						<span className="truncate">{header.ctaButton}</span>
-					</button>
+					</Link>
 				</div>
 				<button
 					className="lg:hidden text-[#111418] dark:text-white p-2"
