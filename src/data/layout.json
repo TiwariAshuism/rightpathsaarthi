@@ -27,13 +27,13 @@
     },
     "helplineBanner": {
         "text": "Admission Helpline:",
-        "phoneNumber": "+91 9731802220",
-        "availability": "(Mon-Sat, 9am-6pm IST)",
+        "phoneNumber": "+91 97318 02220",
+        "availability": "(Mon-Sat, 9am-6pm)",
         "buttonText": "Call Now"
     },
     "whatsappFAB": {
         "phoneNumber": "9731802220",
-        "message": "Hello! I'm interested in learning more about RightPath Saarthi's admission counseling services. Could you please help me?"
+        "message": "Hello! I'm interested in learning more about RightPath Saarthi's admission counseling process. Could you please help me?"
     },
     "footer": {
         "logoText": "RightPath Saarthi",
@@ -98,7 +98,7 @@
                 {
                     "icon": "call",
                     "label": "Phone",
-                    "value": "+91 9731802220\n +91 9731804312"
+                    "value": "+91 97318 02220\n +91 97318 04312"
                 },
                 {
                     "icon": "mail",
