@@ -2,6 +2,8 @@ import React from "react";
 import { useScrollReveal } from "../../hooks/useScrollReveal";
 import { DotLottiePlayer } from "@dotlottie/react-player";
 import { Link } from "@tanstack/react-router";
+import type { Exam } from "../../data/exams";
+import ExamGrid from "./ExamGrid";
 
 interface ServiceItem {
 	title: string;
@@ -15,6 +17,7 @@ interface ServiceSection {
 	icon: string;
 	colorClass: string;
 	items: ServiceItem[];
+	exams: Array<Exam>;
 }
 
 interface ServicesListProps {
@@ -65,37 +68,50 @@ const ServicesList: React.FC<ServicesListProps> = ({ sections }) => {
 							{section.title}
 						</h2>
 					</div>
-					<div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
-						{section.items.map((item, index) => (
-							<div
-								key={index}
-								className="group bg-white dark:bg-slate-900/50 rounded-[2.5rem] border border-slate-100 dark:border-slate-800 hover:border-primary/50 overflow-hidden transition-all duration-500 hover:shadow-2xl hover:shadow-primary/10 hover:-translate-y-2"
-							>
-								<div
-									className="aspect-[16/10] w-full bg-cover bg-center relative transition-transform duration-700 group-hover:scale-110"
-									style={{ backgroundImage: `url("${item.image}")` }}
-								>
-									<div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent flex items-end p-8">
-										<h3 className="text-white font-black text-xl leading-tight">
-											{item.title}
-										</h3>
-									</div>
-								</div>
-								<div className="p-8 flex flex-col gap-4">
-									<p className="text-base text-slate-600 dark:text-slate-400 font-medium leading-relaxed line-clamp-3">
-										{item.description}
-									</p>
-									<Link to="/contact"
-										className="text-primary font-black text-base flex items-center gap-2 group/btn transition-all mt-4"
-									>
-										<span>View Details</span>
-										<span className="material-symbols-outlined text-xl transition-transform group-hover/btn:translate-x-2">
-											arrow_forward
-										</span>
-									</Link>
+					<div className="flex flex-col gap-14">
+						<ExamGrid items={section.exams} />
+						{section.items.length > 0 && (
+							<div className="flex flex-col gap-8">
+								{section.exams.length > 0 && (
+									<h3 className="text-2xl font-black tracking-tight text-slate-900 dark:text-white">
+										Courses
+									</h3>
+								)}
+								<div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
+									{section.items.map((item, index) => (
+										<div
+											key={index}
+											className="group bg-white dark:bg-slate-900/50 rounded-[2.5rem] border border-slate-100 dark:border-slate-800 hover:border-primary/50 overflow-hidden transition-all duration-500 hover:shadow-2xl hover:shadow-primary/10 hover:-translate-y-2"
+										>
+											<div
+												className="aspect-[16/10] w-full bg-cover bg-center relative transition-transform duration-700 group-hover:scale-110"
+												style={{ backgroundImage: `url("${item.image}")` }}
+											>
+												<div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent flex items-end p-8">
+													<h3 className="text-white font-black text-xl leading-tight">
+														{item.title}
+													</h3>
+												</div>
+											</div>
+											<div className="p-8 flex flex-col gap-4">
+												<p className="text-base text-slate-600 dark:text-slate-400 font-medium leading-relaxed line-clamp-3">
+													{item.description}
+												</p>
+												<Link
+													to="/contact"
+													className="text-primary font-black text-base flex items-center gap-2 group/btn transition-all mt-4"
+												>
+													<span>View Details</span>
+													<span className="material-symbols-outlined text-xl transition-transform group-hover/btn:translate-x-2">
+														arrow_forward
+													</span>
+												</Link>
+											</div>
+										</div>
+									))}
 								</div>
 							</div>
-						))}
+						)}
 					</div>
 				</section>
 			))}

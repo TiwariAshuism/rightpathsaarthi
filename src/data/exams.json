@@ -1,0 +1,251 @@
+[
+	{
+		"slug": "wbjee",
+		"section": "engineering",
+		"shortName": "WBJEE",
+		"title": "WBJEE 2026",
+		"fullName": "West Bengal Joint Entrance Examination 2026",
+		"body": "West Bengal Joint Entrance Examinations Board (WBJEEB)",
+		"category": "Engineering",
+		"date": "24 May 2026",
+		"mode": "Offline (OMR)",
+		"fee": "₹200 – ₹500",
+		"reachLabel": "Level",
+		"reach": "State level",
+		"aliases": ["wb-jee", "wb jee", "west bengal jee"],
+		"summary": "WBJEEB conducts WBJEE for undergraduate Engineering, Technology, Pharmacy and Architecture seats in West Bengal universities, government colleges and self-financed institutes for the 2026-27 session.",
+		"eligibility": [
+			"Class 12 or equivalent, with Physics and Mathematics plus the other subjects listed in the WBJEE-2026 information bulletin.",
+			"Age, domicile and minimum marks follow the bulletin. Rank alone does not guarantee a seat."
+		],
+		"pattern": [
+			"Pen-and-paper test answered on an OMR sheet.",
+			"Engineering papers cover Physics, Chemistry and Mathematics.",
+			"Negative marking applies as published in the information bulletin."
+		],
+		"schedule": [
+			{
+				"label": "Online registration",
+				"value": "10 March 2026 – 8 April 2026"
+			},
+			{ "label": "Examination", "value": "24 May 2026 (Sunday)" }
+		],
+		"note": "Fee depends on category and gender: General male ₹500, and lower slabs down to ₹200 for some reserved and third-gender categories. The fee is not refundable.",
+		"officialUrl": "https://wbjeeb.nic.in",
+		"officialLabel": "wbjeeb.nic.in"
+	},
+	{
+		"slug": "comedk",
+		"section": "engineering",
+		"shortName": "COMEDK",
+		"title": "COMEDK UGET 2026",
+		"fullName": "Consortium of Medical, Engineering and Dental Colleges of Karnataka — Undergraduate Entrance Test 2026",
+		"body": "COMEDK",
+		"category": "Engineering",
+		"date": "9 May 2026",
+		"mode": "Online (CBT)",
+		"fee": "₹1,950",
+		"reachLabel": "Level",
+		"reach": "All India",
+		"aliases": ["comdek", "comedk uget", "uni-gauge"],
+		"summary": "COMEDK UGET is the computer-based test for B.E. and B.Tech seats in participating Karnataka engineering colleges. Medical and dental seats are filled through NEET, not COMEDK.",
+		"eligibility": [
+			"Indian citizens, and OCI or PIO candidates, as notified by COMEDK.",
+			"Class 12 with Physics, Mathematics and English, plus Chemistry or Biotechnology or Biology or Computer Science or Electronics.",
+			"General merit needs at least 45% aggregate in PCM (40% for Karnataka SC, ST and OBC), with each of those subjects passed. All subjects must be from one board."
+		],
+		"pattern": [
+			"180 multiple-choice questions: Physics 60, Chemistry 60, Mathematics 60.",
+			"One mark for each correct answer. No negative marking.",
+			"English only. The test was held on Saturday, 9 May 2026, in the slot printed on the Test Admission Ticket."
+		],
+		"schedule": [
+			{ "label": "Application opened", "value": "3 February 2026" },
+			{ "label": "Examination", "value": "9 May 2026" }
+		],
+		"note": "Registration fee is ₹1,950 plus payment-gateway charges. It is non-refundable. COMEDK and Uni-GAUGE fees are separate if you apply for both.",
+		"officialUrl": "https://www.comedk.org",
+		"officialLabel": "comedk.org"
+	},
+	{
+		"slug": "srmjeee",
+		"section": "engineering",
+		"shortName": "SRMJEEE",
+		"title": "SRMJEEE 2026",
+		"fullName": "SRM Joint Engineering Entrance Examination 2026",
+		"body": "SRM Institute of Science and Technology",
+		"category": "Engineering",
+		"date": "Apr – Jul 2026",
+		"mode": "Remote proctored online",
+		"fee": "₹1,400 / phase",
+		"reachLabel": "Level",
+		"reach": "SRM campuses",
+		"aliases": ["srmjee", "srm jee", "srmjeee"],
+		"summary": "SRMJEEE is SRM’s entrance exam for B.Tech at SRM IST campuses in Kattankulathur, Ramapuram, Vadapalani, Tiruchirappalli and Delhi-NCR, and at SRM University, Sonepat and SRM University, Andhra Pradesh.",
+		"eligibility": [
+			"Passed, or appearing in, the 10+2 examination.",
+			"SRM asks for a minimum 60% aggregate in Physics and Mathematics plus one of Chemistry, Biotechnology, Biology, Computer Science or the other subjects listed on its admissions page."
+		],
+		"pattern": [
+			"Remote-proctored online test taken from a desktop or laptop.",
+			"Three phases. A separate application and fee are required for each phase you attempt.",
+			"Campus, programme and specialisation are chosen at counselling, not locked in at application."
+		],
+		"schedule": [
+			{
+				"label": "Phase 1",
+				"value": "24–29 April 2026 (apply by 16 April 2026)"
+			},
+			{ "label": "Phase 2", "value": "10–15 June 2026 (apply by 4 June 2026)" },
+			{ "label": "Phase 3", "value": "4–5 July 2026 (apply by 30 June 2026)" }
+		],
+		"note": "SRM marked the phase dates as tentative. The application fee is ₹1,400 per phase and is not refundable.",
+		"officialUrl": "https://www.srmist.edu.in",
+		"officialLabel": "srmist.edu.in"
+	},
+	{
+		"slug": "iemjee",
+		"section": "engineering",
+		"shortName": "IEMJEE",
+		"title": "IEMJEE 2026",
+		"fullName": "IEM Joint Entrance Examination 2026",
+		"body": "IEM Group",
+		"category": "Engineering",
+		"date": "Dec 2025 – May 2026",
+		"mode": "Online & Offline",
+		"fee": "No exam fee",
+		"reachLabel": "Level",
+		"reach": "IEM Group",
+		"aliases": ["iem jee", "iem entrance"],
+		"summary": "IEMJEE is the entrance exam for engineering admission through the IEM Group. You can pick an online slot inside the published window, or sit the offline paper at a listed centre.",
+		"eligibility": [
+			"Eligibility is the criteria published by IEM for the 2026 engineering cycle.",
+			"Confirm the latest subject and marks rules on the IEMJEE page before you apply."
+		],
+		"pattern": [
+			"Online slots: 12:00–2:00 PM and 2:30–4:30 PM, on any date from 8 December 2025 to 30 May 2026.",
+			"Offline paper: 3 April 2026, 11:00 AM–2:00 PM, at the centres listed by IEM.",
+			"IEM states there is no examination fee."
+		],
+		"schedule": [
+			{ "label": "Online window", "value": "8 December 2025 – 30 May 2026" },
+			{
+				"label": "Offline examination",
+				"value": "3 April 2026, 11:00 AM – 2:00 PM"
+			}
+		],
+		"note": "Online venues include IEM Salt Lake and UEM Kolkata. The offline paper is also held at centres outside Kolkata, as listed by IEM.",
+		"officialUrl": "https://iem.edu.in/iemjee-2026/",
+		"officialLabel": "iem.edu.in"
+	},
+	{
+		"slug": "viteee",
+		"section": "engineering",
+		"shortName": "VITEEE",
+		"title": "VITEEE 2026",
+		"fullName": "VIT Engineering Entrance Examination 2026",
+		"body": "Vellore Institute of Technology",
+		"category": "Engineering",
+		"date": "28 Apr – 3 May 2026",
+		"mode": "Online (CBT)",
+		"fee": "₹1,350",
+		"reachLabel": "Level",
+		"reach": "VIT campuses",
+		"aliases": ["vitjee", "vit jee", "vit entrance"],
+		"summary": "VITEEE is the entrance exam for undergraduate engineering programmes in the VIT group of institutions. VIT allows a candidate to appear only once. A second attempt can cancel the application.",
+		"eligibility": [
+			"Eligibility is the B.Tech 2026-27 criteria published by VIT.",
+			"The application fee covers application and the later counselling step, and VIT states it is not refundable."
+		],
+		"pattern": [
+			"125 multiple-choice questions in 2 hours 30 minutes.",
+			"Mathematics or Biology 40, Physics 35, Chemistry 35, Aptitude 10, English 5.",
+			"Four marks for a correct answer and minus one for a wrong answer. Unanswered questions score zero.",
+			"Question paper is in English. Centres are in India and abroad."
+		],
+		"schedule": [
+			{ "label": "Exam window", "value": "28 April – 3 May 2026" },
+			{
+				"label": "Application fee",
+				"value": "₹1,350 in India; about USD 90 for centres abroad"
+			}
+		],
+		"note": "VIT published this exam window as tentative. The number of exam days can differ by test city.",
+		"officialUrl": "https://viteee.vit.ac.in",
+		"officialLabel": "viteee.vit.ac.in"
+	},
+	{
+		"slug": "jee-main",
+		"section": "engineering",
+		"shortName": "JEE Main",
+		"title": "JEE Main 2026",
+		"fullName": "Joint Entrance Examination (Main) 2026",
+		"body": "National Testing Agency (NTA)",
+		"category": "Engineering",
+		"date": "Jan & Apr 2026",
+		"mode": "Online (CBT)",
+		"fee": "₹500 – ₹1,000",
+		"reachLabel": "Level",
+		"reach": "National",
+		"aliases": ["jeemains", "jee mains", "jee main", "nta jee"],
+		"summary": "JEE Main is the national exam for B.E. / B.Tech, and it is also the qualifying exam for JEE Advanced. NTA conducted the 2026-27 cycle in two sessions. You could apply for one session or both, with a separate fee each time.",
+		"eligibility": [
+			"Eligibility, attempt rules and the qualifying criteria are those in the JEE (Main) 2026 information bulletin.",
+			"Paper 1 is for B.E. / B.Tech. Papers 2A and 2B cover B.Arch and B.Planning."
+		],
+		"pattern": [
+			"Paper 1 is a computer-based test in Physics, Chemistry and Mathematics.",
+			"Session 1 was held between 21 and 30 January 2026.",
+			"Session 2 was held from 2 to 9 April 2026.",
+			"NTA uses the better of the two session scores, as set out in the bulletin."
+		],
+		"schedule": [
+			{ "label": "Session 1", "value": "21–30 January 2026" },
+			{ "label": "Session 2", "value": "2–9 April 2026" },
+			{
+				"label": "Paper 1 fee, India",
+				"value": "₹500 – ₹1,000 per session, by category and gender"
+			}
+		],
+		"note": "For Paper 1 at centres in India, the per-session fee is ₹1,000 for a General male candidate, ₹800 for a General female candidate, ₹900 for a Gen-EWS or OBC-NCL male candidate, ₹800 for a Gen-EWS or OBC-NCL female candidate, and ₹500 for SC, ST, PwD and third-gender candidates. Processing charges and GST are extra. Centres outside India have a higher fee.",
+		"officialUrl": "https://jeemain.nta.nic.in",
+		"officialLabel": "jeemain.nta.nic.in"
+	},
+	{
+		"slug": "neet",
+		"section": "medical",
+		"shortName": "NEET UG",
+		"title": "NEET UG 2026",
+		"fullName": "National Eligibility cum Entrance Test (Undergraduate) 2026",
+		"body": "National Testing Agency (NTA)",
+		"category": "Medical",
+		"date": "3 May 2026",
+		"mode": "Offline (pen and paper)",
+		"fee": "₹1,000 – ₹1,700",
+		"reachLabel": "Applicants",
+		"reach": "22.79L registered",
+		"aliases": ["neet ug", "neet 2026", "medical neet", "nta neet"],
+		"summary": "NEET (UG) is the single national entrance exam for MBBS, BDS and the other undergraduate medical courses it covers, including AYUSH and BVSc & AH as notified for 2026. NTA held it on 3 May 2026 from 2:00 PM to 5:00 PM IST.",
+		"eligibility": [
+			"Age, subjects and the minimum qualifying marks are those in the NEET (UG) 2026 information bulletin.",
+			"A NEET score is required for undergraduate medical and dental admission in India."
+		],
+		"pattern": [
+			"Pen-and-paper exam. Duration is 3 hours, from 2:00 PM to 5:00 PM.",
+			"Eligible PwD / PwBD candidates with compensatory time could continue until 6:00 PM.",
+			"Physics, Chemistry and Biology.",
+			"Held in 551 cities in India and 14 cities abroad."
+		],
+		"schedule": [
+			{
+				"label": "Application window",
+				"value": "8 February 2026 – 8 March 2026"
+			},
+			{ "label": "Examination", "value": "3 May 2026, 2:00 PM – 5:00 PM IST" },
+			{ "label": "Registered candidates", "value": "About 22.79 lakh" }
+		],
+		"note": "India-centre fee: General ₹1,700, General-EWS and OBC-NCL ₹1,600, SC / ST / PwBD / third gender ₹1,000. Centres outside India are higher. Processing charges and GST are extra.",
+		"officialUrl": "https://neet.nta.nic.in",
+		"officialLabel": "neet.nta.nic.in"
+	}
+]

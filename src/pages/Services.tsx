@@ -8,6 +8,7 @@ import ServicesList from "../components/services/ServicesList";
 import ServicesTestimonials from "../components/services/ServicesTestimonials";
 import ServicesCTA from "../components/services/ServicesCTA";
 import data from "../data/services.json";
+import { allExams } from "../data/exams";
 
 const Services: React.FC = () => {
 	const [searchQuery, setSearchQuery] = useState("");
@@ -22,27 +23,48 @@ const Services: React.FC = () => {
 
 		// 2. Filter by Search Query
 		if (!searchQuery.trim()) {
-			return sections;
+			return sections.map((section) => ({
+				...section,
+				exams: allExams.filter((exam) => exam.section === section.id),
+			}));
 		}
 
 		const lowerQuery = searchQuery.toLowerCase();
 
 		return sections
 			.map((section) => {
-				// Filter items within the section
+				const sectionExams = allExams.filter(
+					(exam) => exam.section === section.id
+				);
 				const filteredItems = section.items.filter(
 					(item) =>
 						item.title.toLowerCase().includes(lowerQuery) ||
 						item.description.toLowerCase().includes(lowerQuery)
 				);
+				const filteredExams = sectionExams.filter((exam) => {
+					const haystack = [
+						exam.title,
+						exam.shortName,
+						exam.fullName,
+						exam.body,
+						exam.category,
+						exam.mode,
+						...exam.aliases,
+					]
+						.join(" ")
+						.toLowerCase();
+					return haystack.includes(lowerQuery);
+				});
 
-				// Return section with filtered items
 				return {
 					...section,
 					items: filteredItems,
+					exams: filteredExams,
 				};
 			})
-			.filter((section) => section.items.length > 0); // Remove empty sections
+			.filter(
+				(section) => section.items.length > 0 || section.exams.length > 0
+			);
 	}, [searchQuery, activeCategory]);
 
 	return (
