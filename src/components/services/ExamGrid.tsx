@@ -1,6 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import type { FunctionComponent } from "../../common/types";
-import type { Exam } from "../../data/exams";
+import { examNumber, examRank, type Exam } from "../../data/exams";
 
 const banners: Record<string, string> = {
 	wbjee: "from-sky-600 via-sky-800 to-slate-950",
@@ -9,6 +9,7 @@ const banners: Record<string, string> = {
 	iemjee: "from-emerald-600 via-teal-800 to-slate-950",
 	viteee: "from-violet-600 via-purple-900 to-slate-950",
 	"jee-main": "from-blue-700 via-slate-800 to-slate-950",
+	"mht-cet": "from-orange-600 via-amber-800 to-slate-950",
 	neet: "from-emerald-700 via-teal-900 to-slate-950",
 };
 
@@ -20,6 +21,10 @@ const ExamGrid = ({ items }: ExamGridProps): FunctionComponent => {
 	if (items.length === 0) {
 		return null;
 	}
+
+	const ranked = [...items].sort(
+		(left, right) => examRank(left.slug) - examRank(right.slug)
+	);
 
 	return (
 		<div className="flex flex-col gap-6">
@@ -33,11 +38,13 @@ const ExamGrid = ({ items }: ExamGridProps): FunctionComponent => {
 					</h3>
 				</div>
 				<p className="text-sm font-semibold text-slate-500 dark:text-slate-400">
-					Showing {items.length} {items.length === 1 ? "exam" : "exams"}
+					Showing {ranked.length} {ranked.length === 1 ? "exam" : "exams"}
 				</p>
 			</div>
 			<div className="grid grid-cols-1 xl:grid-cols-2 gap-8">
-				{items.map((exam) => (
+				{ranked.map((exam) => {
+					const number = examNumber(exam.slug);
+					return (
 					<article
 						key={exam.slug}
 						className="group flex flex-col overflow-hidden rounded-[2rem] border border-slate-200 bg-white shadow-sm transition-all duration-500 hover:-translate-y-1 hover:border-primary/40 hover:shadow-2xl hover:shadow-primary/10 dark:border-slate-800 dark:bg-slate-900/70"
@@ -55,6 +62,11 @@ const ExamGrid = ({ items }: ExamGridProps): FunctionComponent => {
 							>
 								{exam.category}
 							</span>
+							{number !== null && (
+								<span className="absolute right-5 top-5 flex size-10 items-center justify-center rounded-full bg-white text-lg font-black text-slate-900">
+									{number}
+								</span>
+							)}
 							<p className="relative text-4xl font-black tracking-tight text-white">
 								{exam.shortName}
 							</p>
@@ -111,7 +123,8 @@ const ExamGrid = ({ items }: ExamGridProps): FunctionComponent => {
 							</Link>
 						</div>
 					</article>
-				))}
+					);
+				})}
 			</div>
 		</div>
 	);

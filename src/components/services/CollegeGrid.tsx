@@ -28,7 +28,7 @@ const CollegeGrid = ({ items }: CollegeGridProps): FunctionComponent => {
 						Admissions 2026
 					</p>
 					<h3 className="text-2xl font-black tracking-tight text-slate-900 dark:text-white">
-						B.Tech Colleges
+						Colleges
 					</h3>
 				</div>
 				<p className="text-sm font-semibold text-slate-500 dark:text-slate-400">

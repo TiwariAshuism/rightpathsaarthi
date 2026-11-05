@@ -16,10 +16,22 @@ export const Route = createRootRoute({
 			}
 		}, []);
 
-		// Scroll to top on route change
 		useEffect(() => {
+			const hash = location.hash.replace(/^#/, "");
+			if (hash) {
+				const scrollToSection = (): boolean => {
+					const node = document.getElementById(hash);
+					if (!node) return false;
+					node.scrollIntoView({ block: "start" });
+					return true;
+				};
+				if (!scrollToSection()) {
+					requestAnimationFrame(scrollToSection);
+				}
+				return;
+			}
 			window.scrollTo({ top: 0, left: 0, behavior: "instant" });
-		}, [location.pathname]);
+		}, [location.pathname, location.hash]);
 
 		return (
 			<>

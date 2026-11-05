@@ -13,6 +13,7 @@ const banners: Record<string, string> = {
 	iemjee: "from-emerald-600 via-teal-800 to-slate-950",
 	viteee: "from-violet-600 via-purple-900 to-slate-950",
 	"jee-main": "from-blue-700 via-slate-800 to-slate-950",
+	"mht-cet": "from-orange-600 via-amber-800 to-slate-950",
 	neet: "from-emerald-700 via-teal-900 to-slate-950",
 };
 

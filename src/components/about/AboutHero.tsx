@@ -1,3 +1,4 @@
+import { Link } from "@tanstack/react-router";
 import type { FunctionComponent } from "../../common/types";
 import aboutData from "../../data/about.json";
 import { useScrollReveal } from "../../hooks/useScrollReveal";
@@ -45,9 +46,12 @@ export const AboutHero = (): FunctionComponent => {
 								{hero.subtitle}
 							</p>
 							<div className="flex gap-4 mt-6">
-								<button className="h-14 px-10 rounded-2xl bg-primary text-white font-black text-lg hover:bg-[#D41C25] transition-all shadow-xl shadow-primary/30 transform hover:-translate-y-1">
+								<Link
+									className="h-14 px-10 rounded-2xl bg-primary text-white font-black text-lg hover:bg-[#D41C25] transition-all shadow-xl shadow-primary/30 transform hover:-translate-y-1 inline-flex items-center"
+									to="/services"
+								>
 									{hero.buttonText}
-								</button>
+								</Link>
 							</div>
 						</div>
 					</div>

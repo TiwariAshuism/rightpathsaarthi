@@ -177,39 +177,81 @@
 	{
 		"slug": "jee-main",
 		"section": "engineering",
-		"shortName": "JEE Main",
-		"title": "JEE Main 2026",
-		"fullName": "Joint Entrance Examination (Main) 2026",
-		"body": "National Testing Agency (NTA)",
+		"shortName": "JEE",
+		"title": "JEE Main & Advanced 2026",
+		"fullName": "Joint Entrance Examination (Main) and JEE (Advanced) 2026",
+		"body": "NTA (Main) · IIT Roorkee (Advanced)",
 		"category": "Engineering",
-		"date": "Jan & Apr 2026",
+		"date": "Jan, Apr & 17 May 2026",
 		"mode": "Online (CBT)",
-		"fee": "₹500 – ₹1,000",
+		"fee": "Main ₹500 – ₹1,000 · Adv ₹1,600 – ₹3,200",
 		"reachLabel": "Level",
 		"reach": "National",
-		"aliases": ["jeemains", "jee mains", "jee main", "nta jee"],
-		"summary": "JEE Main is the national exam for B.E. / B.Tech, and it is also the qualifying exam for JEE Advanced. NTA conducted the 2026-27 cycle in two sessions. You could apply for one session or both, with a separate fee each time.",
+		"aliases": [
+			"jeemains",
+			"jee mains",
+			"jee main",
+			"jee advance",
+			"jee advanced",
+			"jeeadv",
+			"nta jee"
+		],
+		"summary": "JEE Main is the national exam for B.E. / B.Tech, and qualifying it is required for JEE Advanced. NTA held JEE Main 2026 in two sessions. IIT Roorkee conducted JEE Advanced 2026 on 17 May 2026. Both Advanced papers are compulsory.",
 		"eligibility": [
-			"Eligibility, attempt rules and the qualifying criteria are those in the JEE (Main) 2026 information bulletin.",
-			"Paper 1 is for B.E. / B.Tech. Papers 2A and 2B cover B.Arch and B.Planning."
+			"JEE Main eligibility, attempt rules and qualifying criteria are those in the JEE (Main) 2026 information bulletin. Paper 1 is for B.E. / B.Tech.",
+			"JEE Advanced is only for candidates who qualify JEE Main and meet the attempt rules in the JEE (Advanced) 2026 information brochure."
 		],
 		"pattern": [
-			"Paper 1 is a computer-based test in Physics, Chemistry and Mathematics.",
-			"Session 1 was held between 21 and 30 January 2026.",
-			"Session 2 was held from 2 to 9 April 2026.",
-			"NTA uses the better of the two session scores, as set out in the bulletin."
+			"JEE Main Paper 1 is a computer-based test in Physics, Chemistry and Mathematics. NTA uses the better of the two session scores, as set out in the bulletin.",
+			"JEE Advanced is a computer-based test. Paper 1 is 9:00–12:00 IST and Paper 2 is 2:30–5:30 IST. Appearing in both papers is compulsory."
 		],
 		"schedule": [
-			{ "label": "Session 1", "value": "21–30 January 2026" },
-			{ "label": "Session 2", "value": "2–9 April 2026" },
+			{ "label": "JEE Main Session 1", "value": "21–30 January 2026" },
+			{ "label": "JEE Main Session 2", "value": "2–9 April 2026" },
 			{
-				"label": "Paper 1 fee, India",
-				"value": "₹500 – ₹1,000 per session, by category and gender"
+				"label": "JEE Advanced",
+				"value": "17 May 2026, Paper 1 9:00–12:00 and Paper 2 2:30–5:30 IST"
 			}
 		],
-		"note": "For Paper 1 at centres in India, the per-session fee is ₹1,000 for a General male candidate, ₹800 for a General female candidate, ₹900 for a Gen-EWS or OBC-NCL male candidate, ₹800 for a Gen-EWS or OBC-NCL female candidate, and ₹500 for SC, ST, PwD and third-gender candidates. Processing charges and GST are extra. Centres outside India have a higher fee.",
+		"note": "JEE Main Paper 1 fee in India is ₹1,000 for a General male candidate, down to ₹500 for SC, ST, PwD and third-gender candidates, per session. JEE Advanced fee at centres in India is ₹3,200, and ₹1,600 for female candidates and for SC, ST and PwD candidates. Gateway charges are extra, and the Advanced fee is not refundable. Advanced registration and updates are on jeeadv.ac.in.",
 		"officialUrl": "https://jeemain.nta.nic.in",
 		"officialLabel": "jeemain.nta.nic.in"
+	},
+	{
+		"slug": "mht-cet",
+		"section": "engineering",
+		"shortName": "MHT-CET",
+		"title": "MHT-CET 2026",
+		"fullName": "Maharashtra Health and Technical Common Entrance Test 2026",
+		"body": "State Common Entrance Test Cell, Maharashtra",
+		"category": "Engineering",
+		"date": "Apr & May 2026",
+		"mode": "Online (CBT)",
+		"fee": "₹1,000 – ₹1,300",
+		"reachLabel": "Level",
+		"reach": "Maharashtra",
+		"aliases": ["mhcet", "mhtcet", "mht cet", "mh cet", "mah cet"],
+		"summary": "MHT-CET is the Maharashtra computer-based test for B.E. / B.Tech and the other technical courses it covers. The PCM and PCB groups are separate papers. A candidate may sit one group or both, and may take one attempt or both. The better percentile is used when both attempts are taken.",
+		"eligibility": [
+			"Engineering admission uses the PCM group. Subject and marks rules are those in the MHT-CET 2026 information brochure.",
+			"The group chosen on the form cannot be changed later, and marks from one group are not transferred to the other."
+		],
+		"pattern": [
+			"PCM: 150 multiple-choice questions in 180 minutes. Physics and Chemistry carry 1 mark each. Mathematics carries 2 marks. No negative marking.",
+			"The first 90 minutes are Physics and Chemistry. That group is then submitted, and Mathematics opens for the next 90 minutes.",
+			"Centres are in Maharashtra. The paper is in English, and Marathi or Urdu only if that medium was chosen on the form."
+		],
+		"schedule": [
+			{ "label": "1st attempt", "value": "11–26 April 2026" },
+			{ "label": "2nd attempt", "value": "10–16 May 2026" },
+			{
+				"label": "PCM fee, one attempt",
+				"value": "₹1,300 General / outside Maharashtra; ₹1,000 for notified Maharashtra reserved categories"
+			}
+		],
+		"note": "These attempt windows are from the State CET Cell notice. The shift and the exact day are on the admit card. Both attempts cost ₹2,600 (General) or ₹2,000 (notified Maharashtra reserved categories). The fee is not refundable. Gateway charges are extra.",
+		"officialUrl": "https://cetcell.mahacet.org",
+		"officialLabel": "cetcell.mahacet.org"
 	},
 	{
 		"slug": "neet",

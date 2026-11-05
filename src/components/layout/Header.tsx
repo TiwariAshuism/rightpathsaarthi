@@ -57,6 +57,7 @@ export const Header = (): FunctionComponent => {
 							<Link
 								key={index}
 								className="text-sm font-medium hover:text-primary transition-colors dark:text-slate-300 dark:hover:text-white"
+								hash={"hash" in link ? link.hash : undefined}
 								to={link.href}
 							>
 								{link.text}
@@ -85,6 +86,7 @@ export const Header = (): FunctionComponent => {
 							<Link
 								key={index}
 								className="text-base font-medium hover:text-primary transition-colors dark:text-slate-300 dark:hover:text-white"
+								hash={"hash" in link ? link.hash : undefined}
 								to={link.href}
 								onClick={() => setIsMenuOpen(false)}
 							>

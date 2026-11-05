@@ -11,6 +11,11 @@
                 "href": "/services"
             },
             {
+                "text": "Exams",
+                "href": "/services",
+                "hash": "exams"
+            },
+            {
                 "text": "About",
                 "href": "/about"
             },

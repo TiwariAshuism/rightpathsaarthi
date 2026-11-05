@@ -51,9 +51,25 @@ const ServicesList: React.FC<ServicesListProps> = ({ sections }) => {
 		);
 	}
 
+	const engineeringExams = sections
+		.filter((section) => section.id === "engineering")
+		.flatMap((section) => section.exams);
+	const visibleSections = sections.filter((section) => {
+		if (section.id !== "engineering") return true;
+		return section.colleges.length > 0 || section.items.length > 0;
+	});
+
 	return (
 		<div ref={ref} className="flex-1 flex flex-col gap-20">
-			{sections.map((section, sIdx) => (
+			{engineeringExams.length > 0 && (
+				<section
+					className={`scroll-mt-40 transition-all duration-1000 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-20"}`}
+					id="exams"
+				>
+					<ExamGrid items={engineeringExams} />
+				</section>
+			)}
+			{visibleSections.map((section, sIdx) => (
 				<section
 					key={section.id}
 					className={`transition-all duration-1000 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-20"}`}
@@ -72,9 +88,33 @@ const ServicesList: React.FC<ServicesListProps> = ({ sections }) => {
 						</h2>
 					</div>
 					<div className="flex flex-col gap-14">
-						<ExamGrid items={section.exams} />
+						{section.id !== "engineering" && (
+							<ExamGrid items={section.exams} />
+						)}
 						<CollegeGrid items={section.colleges} />
-						{section.items.length > 0 && (
+						{section.id === "engineering" && section.items.length > 0 && (
+							<div className="flex flex-col gap-6">
+								<h3 className="text-2xl font-black tracking-tight text-slate-900 dark:text-white">
+									Branches / Courses
+								</h3>
+								<ol className="grid grid-cols-1 gap-4 md:grid-cols-2">
+									{section.items.map((item, index) => (
+										<li key={item.title}>
+											<Link
+												className="flex items-center gap-4 rounded-2xl border border-slate-200 bg-white p-5 font-black text-slate-900 transition-colors hover:border-primary dark:border-slate-800 dark:bg-slate-900/70 dark:text-white"
+												to="/contact"
+											>
+												<span className="flex size-10 shrink-0 items-center justify-center rounded-full bg-primary text-base text-white">
+													{index + 1}
+												</span>
+												{item.title}
+											</Link>
+										</li>
+									))}
+								</ol>
+							</div>
+						)}
+						{section.id !== "engineering" && section.items.length > 0 && (
 							<div className="flex flex-col gap-8">
 								{(section.exams.length > 0 || section.colleges.length > 0) && (
 									<h3 className="text-2xl font-black tracking-tight text-slate-900 dark:text-white">
