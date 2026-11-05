@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from "react";
+import React, { useEffect, useMemo, useRef, useState } from "react";
 import { Header } from "../components/layout/Header";
 import { Footer } from "../components/layout/Footer";
 import { SEO } from "../components/layout/SEO";
@@ -14,6 +14,16 @@ import { allExams } from "../data/exams";
 const Services: React.FC = () => {
 	const [searchQuery, setSearchQuery] = useState("");
 	const [activeCategory, setActiveCategory] = useState("all");
+	const resultsRef = useRef<HTMLElement>(null);
+	const skipScroll = useRef(true);
+
+	useEffect(() => {
+		if (skipScroll.current) {
+			skipScroll.current = false;
+			return;
+		}
+		resultsRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+	}, [activeCategory, searchQuery]);
 
 	const filteredSections = useMemo(() => {
 		// 1. Filter by Category
@@ -120,7 +130,7 @@ const Services: React.FC = () => {
 						</aside>
 
 						{/* Main Content */}
-						<main className="flex-grow">
+						<main ref={resultsRef} className="flex-grow scroll-mt-32">
 							{filteredSections.length > 0 ? (
 								<ServicesList sections={filteredSections} />
 							) : (

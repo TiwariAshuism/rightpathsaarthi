@@ -29,7 +29,7 @@ const ServicesFilter: React.FC<ServicesFilterProps> = ({
 				<div className="flex lg:flex-col gap-3 overflow-x-auto lg:overflow-visible pb-6 lg:pb-0 scrollbar-hide snap-x px-2">
 					<button
 						onClick={() => setActiveCategory("all")}
-						className={`snap-start flex items-center gap-4 w-full p-5 rounded-2xl transition-all duration-300 text-left min-w-[200px] lg:min-w-0 flex-shrink-0 lg:flex-shrink group border shadow-sm ${
+						className={`snap-start flex items-center gap-4 w-auto lg:w-full p-5 rounded-2xl transition-all duration-300 text-left min-w-[200px] lg:min-w-0 flex-shrink-0 lg:flex-shrink group border shadow-sm ${
 							activeCategory === "all"
 								? "bg-primary text-white border-primary shadow-xl shadow-primary/20"
 								: "bg-white dark:bg-slate-900 border-slate-100 dark:border-slate-800 hover:border-primary/50 text-slate-700 dark:text-slate-300"
@@ -48,7 +48,7 @@ const ServicesFilter: React.FC<ServicesFilterProps> = ({
 						<button
 							key={category.id}
 							onClick={() => setActiveCategory(category.id)}
-							className={`snap-start flex items-center gap-4 w-full p-5 rounded-2xl transition-all duration-300 text-left min-w-[200px] lg:min-w-0 flex-shrink-0 lg:flex-shrink group border shadow-sm ${
+							className={`snap-start flex items-center gap-4 w-auto lg:w-full p-5 rounded-2xl transition-all duration-300 text-left min-w-[200px] lg:min-w-0 flex-shrink-0 lg:flex-shrink group border shadow-sm ${
 								activeCategory === category.id
 									? "bg-primary text-white border-primary shadow-xl shadow-primary/20"
 									: "bg-white dark:bg-slate-900 border-slate-100 dark:border-slate-800 hover:border-primary/50 text-slate-700 dark:text-slate-300"
