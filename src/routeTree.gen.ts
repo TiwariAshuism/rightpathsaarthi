@@ -15,6 +15,7 @@ import { Route as ContactRouteImport } from './routes/contact'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as ExamsSlugRouteImport } from './routes/exams.$slug'
+import { Route as CollegesSlugRouteImport } from './routes/colleges.$slug'
 
 const ServicesRoute = ServicesRouteImport.update({
   id: '/services',
@@ -46,6 +47,11 @@ const ExamsSlugRoute = ExamsSlugRouteImport.update({
   path: '/exams/$slug',
   getParentRoute: () => rootRouteImport,
 } as any)
+const CollegesSlugRoute = CollegesSlugRouteImport.update({
+  id: '/colleges/$slug',
+  path: '/colleges/$slug',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -53,6 +59,7 @@ export interface FileRoutesByFullPath {
   '/contact': typeof ContactRoute
   '/faq': typeof FaqRoute
   '/services': typeof ServicesRoute
+  '/colleges/$slug': typeof CollegesSlugRoute
   '/exams/$slug': typeof ExamsSlugRoute
 }
 export interface FileRoutesByTo {
@@ -61,6 +68,7 @@ export interface FileRoutesByTo {
   '/contact': typeof ContactRoute
   '/faq': typeof FaqRoute
   '/services': typeof ServicesRoute
+  '/colleges/$slug': typeof CollegesSlugRoute
   '/exams/$slug': typeof ExamsSlugRoute
 }
 export interface FileRoutesById {
@@ -70,13 +78,28 @@ export interface FileRoutesById {
   '/contact': typeof ContactRoute
   '/faq': typeof FaqRoute
   '/services': typeof ServicesRoute
+  '/colleges/$slug': typeof CollegesSlugRoute
   '/exams/$slug': typeof ExamsSlugRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/about' | '/contact' | '/faq' | '/services' | '/exams/$slug'
+  fullPaths:
+    | '/'
+    | '/about'
+    | '/contact'
+    | '/faq'
+    | '/services'
+    | '/colleges/$slug'
+    | '/exams/$slug'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/about' | '/contact' | '/faq' | '/services' | '/exams/$slug'
+  to:
+    | '/'
+    | '/about'
+    | '/contact'
+    | '/faq'
+    | '/services'
+    | '/colleges/$slug'
+    | '/exams/$slug'
   id:
     | '__root__'
     | '/'
@@ -84,6 +107,7 @@ export interface FileRouteTypes {
     | '/contact'
     | '/faq'
     | '/services'
+    | '/colleges/$slug'
     | '/exams/$slug'
   fileRoutesById: FileRoutesById
 }
@@ -93,6 +117,7 @@ export interface RootRouteChildren {
   ContactRoute: typeof ContactRoute
   FaqRoute: typeof FaqRoute
   ServicesRoute: typeof ServicesRoute
+  CollegesSlugRoute: typeof CollegesSlugRoute
   ExamsSlugRoute: typeof ExamsSlugRoute
 }
 
@@ -140,6 +165,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ExamsSlugRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/colleges/$slug': {
+      id: '/colleges/$slug'
+      path: '/colleges/$slug'
+      fullPath: '/colleges/$slug'
+      preLoaderRoute: typeof CollegesSlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
@@ -149,6 +181,7 @@ const rootRouteChildren: RootRouteChildren = {
   ContactRoute: ContactRoute,
   FaqRoute: FaqRoute,
   ServicesRoute: ServicesRoute,
+  CollegesSlugRoute: CollegesSlugRoute,
   ExamsSlugRoute: ExamsSlugRoute,
 }
 export const routeTree = rootRouteImport

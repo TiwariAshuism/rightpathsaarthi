@@ -1,0 +1,1071 @@
+[
+	{
+		"slug": "haldia-institute-of-technology",
+		"section": "engineering",
+		"shortName": "HIT",
+		"name": "Haldia Institute of Technology",
+		"accreditation": "Autonomous, NAAC 'A', NBA",
+		"location": "Haldia",
+		"aliases": ["haldia", "hit"],
+		"programs": [
+			{
+				"course": "CSE",
+				"totalFee": "₹6,12,700",
+				"admissionFee": "₹98,700",
+				"eligibility": "60% marks in Class 10th and 12th",
+				"directAdmission": false
+			},
+			{
+				"course": "CSE (AI ML)",
+				"totalFee": "₹6,12,700",
+				"admissionFee": "₹98,700",
+				"eligibility": "60% marks in Class 10th and 12th",
+				"directAdmission": false
+			},
+			{
+				"course": "CSE (Data Science)",
+				"totalFee": "₹6,12,700",
+				"admissionFee": "₹98,700",
+				"eligibility": "60% marks in Class 10th and 12th",
+				"directAdmission": false
+			},
+			{
+				"course": "CSE (Cyber Security)",
+				"totalFee": "₹6,12,700",
+				"admissionFee": "₹98,700",
+				"eligibility": "60% marks in Class 10th and 12th",
+				"directAdmission": false
+			},
+			{
+				"course": "IT",
+				"totalFee": "₹6,12,700",
+				"admissionFee": "₹98,700",
+				"eligibility": "60% marks in Class 10th and 12th",
+				"directAdmission": false
+			},
+			{
+				"course": "Chemical",
+				"totalFee": "₹6,12,700",
+				"admissionFee": "₹98,700",
+				"eligibility": "60% marks in Class 10th and 12th",
+				"directAdmission": false
+			},
+			{
+				"course": "ECE",
+				"totalFee": "₹6,12,700",
+				"admissionFee": "₹98,700",
+				"eligibility": "60% marks in Class 10th and 12th",
+				"directAdmission": false
+			},
+			{
+				"course": "BioTech",
+				"totalFee": "₹6,12,700",
+				"admissionFee": "₹98,700",
+				"eligibility": "Pass in 10+2 with 45% average in PCM",
+				"directAdmission": false
+			},
+			{
+				"course": "EE",
+				"totalFee": "₹6,12,700",
+				"admissionFee": "₹98,700",
+				"eligibility": "Pass in 10+2 with 45% average in PCM",
+				"directAdmission": false
+			},
+			{
+				"course": "Food Technology",
+				"totalFee": "₹6,12,700",
+				"admissionFee": "₹98,700",
+				"eligibility": "Pass in 10+2 with 45% average in PCM",
+				"directAdmission": false
+			},
+			{
+				"course": "ME",
+				"totalFee": "₹6,12,700",
+				"admissionFee": "₹98,700",
+				"eligibility": "Pass in 10+2 with 45% average in PCM",
+				"directAdmission": false
+			},
+			{
+				"course": "AEIE",
+				"totalFee": "₹6,12,700",
+				"admissionFee": "₹98,700",
+				"eligibility": "Pass in 10+2 with 45% average in PCM",
+				"directAdmission": true
+			},
+			{
+				"course": "Civil",
+				"totalFee": "₹4,67,500",
+				"admissionFee": "₹80,550",
+				"eligibility": "Pass in 10+2 with 45% average in PCM",
+				"directAdmission": true
+			},
+			{
+				"course": "Agriculture",
+				"totalFee": "₹4,67,500",
+				"admissionFee": "₹80,550",
+				"eligibility": "Pass in 10+2 with 45% average in PCM",
+				"directAdmission": true
+			}
+		]
+	},
+	{
+		"slug": "iem-salt-lake",
+		"section": "engineering",
+		"shortName": "IEM",
+		"name": "Institute of Engineering & Management, Salt Lake",
+		"accreditation": "Autonomous, NAAC 'A' Grade, Affiliated to UEM Kolkata",
+		"location": "Sector-5, Salt Lake, Kolkata",
+		"aliases": ["iem", "uem", "salt lake"],
+		"programs": [
+			{
+				"course": "CSE",
+				"totalFee": "₹9,45,000",
+				"admissionFee": "₹1,40,000",
+				"eligibility": "85% marks in 10th & 12th, 12th PCM",
+				"directAdmission": true
+			},
+			{
+				"course": "CSE (AI ML)",
+				"totalFee": "₹9,45,000",
+				"admissionFee": "₹1,40,000",
+				"eligibility": "75% marks in 10th & 12th, 12th PCM",
+				"directAdmission": true
+			},
+			{
+				"course": "IT",
+				"totalFee": "₹9,45,000",
+				"admissionFee": "₹1,40,000",
+				"eligibility": "70% marks in 10th & 12th, 12th PCM",
+				"directAdmission": true
+			},
+			{
+				"course": "ECE",
+				"totalFee": "₹9,45,000",
+				"admissionFee": "₹1,40,000",
+				"eligibility": "60% marks in 10th & 12th, 12th PCM 45%",
+				"directAdmission": true
+			},
+			{
+				"course": "EE",
+				"totalFee": "₹9,45,000",
+				"admissionFee": "₹1,40,000",
+				"eligibility": "60% marks in 10th & 12th, 12th PCM 45%",
+				"directAdmission": true
+			},
+			{
+				"course": "ME",
+				"totalFee": "₹9,45,000",
+				"admissionFee": "₹1,40,000",
+				"eligibility": "60% marks in 10th & 12th, 12th PCM 45%",
+				"directAdmission": true
+			}
+		]
+	},
+	{
+		"slug": "iem-newtown",
+		"section": "engineering",
+		"shortName": "IEM",
+		"name": "Institute of Engineering & Management, Newtown",
+		"accreditation": "Affiliated to UEM Kolkata",
+		"location": "Newtown, Kolkata",
+		"aliases": ["iem newtown", "uem"],
+		"programs": [
+			{
+				"course": "CSE (AI)",
+				"totalFee": "₹9,45,000",
+				"admissionFee": "₹1,40,000",
+				"eligibility": "70% marks in 10th & 12th, 12th PCM",
+				"directAdmission": true
+			},
+			{
+				"course": "CSE (IOT)",
+				"totalFee": "₹9,45,000",
+				"admissionFee": "₹1,40,000",
+				"eligibility": "60% marks in 10th & 12th, 12th PCM 45%",
+				"directAdmission": true
+			},
+			{
+				"course": "CSE (IOT, CS, BCT)",
+				"totalFee": "₹9,45,000",
+				"admissionFee": "₹1,40,000",
+				"eligibility": "60% marks in 10th & 12th, 12th PCM 45%",
+				"directAdmission": true
+			},
+			{
+				"course": "CSE (Cyber Security)",
+				"totalFee": "₹9,45,000",
+				"admissionFee": "₹1,40,000",
+				"eligibility": "60% marks in 10th & 12th, 12th PCM 45%",
+				"directAdmission": true
+			},
+			{
+				"course": "CSE (Data Science)",
+				"totalFee": "₹9,45,000",
+				"admissionFee": "₹1,40,000",
+				"eligibility": "60% marks in 10th & 12th, 12th PCM 45%",
+				"directAdmission": true
+			},
+			{
+				"course": "CSE (AI & DS)",
+				"totalFee": "₹9,45,000",
+				"admissionFee": "₹1,40,000",
+				"eligibility": "60% marks in 10th & 12th, 12th PCM 45%",
+				"directAdmission": true
+			},
+			{
+				"course": "BioTech",
+				"totalFee": "₹9,45,000",
+				"admissionFee": "₹1,40,000",
+				"eligibility": "60% marks in 10th & 12th, 12th PCM 45%",
+				"directAdmission": true
+			}
+		]
+	},
+	{
+		"slug": "academy-of-technology",
+		"section": "engineering",
+		"shortName": "AOT",
+		"name": "Academy of Technology",
+		"accreditation": "",
+		"location": "Adisaptagram, Hooghly",
+		"aliases": ["aot", "adisaptagram"],
+		"programs": [
+			{
+				"course": "CSE",
+				"totalFee": "₹4,69,200",
+				"admissionFee": "₹1,05,200",
+				"eligibility": "60% marks in Class 10th and 12th",
+				"directAdmission": false
+			},
+			{
+				"course": "CSE (AI ML)",
+				"totalFee": "₹4,69,200",
+				"admissionFee": "₹1,05,200",
+				"eligibility": "60% marks in Class 10th and 12th",
+				"directAdmission": false
+			},
+			{
+				"course": "CSBS",
+				"totalFee": "₹4,69,200",
+				"admissionFee": "₹1,05,200",
+				"eligibility": "60% marks in Class 10th and 12th",
+				"directAdmission": false
+			},
+			{
+				"course": "ECE",
+				"totalFee": "₹4,69,200",
+				"admissionFee": "₹1,05,200",
+				"eligibility": "Pass in 10+2 with 45% average in PCM",
+				"directAdmission": true
+			},
+			{
+				"course": "EEE",
+				"totalFee": "₹4,69,200",
+				"admissionFee": "₹1,05,200",
+				"eligibility": "Pass in 10+2 with 45% average in PCM",
+				"directAdmission": true
+			},
+			{
+				"course": "EE",
+				"totalFee": "₹4,69,200",
+				"admissionFee": "₹1,05,200",
+				"eligibility": "Pass in 10+2 with 45% average in PCM",
+				"directAdmission": true
+			},
+			{
+				"course": "ME",
+				"totalFee": "₹4,69,200",
+				"admissionFee": "₹1,05,200",
+				"eligibility": "Pass in 10+2 with 45% average in PCM",
+				"directAdmission": true
+			}
+		]
+	},
+	{
+		"slug": "techno-india-university",
+		"section": "engineering",
+		"shortName": "Techno",
+		"name": "Techno India University, School of The Future",
+		"accreditation": "State Private University",
+		"location": "Sector-5, Salt Lake, Kolkata",
+		"aliases": ["techno india", "tiu"],
+		"programs": [
+			{
+				"course": "CSE (AI ML)",
+				"totalFee": "₹10,40,000",
+				"admissionFee": "₹1,30,000",
+				"eligibility": "60% marks in Class 10th and 12th",
+				"directAdmission": true
+			},
+			{
+				"course": "CSE (Data Science)",
+				"totalFee": "₹10,40,000",
+				"admissionFee": "₹1,30,000",
+				"eligibility": "60% marks in Class 10th and 12th",
+				"directAdmission": true
+			},
+			{
+				"course": "CSE (Cloud Computing)",
+				"totalFee": "₹10,40,000",
+				"admissionFee": "₹1,30,000",
+				"eligibility": "60% marks in Class 10th and 12th",
+				"directAdmission": true
+			}
+		]
+	},
+	{
+		"slug": "narula-institute-of-technology",
+		"section": "engineering",
+		"shortName": "Narula",
+		"name": "Narula Institute of Technology",
+		"accreditation": "Autonomous, NAAC 'A', NBA",
+		"location": "Agarpara, Kolkata",
+		"aliases": ["nit agarpara", "narula"],
+		"programs": [
+			{
+				"course": "CSE",
+				"totalFee": "₹7,04,700",
+				"admissionFee": "₹1,01,725",
+				"eligibility": "60% marks in Class 10th and 12th",
+				"directAdmission": true
+			},
+			{
+				"course": "CSE (AI ML)",
+				"totalFee": "₹6,55,200",
+				"admissionFee": "₹1,01,725",
+				"eligibility": "60% marks in Class 10th and 12th",
+				"directAdmission": true
+			},
+			{
+				"course": "CSE (Data Science)",
+				"totalFee": "₹6,55,200",
+				"admissionFee": "₹1,01,725",
+				"eligibility": "60% marks in Class 10th and 12th",
+				"directAdmission": true
+			},
+			{
+				"course": "IT",
+				"totalFee": "₹6,55,200",
+				"admissionFee": "₹1,01,725",
+				"eligibility": "60% marks in Class 10th and 12th",
+				"directAdmission": true
+			},
+			{
+				"course": "CST",
+				"totalFee": "₹6,55,200",
+				"admissionFee": "₹1,01,725",
+				"eligibility": "60% marks in Class 10th and 12th",
+				"directAdmission": true
+			},
+			{
+				"course": "CSBS",
+				"totalFee": "₹6,55,200",
+				"admissionFee": "₹1,01,725",
+				"eligibility": "60% marks in Class 10th and 12th",
+				"directAdmission": true
+			},
+			{
+				"course": "ECE",
+				"totalFee": "₹6,02,700",
+				"admissionFee": "₹1,01,725",
+				"eligibility": "60% marks in Class 10th and 12th",
+				"directAdmission": true
+			},
+			{
+				"course": "ECS",
+				"totalFee": "₹5,38,700",
+				"admissionFee": "₹93,725",
+				"eligibility": "60% marks in Class 10th and 12th",
+				"directAdmission": true
+			},
+			{
+				"course": "EE",
+				"totalFee": "₹4,24,700",
+				"admissionFee": "₹79,475",
+				"eligibility": "Pass in 10+2 with 45% average in PCM",
+				"directAdmission": true
+			},
+			{
+				"course": "ME",
+				"totalFee": "₹4,24,700",
+				"admissionFee": "₹79,475",
+				"eligibility": "Pass in 10+2 with 45% average in PCM",
+				"directAdmission": true
+			},
+			{
+				"course": "ME [Students from Bihar]",
+				"totalFee": "₹3,60,000",
+				"admissionFee": "₹45,000",
+				"eligibility": "Pass in 10+2 with 45% average in PCM",
+				"directAdmission": true
+			},
+			{
+				"course": "Civil",
+				"totalFee": "₹4,24,700",
+				"admissionFee": "₹79,475",
+				"eligibility": "Pass in 10+2 with 45% average in PCM",
+				"directAdmission": true
+			},
+			{
+				"course": "Civil [Students from Bihar]",
+				"totalFee": "₹3,60,000",
+				"admissionFee": "₹45,000",
+				"eligibility": "Pass in 10+2 with 45% average in PCM",
+				"directAdmission": true
+			}
+		]
+	},
+	{
+		"slug": "asansol-engineering-college",
+		"section": "engineering",
+		"shortName": "AEC",
+		"name": "Asansol Engineering College",
+		"accreditation": "Autonomous, NAAC 'A', NBA",
+		"location": "Asansol",
+		"aliases": ["aec", "asansol"],
+		"programs": [
+			{
+				"course": "CSE",
+				"totalFee": "₹7,01,800",
+				"admissionFee": "₹93,525",
+				"eligibility": "Minimum 60% marks in Class 12th",
+				"directAdmission": false
+			},
+			{
+				"course": "CSE (AI ML)",
+				"totalFee": "₹6,52,300",
+				"admissionFee": "₹93,525",
+				"eligibility": "Minimum 60% marks in Class 12th",
+				"directAdmission": false
+			},
+			{
+				"course": "CSE (IOT, CS, BCT)",
+				"totalFee": "₹6,52,300",
+				"admissionFee": "₹93,525",
+				"eligibility": "Minimum 60% marks in Class 12th",
+				"directAdmission": false
+			},
+			{
+				"course": "CSE (IOT, CS, BCT) [Students from Bihar]",
+				"totalFee": "₹6,00,000",
+				"admissionFee": "₹75,000",
+				"eligibility": "Minimum 60% marks in Class 12th",
+				"directAdmission": false
+			},
+			{
+				"course": "CSBS",
+				"totalFee": "₹6,52,300",
+				"admissionFee": "₹93,525",
+				"eligibility": "Minimum 60% marks in Class 12th",
+				"directAdmission": false
+			},
+			{
+				"course": "CSBS [Students from Bihar]",
+				"totalFee": "₹6,00,000",
+				"admissionFee": "₹75,000",
+				"eligibility": "Minimum 60% marks in Class 12th",
+				"directAdmission": false
+			},
+			{
+				"course": "IT",
+				"totalFee": "₹6,52,300",
+				"admissionFee": "₹93,525",
+				"eligibility": "Minimum 60% marks in Class 12th",
+				"directAdmission": false
+			},
+			{
+				"course": "IT [Students from Bihar]",
+				"totalFee": "₹6,00,000",
+				"admissionFee": "₹75,000",
+				"eligibility": "Minimum 60% marks in Class 12th",
+				"directAdmission": false
+			},
+			{
+				"course": "ECE",
+				"totalFee": "₹5,99,800",
+				"admissionFee": "₹93,525",
+				"eligibility": "Minimum 60% marks in Class 12th",
+				"directAdmission": false
+			},
+			{
+				"course": "ECE [Students from Bihar]",
+				"totalFee": "₹4,50,000",
+				"admissionFee": "₹60,000",
+				"eligibility": "Minimum 60% marks in Class 12th",
+				"directAdmission": false
+			},
+			{
+				"course": "EE",
+				"totalFee": "₹4,21,800",
+				"admissionFee": "₹71,275",
+				"eligibility": "Pass in 10+2 with 45% average in PCM",
+				"directAdmission": false
+			},
+			{
+				"course": "EE [Students from Bihar]",
+				"totalFee": "₹3,60,000",
+				"admissionFee": "₹45,000",
+				"eligibility": "Pass in 10+2 with 45% average in PCM",
+				"directAdmission": false
+			},
+			{
+				"course": "ME",
+				"totalFee": "₹4,21,800",
+				"admissionFee": "₹71,275",
+				"eligibility": "Pass in 10+2 with 45% average in PCM",
+				"directAdmission": false
+			},
+			{
+				"course": "ME [Students from Bihar]",
+				"totalFee": "₹3,60,000",
+				"admissionFee": "₹45,000",
+				"eligibility": "Pass in 10+2 with 45% average in PCM",
+				"directAdmission": false
+			},
+			{
+				"course": "Civil",
+				"totalFee": "₹4,21,800",
+				"admissionFee": "₹71,275",
+				"eligibility": "Pass in 10+2 with 45% average in PCM",
+				"directAdmission": false
+			},
+			{
+				"course": "Civil [Students from Bihar]",
+				"totalFee": "₹3,60,000",
+				"admissionFee": "₹45,000",
+				"eligibility": "Pass in 10+2 with 45% average in PCM",
+				"directAdmission": false
+			}
+		]
+	},
+	{
+		"slug": "guru-nanak-institute-of-technology",
+		"section": "engineering",
+		"shortName": "GNIT",
+		"name": "Guru Nanak Institute of Technology",
+		"accreditation": "Autonomous, NAAC 'A+', NBA",
+		"location": "Sodepur, Kolkata",
+		"aliases": ["gnit", "guru nanak"],
+		"programs": [
+			{
+				"course": "CSE",
+				"totalFee": "₹7,04,700",
+				"admissionFee": "₹1,01,725",
+				"eligibility": "Minimum 60% marks in Class 12th",
+				"directAdmission": true
+			},
+			{
+				"course": "CSE (AI ML)",
+				"totalFee": "₹6,56,700",
+				"admissionFee": "₹1,01,725",
+				"eligibility": "Minimum 60% marks in Class 12th",
+				"directAdmission": true
+			},
+			{
+				"course": "CSE (Cyber Security)",
+				"totalFee": "₹6,56,700",
+				"admissionFee": "₹1,01,725",
+				"eligibility": "Minimum 60% marks in Class 12th",
+				"directAdmission": true
+			},
+			{
+				"course": "IT",
+				"totalFee": "₹6,56,700",
+				"admissionFee": "₹1,01,725",
+				"eligibility": "Minimum 60% marks in Class 12th",
+				"directAdmission": true
+			},
+			{
+				"course": "ECE",
+				"totalFee": "₹6,07,500",
+				"admissionFee": "₹1,01,725",
+				"eligibility": "Minimum 60% marks in Class 12th",
+				"directAdmission": true
+			},
+			{
+				"course": "ECE [Students from Bihar]",
+				"totalFee": "₹4,50,000",
+				"admissionFee": "₹60,000",
+				"eligibility": "Minimum 60% marks in Class 12th",
+				"directAdmission": true
+			},
+			{
+				"course": "EE",
+				"totalFee": "₹6,02,700",
+				"admissionFee": "₹1,01,725",
+				"eligibility": "Minimum 60% marks in Class 12th",
+				"directAdmission": true
+			},
+			{
+				"course": "EE [Students from Bihar]",
+				"totalFee": "₹3,60,000",
+				"admissionFee": "₹45,000",
+				"eligibility": "Minimum 60% marks in Class 12th",
+				"directAdmission": true
+			},
+			{
+				"course": "Food Technology",
+				"totalFee": "₹6,02,700",
+				"admissionFee": "₹1,01,725",
+				"eligibility": "Pass in 10+2 with 45% average in PCM / PCB",
+				"directAdmission": true
+			},
+			{
+				"course": "Food Technology [Students from Bihar]",
+				"totalFee": "₹3,60,000",
+				"admissionFee": "₹45,000",
+				"eligibility": "Pass in 10+2 with 45% average in PCM / PCB",
+				"directAdmission": true
+			}
+		]
+	},
+	{
+		"slug": "mckv-institute-of-engineering",
+		"section": "engineering",
+		"shortName": "MCKV",
+		"name": "MCKV Institute of Engineering",
+		"accreditation": "Autonomous, NAAC 'A', NBA",
+		"location": "Liluah, Howrah",
+		"aliases": ["mckv", "liluah"],
+		"programs": [
+			{
+				"course": "CSE",
+				"totalFee": "₹5,09,600",
+				"admissionFee": "₹82,600",
+				"eligibility": "60% in Class 12th",
+				"directAdmission": false
+			},
+			{
+				"course": "CSE (AI ML)",
+				"totalFee": "₹5,09,600",
+				"admissionFee": "₹82,600",
+				"eligibility": "60% in Class 12th",
+				"directAdmission": false
+			},
+			{
+				"course": "CSE (Data Science)",
+				"totalFee": "₹5,09,600",
+				"admissionFee": "₹82,600",
+				"eligibility": "60% in Class 12th",
+				"directAdmission": false
+			},
+			{
+				"course": "IT",
+				"totalFee": "₹5,09,600",
+				"admissionFee": "₹82,600",
+				"eligibility": "60% in Class 12th",
+				"directAdmission": false
+			},
+			{
+				"course": "ECE",
+				"totalFee": "₹5,09,600",
+				"admissionFee": "₹82,600",
+				"eligibility": "Pass in 10+2 with 45% average in PCM",
+				"directAdmission": true
+			},
+			{
+				"course": "EE",
+				"totalFee": "₹5,09,600",
+				"admissionFee": "₹82,600",
+				"eligibility": "Pass in 10+2 with 45% average in PCM",
+				"directAdmission": true
+			},
+			{
+				"course": "ME",
+				"totalFee": "₹5,09,600",
+				"admissionFee": "₹82,600",
+				"eligibility": "Pass in 10+2 with 45% average in PCM",
+				"directAdmission": true
+			},
+			{
+				"course": "Automobile Engineering",
+				"totalFee": "₹5,09,600",
+				"admissionFee": "₹82,600",
+				"eligibility": "Pass in 10+2 with 45% average in PCM",
+				"directAdmission": true
+			}
+		]
+	},
+	{
+		"slug": "future-institute-of-engineering-and-management",
+		"section": "engineering",
+		"shortName": "FIEM",
+		"name": "Future Institute of Engineering & Management",
+		"accreditation": "",
+		"location": "Sonarpur, Kolkata",
+		"aliases": ["fiem", "future institute"],
+		"programs": [
+			{
+				"course": "CSE",
+				"totalFee": "₹4,75,000",
+				"admissionFee": "₹90,700",
+				"eligibility": "60% marks in Class 12th",
+				"directAdmission": false
+			},
+			{
+				"course": "CSE (Data Science)",
+				"totalFee": "₹4,75,000",
+				"admissionFee": "₹90,700",
+				"eligibility": "60% marks in Class 12th",
+				"directAdmission": false
+			},
+			{
+				"course": "IT",
+				"totalFee": "₹4,75,000",
+				"admissionFee": "₹90,700",
+				"eligibility": "60% marks in Class 12th",
+				"directAdmission": false
+			},
+			{
+				"course": "ECE",
+				"totalFee": "₹4,75,000",
+				"admissionFee": "₹90,700",
+				"eligibility": "60% marks in Class 12th",
+				"directAdmission": false
+			}
+		]
+	},
+	{
+		"slug": "jis-college-of-engineering",
+		"section": "engineering",
+		"shortName": "JIS",
+		"name": "JIS College of Engineering",
+		"accreditation": "Autonomous, NAAC 'A', NBA",
+		"location": "Kalyani",
+		"aliases": ["jis college", "jisce"],
+		"programs": [
+			{
+				"course": "CSE",
+				"totalFee": "₹6,56,700",
+				"admissionFee": "₹1,01,725",
+				"eligibility": "Minimum 60% marks in Class 12th",
+				"directAdmission": true
+			},
+			{
+				"course": "CSE (AI ML)",
+				"totalFee": "₹6,56,700",
+				"admissionFee": "₹1,01,725",
+				"eligibility": "Minimum 60% marks in Class 12th",
+				"directAdmission": true
+			},
+			{
+				"course": "CST",
+				"totalFee": "₹6,14,700",
+				"admissionFee": "₹1,01,725",
+				"eligibility": "Minimum 60% marks in Class 12th",
+				"directAdmission": true
+			},
+			{
+				"course": "CST [Students from Bihar]",
+				"totalFee": "₹6,00,000",
+				"admissionFee": "₹75,000",
+				"eligibility": "Minimum 60% marks in Class 12th",
+				"directAdmission": true
+			},
+			{
+				"course": "IT",
+				"totalFee": "₹6,14,700",
+				"admissionFee": "₹1,01,725",
+				"eligibility": "Minimum 60% marks in Class 12th",
+				"directAdmission": true
+			},
+			{
+				"course": "IT [Students from Bihar]",
+				"totalFee": "₹6,00,000",
+				"admissionFee": "₹75,000",
+				"eligibility": "Minimum 60% marks in Class 12th",
+				"directAdmission": true
+			},
+			{
+				"course": "ECE",
+				"totalFee": "₹6,02,700",
+				"admissionFee": "₹1,01,725",
+				"eligibility": "Pass in 10+2 with 45% average in PCM",
+				"directAdmission": true
+			},
+			{
+				"course": "ECE [Students from Bihar]",
+				"totalFee": "₹4,50,000",
+				"admissionFee": "₹60,000",
+				"eligibility": "Pass in 10+2 with 45% average in PCM",
+				"directAdmission": true
+			},
+			{
+				"course": "EE",
+				"totalFee": "₹4,24,700",
+				"admissionFee": "₹79,475",
+				"eligibility": "Pass in 10+2 with 45% average in PCM",
+				"directAdmission": true
+			},
+			{
+				"course": "EE [Students from Bihar]",
+				"totalFee": "₹3,60,000",
+				"admissionFee": "₹45,000",
+				"eligibility": "Pass in 10+2 with 45% average in PCM",
+				"directAdmission": true
+			},
+			{
+				"course": "ME",
+				"totalFee": "₹4,24,700",
+				"admissionFee": "₹79,475",
+				"eligibility": "Pass in 10+2 with 45% average in PCM",
+				"directAdmission": true
+			},
+			{
+				"course": "ME [Students from Bihar]",
+				"totalFee": "₹3,60,000",
+				"admissionFee": "₹45,000",
+				"eligibility": "Pass in 10+2 with 45% average in PCM",
+				"directAdmission": true
+			},
+			{
+				"course": "Civil",
+				"totalFee": "₹4,24,700",
+				"admissionFee": "₹79,475",
+				"eligibility": "Pass in 10+2 with 45% average in PCM",
+				"directAdmission": true
+			},
+			{
+				"course": "Civil [Students from Bihar]",
+				"totalFee": "₹3,60,000",
+				"admissionFee": "₹45,000",
+				"eligibility": "Pass in 10+2 with 45% average in PCM",
+				"directAdmission": true
+			},
+			{
+				"course": "BME",
+				"totalFee": "₹4,24,700",
+				"admissionFee": "₹79,475",
+				"eligibility": "Pass in 10+2 with 45% average in PCM",
+				"directAdmission": true
+			},
+			{
+				"course": "BME [Students from Bihar]",
+				"totalFee": "₹3,60,000",
+				"admissionFee": "₹45,000",
+				"eligibility": "Pass in 10+2 with 45% average in PCM",
+				"directAdmission": true
+			},
+			{
+				"course": "Agriculture",
+				"totalFee": "₹4,24,700",
+				"admissionFee": "₹79,475",
+				"eligibility": "Pass in 10+2 with 45% average in PCM / PCB",
+				"directAdmission": true
+			},
+			{
+				"course": "Agriculture [Students from Bihar]",
+				"totalFee": "₹3,60,000",
+				"admissionFee": "₹45,000",
+				"eligibility": "Pass in 10+2 with 45% average in PCM / PCB",
+				"directAdmission": true
+			}
+		]
+	},
+	{
+		"slug": "dr-sudhir-chandra-sur-institute",
+		"section": "engineering",
+		"shortName": "Sur",
+		"name": "Dr Sudhir Chandra Sur Institute of Technology",
+		"accreditation": "Autonomous, NAAC 'A', NBA",
+		"location": "Dumdum, Kolkata",
+		"aliases": ["sur institute", "dscsit", "dumdum"],
+		"feeNote": "Fees marked with * are printed that way on the 2026 sheet.",
+		"programs": [
+			{
+				"course": "CSE",
+				"totalFee": "₹5,46,800",
+				"admissionFee": "₹94,800",
+				"eligibility": "Pass in 10+2 with Physics and Mathematics, along with Chemistry, Biotechnology, Biology or Computer Science. Minimum 45% in these subjects taken together (40% for reserved categories), and 30% in English.",
+				"directAdmission": true
+			},
+			{
+				"course": "CSE [Students from Bihar]",
+				"totalFee": "₹5,80,000",
+				"admissionFee": "₹75,000",
+				"eligibility": "Pass in 10+2 with Physics and Mathematics, along with Chemistry, Biotechnology, Biology or Computer Science. Minimum 45% in these subjects taken together (40% for reserved categories), and 30% in English.",
+				"directAdmission": true
+			},
+			{
+				"course": "CSE (AI ML)",
+				"totalFee": "₹5,46,800",
+				"admissionFee": "₹94,800",
+				"eligibility": "Pass in 10+2 with Physics and Mathematics, along with Chemistry, Biotechnology, Biology or Computer Science. Minimum 45% in these subjects taken together (40% for reserved categories), and 30% in English.",
+				"directAdmission": true
+			},
+			{
+				"course": "CSE (AI ML) [Students from Bihar]",
+				"totalFee": "₹5,80,000",
+				"admissionFee": "₹75,000",
+				"eligibility": "Pass in 10+2 with Physics and Mathematics, along with Chemistry, Biotechnology, Biology or Computer Science. Minimum 45% in these subjects taken together (40% for reserved categories), and 30% in English.",
+				"directAdmission": true
+			},
+			{
+				"course": "CSE (Data Science)",
+				"totalFee": "₹5,46,800",
+				"admissionFee": "₹94,800",
+				"eligibility": "Pass in 10+2 with Physics and Mathematics, along with Chemistry, Biotechnology, Biology or Computer Science. Minimum 45% in these subjects taken together (40% for reserved categories), and 30% in English.",
+				"directAdmission": true
+			},
+			{
+				"course": "CSE (Data Science) [Students from Bihar]",
+				"totalFee": "₹5,60,000",
+				"admissionFee": "₹70,000",
+				"eligibility": "Pass in 10+2 with Physics and Mathematics, along with Chemistry, Biotechnology, Biology or Computer Science. Minimum 45% in these subjects taken together (40% for reserved categories), and 30% in English.",
+				"directAdmission": true
+			},
+			{
+				"course": "CSE (Cyber Security)",
+				"totalFee": "₹5,46,800",
+				"admissionFee": "₹94,800",
+				"eligibility": "Pass in 10+2 with Physics and Mathematics, along with Chemistry, Biotechnology, Biology or Computer Science. Minimum 45% in these subjects taken together (40% for reserved categories), and 30% in English.",
+				"directAdmission": true
+			},
+			{
+				"course": "CSE (Cyber Security) [Students from Bihar]",
+				"totalFee": "₹5,60,000",
+				"admissionFee": "₹70,000",
+				"eligibility": "Pass in 10+2 with Physics and Mathematics, along with Chemistry, Biotechnology, Biology or Computer Science. Minimum 45% in these subjects taken together (40% for reserved categories), and 30% in English.",
+				"directAdmission": true
+			},
+			{
+				"course": "ECE",
+				"totalFee": "₹5,46,800*",
+				"admissionFee": "₹94,800*",
+				"eligibility": "Pass in 10+2 with Physics and Mathematics, along with Chemistry, Biotechnology, Biology or Computer Science. Minimum 45% in these subjects taken together (40% for reserved categories), and 30% in English.",
+				"directAdmission": true
+			},
+			{
+				"course": "ECE [Students from Bihar]",
+				"totalFee": "₹4,10,000",
+				"admissionFee": "₹55,000",
+				"eligibility": "Pass in 10+2 with Physics and Mathematics, along with Chemistry, Biotechnology, Biology or Computer Science. Minimum 45% in these subjects taken together (40% for reserved categories), and 30% in English.",
+				"directAdmission": true
+			},
+			{
+				"course": "EE",
+				"totalFee": "₹5,46,800*",
+				"admissionFee": "₹94,800*",
+				"eligibility": "Pass in 10+2 with Physics and Mathematics, along with Chemistry, Biotechnology, Biology or Computer Science. Minimum 45% in these subjects taken together (40% for reserved categories), and 30% in English.",
+				"directAdmission": true
+			},
+			{
+				"course": "EE [Students from Bihar]",
+				"totalFee": "₹3,60,000",
+				"admissionFee": "₹45,000",
+				"eligibility": "Pass in 10+2 with Physics and Mathematics, along with Chemistry, Biotechnology, Biology or Computer Science. Minimum 45% in these subjects taken together (40% for reserved categories), and 30% in English.",
+				"directAdmission": true
+			},
+			{
+				"course": "ME",
+				"totalFee": "₹5,46,800*",
+				"admissionFee": "₹94,800*",
+				"eligibility": "Pass in 10+2 with Physics and Mathematics, along with Chemistry, Biotechnology, Biology or Computer Science. Minimum 45% in these subjects taken together (40% for reserved categories), and 30% in English.",
+				"directAdmission": true
+			},
+			{
+				"course": "ME [Students from Bihar]",
+				"totalFee": "₹3,60,000",
+				"admissionFee": "₹45,000",
+				"eligibility": "Pass in 10+2 with Physics and Mathematics, along with Chemistry, Biotechnology, Biology or Computer Science. Minimum 45% in these subjects taken together (40% for reserved categories), and 30% in English.",
+				"directAdmission": true
+			},
+			{
+				"course": "Civil",
+				"totalFee": "₹5,46,800*",
+				"admissionFee": "₹94,800*",
+				"eligibility": "Pass in 10+2 with Physics and Mathematics, along with Chemistry, Biotechnology, Biology or Computer Science. Minimum 45% in these subjects taken together (40% for reserved categories), and 30% in English.",
+				"directAdmission": true
+			},
+			{
+				"course": "Civil [Students from Bihar]",
+				"totalFee": "₹3,60,000",
+				"admissionFee": "₹45,000",
+				"eligibility": "Pass in 10+2 with Physics and Mathematics, along with Chemistry, Biotechnology, Biology or Computer Science. Minimum 45% in these subjects taken together (40% for reserved categories), and 30% in English.",
+				"directAdmission": true
+			},
+			{
+				"course": "Automobile Engineering",
+				"totalFee": "₹5,46,800*",
+				"admissionFee": "₹94,800*",
+				"eligibility": "Pass in 10+2 with Physics and Mathematics, along with Chemistry, Biotechnology, Biology or Computer Science. Minimum 45% in these subjects taken together (40% for reserved categories), and 30% in English.",
+				"directAdmission": true
+			},
+			{
+				"course": "Automobile Engineering [Students from Bihar]",
+				"totalFee": "₹3,60,000",
+				"admissionFee": "₹45,000",
+				"eligibility": "Pass in 10+2 with Physics and Mathematics, along with Chemistry, Biotechnology, Biology or Computer Science. Minimum 45% in these subjects taken together (40% for reserved categories), and 30% in English.",
+				"directAdmission": true
+			}
+		]
+	},
+	{
+		"slug": "jis-university",
+		"section": "engineering",
+		"shortName": "JIS",
+		"name": "JIS University",
+		"accreditation": "State Private University",
+		"location": "Agarpara, Kolkata",
+		"aliases": ["jis university"],
+		"programs": [
+			{
+				"course": "CSE",
+				"totalFee": "₹6,68,900",
+				"admissionFee": "₹1,06,850",
+				"eligibility": "60% marks in 10+2 from any recognised board in the science stream",
+				"directAdmission": true
+			},
+			{
+				"course": "CSE (AI ML)",
+				"totalFee": "₹6,68,900",
+				"admissionFee": "₹1,06,850",
+				"eligibility": "60% marks in 10+2 from any recognised board in the science stream",
+				"directAdmission": true
+			},
+			{
+				"course": "CSE (Data Science)",
+				"totalFee": "₹6,68,900",
+				"admissionFee": "₹1,06,850",
+				"eligibility": "60% marks in 10+2 from any recognised board in the science stream",
+				"directAdmission": true
+			},
+			{
+				"course": "CSE (Cyber Security)",
+				"totalFee": "₹6,68,900",
+				"admissionFee": "₹1,06,850",
+				"eligibility": "60% marks in 10+2 from any recognised board in the science stream",
+				"directAdmission": true
+			},
+			{
+				"course": "CSE (IOT)",
+				"totalFee": "₹6,68,900",
+				"admissionFee": "₹1,06,850",
+				"eligibility": "60% marks in 10+2 from any recognised board in the science stream",
+				"directAdmission": true
+			}
+		]
+	},
+	{
+		"slug": "adamas-university",
+		"section": "engineering",
+		"shortName": "Adamas",
+		"name": "Adamas University",
+		"accreditation": "NAAC 'A' Grade, State Private University",
+		"location": "Barasat, Kolkata",
+		"aliases": ["adamas"],
+		"directAdmission": true,
+		"programs": []
+	},
+	{
+		"slug": "brainware-university",
+		"section": "engineering",
+		"shortName": "Brainware",
+		"name": "Brainware University",
+		"accreditation": "State Private University",
+		"location": "Barasat, Kolkata",
+		"aliases": ["brainware"],
+		"directAdmission": true,
+		"programs": []
+	}
+]

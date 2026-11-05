@@ -8,6 +8,7 @@ import ServicesList from "../components/services/ServicesList";
 import ServicesTestimonials from "../components/services/ServicesTestimonials";
 import ServicesCTA from "../components/services/ServicesCTA";
 import data from "../data/services.json";
+import { allColleges } from "../data/colleges";
 import { allExams } from "../data/exams";
 
 const Services: React.FC = () => {
@@ -25,6 +26,9 @@ const Services: React.FC = () => {
 		if (!searchQuery.trim()) {
 			return sections.map((section) => ({
 				...section,
+				colleges: allColleges.filter(
+					(college) => college.section === section.id
+				),
 				exams: allExams.filter((exam) => exam.section === section.id),
 			}));
 		}
@@ -35,6 +39,9 @@ const Services: React.FC = () => {
 			.map((section) => {
 				const sectionExams = allExams.filter(
 					(exam) => exam.section === section.id
+				);
+				const sectionColleges = allColleges.filter(
+					(college) => college.section === section.id
 				);
 				const filteredItems = section.items.filter(
 					(item) =>
@@ -56,14 +63,32 @@ const Services: React.FC = () => {
 					return haystack.includes(lowerQuery);
 				});
 
+				const filteredColleges = sectionColleges.filter((college) => {
+					const haystack = [
+						college.name,
+						college.shortName,
+						college.location,
+						college.accreditation,
+						...college.aliases,
+						...college.programs.map((program) => program.course),
+					]
+						.join(" ")
+						.toLowerCase();
+					return haystack.includes(lowerQuery);
+				});
+
 				return {
 					...section,
-					items: filteredItems,
+					colleges: filteredColleges,
 					exams: filteredExams,
+					items: filteredItems,
 				};
 			})
 			.filter(
-				(section) => section.items.length > 0 || section.exams.length > 0
+				(section) =>
+					section.items.length > 0 ||
+					section.exams.length > 0 ||
+					section.colleges.length > 0
 			);
 	}, [searchQuery, activeCategory]);
 

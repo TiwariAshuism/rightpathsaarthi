@@ -2,7 +2,9 @@ import React from "react";
 import { useScrollReveal } from "../../hooks/useScrollReveal";
 import { DotLottiePlayer } from "@dotlottie/react-player";
 import { Link } from "@tanstack/react-router";
+import type { College } from "../../data/colleges";
 import type { Exam } from "../../data/exams";
+import CollegeGrid from "./CollegeGrid";
 import ExamGrid from "./ExamGrid";
 
 interface ServiceItem {
@@ -18,6 +20,7 @@ interface ServiceSection {
 	colorClass: string;
 	items: ServiceItem[];
 	exams: Array<Exam>;
+	colleges: Array<College>;
 }
 
 interface ServicesListProps {
@@ -70,9 +73,10 @@ const ServicesList: React.FC<ServicesListProps> = ({ sections }) => {
 					</div>
 					<div className="flex flex-col gap-14">
 						<ExamGrid items={section.exams} />
+						<CollegeGrid items={section.colleges} />
 						{section.items.length > 0 && (
 							<div className="flex flex-col gap-8">
-								{section.exams.length > 0 && (
+								{(section.exams.length > 0 || section.colleges.length > 0) && (
 									<h3 className="text-2xl font-black tracking-tight text-slate-900 dark:text-white">
 										Courses
 									</h3>

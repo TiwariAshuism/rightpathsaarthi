@@ -2,7 +2,7 @@
     "hero": {
         "title": "Courses We Consult On",
         "description": "Expert guidance across every academic field. From university admissions to specialized exam prep, find the right path for your future.",
-        "searchPlaceholder": "Search a course or exam (e.g. NEET, WBJEE, MBA)...",
+        "searchPlaceholder": "Search a course, exam, or college (e.g. NEET, IEM)...",
         "searchButtonText": "Find Course"
     },
     "categories": [
